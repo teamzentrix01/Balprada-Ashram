@@ -1,65 +1,217 @@
-import Image from "next/image";
+import Link from "next/link";
+import { ContactPanel, Footer, Header } from "./_components/SiteChrome";
+import TreatmentAccordion from "./_components/TreatmentAccordion";
+import TreatmentJourney from "./_components/TreatmentJourney";
+import {
+  facilities,
+  careProcess,
+  galleryImages,
+  heroImages,
+  opdInfo,
+  site,
+  testimonials,
+} from "./data";
+
+const aboutCards = [
+  {
+    image: galleryImages[5],
+    title: "We practice ancient medical systems",
+  },
+  {
+    image: galleryImages[0],
+    title: "Legacy carried by visionary vaidyas",
+  },
+  {
+    image: galleryImages[1],
+    title: "Trusted Ayurvedic chikitsalaya",
+  },
+  {
+    image: galleryImages[3],
+    title: "Passing true seva and knowledge",
+  },
+  {
+    image: galleryImages[2],
+    title: "Unmatched quality of medicine",
+  },
+];
 
 export default function Home() {
+  const slides = [heroImages[1], galleryImages[5], heroImages[0], galleryImages[3]];
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <main className="site-shell">
+      <section className="home-hero">
+        <div className="hero-slider" aria-label="Balprada hero image slider">
+          {slides.map((image, index) => (
+            <img
+              className="hero-slide"
+              key={image}
+              src={image}
+              alt={`Balprada wellness slide ${index + 1}`}
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          ))}
         </div>
-      </main>
-    </div>
+        <div className="hero-overlay" />
+        <Header />
+        <img className="hero-seal" src="/balprada-seal.svg" alt="" aria-hidden="true" />
+        <div className="hero-content">
+          <p>{site.tagline}</p>
+          <h1>{site.fullName}</h1>
+          <span>{site.mantra}</span>
+          <div className="hero-actions center">
+            <Link className="button primary gradient" href="/contact">
+              Book Now
+            </Link>
+            <Link className="button glass" href="/treatments">
+              Our Treatments
+            </Link>
+          </div>
+        </div>
+        <div className="hero-dots" aria-hidden="true">
+          {slides.map((image, index) => (
+            <span key={`${image}-dot`} className={index === 0 ? "active" : ""} />
+          ))}
+        </div>
+      </section>
+
+      <section className="opd-highlight section">
+        <div>
+          <p className="eyebrow">Daily OPD</p>
+          <h2>{opdInfo.title}</h2>
+          <p>{opdInfo.summary}</p>
+        </div>
+        <div className="opd-list">
+          {opdInfo.items.map((item) => (
+            <span key={item}>{item}</span>
+          ))}
+        </div>
+      </section>
+
+      <section className="about-showcase section">
+        <p className="eyebrow center-text">About Us</p>
+        <h2>Healing Rooted in Balprada Tradition</h2>
+        <p>
+          Built on the seva sankalp of Sw. Vaidya Vijay Pal Singh Ji, Balprada
+          blends Ayurvedic wisdom, in-house herbal medicines, experienced doctors,
+          and a peaceful ashram environment for long-term healing.
+        </p>
+        <div className="image-row">
+          {aboutCards.map((item, index) => (
+            <figure key={item.title}>
+              <img src={item.image} alt={`Balprada about highlight ${index + 1}`} />
+              <figcaption>{item.title}</figcaption>
+            </figure>
+          ))}
+        </div>
+        <Link className="button primary gradient about-more" href="/about">
+          Explore More
+        </Link>
+      </section>
+
+      <section className="treatments-stage section" id="treatments">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Our Treatments</p>
+            <h2>Health concerns we support with Ayurvedic care</h2>
+          </div>
+          <Link className="button primary gradient" href="/treatments">
+            Explore Our Treatments
+          </Link>
+        </div>
+        <TreatmentAccordion compact />
+      </section>
+
+      <section className="holistic section">
+        <div>
+          <p className="eyebrow">Our Holistic Approach</p>
+          <h2>Care that brings body, mind and lifestyle together</h2>
+          <p>
+            Balprada combines consultation, Ayurvedic medicines, yoga,
+            panchakarma, naturopathy, diet guidance and follow-up care to make
+            the treatment journey more complete.
+          </p>
+          <Link className="button primary gradient" href="/facilities">
+            Explore More
+          </Link>
+        </div>
+        <div className="circle-care">
+          <img src={galleryImages[0]} alt="Balprada care" />
+          <span>Personalized Doctor Care</span>
+        </div>
+      </section>
+
+      <section className="care-process section">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Care Process</p>
+            <h2>A clear path from consultation to follow-up</h2>
+          </div>
+          <Link className="button secondary" href="/contact">
+            Plan Your Visit
+          </Link>
+        </div>
+        <div className="process-grid">
+          {careProcess.map((item, index) => (
+            <article key={item.title}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <TreatmentJourney />
+
+      <section className="section">
+        <div className="section-heading centered-heading">
+          <div>
+            <p className="eyebrow">Facilities</p>
+            <h2>Facilities</h2>
+          </div>
+          <Link className="button secondary" href="/facilities">
+            View All
+          </Link>
+        </div>
+        <div className="facility-grid">
+          {facilities.map((item) => (
+            <Link className="facility-card" href={`/facilities/${item.slug}`} key={item.slug}>
+              <img src={item.image} alt={item.title} />
+              <div>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="stories section">
+        <p className="eyebrow center-text">Stories of Trust and Healing</p>
+        <h2>Blessings and Experiences</h2>
+        <div className="story-grid">
+          {testimonials.map((item) => (
+            <article key={item.name}>
+              <small>{item.tag}</small>
+              <span>"</span>
+              <p>{item.text}</p>
+              <strong>{item.name}</strong>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="founder-blessing section">
+        <img src="/balprada-seal.svg" alt="" aria-hidden="true" />
+        <div>
+          <p className="eyebrow">Aashirvachan</p>
+          <h2>{site.founderQuote}</h2>
+          <strong>- {site.founder}</strong>
+        </div>
+      </section>
+
+      <ContactPanel />
+      <Footer />
+    </main>
   );
 }

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460" role="img" aria-label="Balprada Jansewa Ashram Trust seal">
+  <defs>
+    <radialGradient id="sealGlow" cx="50%" cy="42%" r="62%">
+      <stop offset="0" stop-color="#fff9a8" />
+      <stop offset=".72" stop-color="#fff27a" />
+      <stop offset="1" stop-color="#ffd65c" />
+    </radialGradient>
+    <linearGradient id="rim" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffcf66" />
+      <stop offset=".3" stop-color="#f47b20" />
+      <stop offset=".62" stop-color="#a9470d" />
+      <stop offset="1" stop-color="#ffbd54" />
+    </linearGradient>
+    <filter id="sealShadow" x="-20%" y="-15%" width="140%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#0b2f20" flood-opacity=".18" />
+    </filter>
+  </defs>
+  <g filter="url(#sealShadow)">
+    <ellipse cx="180" cy="230" rx="124" ry="184" fill="url(#rim)" />
+    <ellipse cx="180" cy="230" rx="112" ry="172" fill="#ffe68a" stroke="#fff2bd" stroke-width="7" />
+    <ellipse cx="180" cy="230" rx="96" ry="151" fill="url(#sealGlow)" opacity=".96" />
+    <path d="M93 239c34-49 70-71 113-70 28 1 50 12 68 32-41-16-78-9-111 22-21 20-44 27-70 16Z" fill="#ffdca7" opacity=".58" />
+    <path d="M85 260c34 9 65 1 92-24 28 26 59 34 93 24-31 35-62 44-93 29-31 15-62 6-92-29Z" fill="#0aa45f" opacity=".95" />
+    <path d="M150 241c-20 20-43 24-70 13 25-17 49-20 70-13Z" fill="#f7b891" opacity=".72" />
+    <path d="M211 241c20 20 43 24 70 13-25-17-49-20-70-13Z" fill="#f7b891" opacity=".72" />
+    <text x="180" y="210" fill="#0aa45f" font-family="Georgia, serif" font-size="86" font-weight="700" text-anchor="middle">ॐ</text>
+    <path id="topArc" d="M91 176a94 126 0 0 1 178 0" fill="none" />
+    <path id="bottomArc" d="M91 283a94 126 0 0 0 178 0" fill="none" />
+    <text fill="#0aa45f" font-family="Noto Serif Devanagari, Tiro Devanagari Hindi, Georgia, serif" font-size="19" font-weight="700">
+      <textPath href="#topArc" startOffset="50%" text-anchor="middle">बलप्रदा जनसेवा आश्रम ट्रस्ट</textPath>
+    </text>
+    <text fill="#0aa45f" font-family="Noto Serif Devanagari, Tiro Devanagari Hindi, Georgia, serif" font-size="19" font-weight="700">
+      <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">भूमि विश्वास आश्रम</textPath>
+    </text>
+  </g>
+</svg>
