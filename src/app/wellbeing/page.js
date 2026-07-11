@@ -22,9 +22,9 @@ export default function WellbeingPage() {
           <h2>Balance body, mind and daily life</h2>
         </div>
         <p>
-          Balprada combines supportive therapies with consultation and medicines.
-          Every facility is recommended according to the patient’s condition,
-          comfort and treatment plan.
+          Balprada combines supportive therapies with consultation and
+          medicines. Every facility is recommended according to the patient's
+          condition, comfort and treatment plan.
         </p>
       </section>
 

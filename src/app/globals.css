@@ -5445,3 +5445,564 @@ body {
     width: 100%;
   }
 }
+
+/* Responsive audit layer: every route */
+html,
+body,
+.site-shell {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+:where(
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  a,
+  button,
+  span,
+  strong,
+  small,
+  li,
+  input,
+  select,
+  textarea
+) {
+  overflow-wrap: anywhere;
+}
+
+:where(img, svg, video, canvas) {
+  max-width: 100%;
+}
+
+:where(input, select, textarea, button) {
+  min-width: 0;
+}
+
+:where(
+  .section,
+  .page-hero,
+  .about-hero-pro,
+  .about-area-hero,
+  .treatment-category-hero,
+  .condition-hero,
+  .treatment-category-nav,
+  .about-area-nav,
+  .about-sticky-tabs,
+  .journey-card,
+  .contact,
+  .quote,
+  .opd,
+  .footer
+) {
+  max-width: calc(100% - 1.25rem);
+}
+
+.nav {
+  max-width: calc(100% - 1.25rem);
+}
+
+.button,
+.nav-cta,
+.accordion-button,
+.official-contact-actions .button {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.section-heading,
+.about-next,
+.about-explorer-heading {
+  min-width: 0;
+}
+
+@media (max-width: 1180px) {
+  .about-stats,
+  .timeline-line,
+  .about-area-cards,
+  .condition-page-grid,
+  .process-grid,
+  .faq-grid,
+  .products-grid,
+  .team-grid,
+  .facility-grid,
+  .gallery-grid,
+  .insights-grid,
+  .story-grid,
+  .branch-page-grid,
+  .ashram-branches {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .image-row,
+  .ashram-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .treatment-process ol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 980px) {
+  .nav,
+  .home-hero > .nav {
+    width: calc(100% - 1rem);
+    max-width: calc(100% - 1rem);
+    gap: 0.75rem;
+    border-radius: 0.85rem;
+  }
+
+  .nav nav,
+  .home-hero > .nav nav {
+    display: none !important;
+  }
+
+  .nav .brand,
+  .home-hero > .nav .brand {
+    min-width: 0;
+  }
+
+  .nav .brand-logo,
+  .home-hero > .nav .brand-logo {
+    width: clamp(7.5rem, 30vw, 10.5rem);
+  }
+
+  .nav-cta {
+    flex: 0 1 auto;
+    min-height: 2.55rem;
+    padding: 0.75rem 0.95rem;
+    font-size: 0.62rem;
+    line-height: 1.1;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .home-hero {
+    min-height: 86svh;
+  }
+
+  .home-hero .hero-content {
+    width: min(54rem, calc(100% - 1.25rem));
+    padding-top: 7rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .home-hero .hero-content h1 {
+    font-size: clamp(3rem, 10vw, 5.6rem);
+    line-height: 1.04;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    width: min(34rem, 100%);
+    margin-inline: auto;
+  }
+
+  .hero-actions .button {
+    flex: 1 1 12rem;
+  }
+
+  .page-hero,
+  .about-hero-pro,
+  .about-area-hero,
+  .treatment-category-hero,
+  .condition-hero,
+  .about-mission,
+  .about-area-intro,
+  .treatment-category-intro,
+  .condition-content,
+  .wellbeing-intro,
+  .ashram-services,
+  .section-band,
+  .detail-band,
+  .feature-page-grid,
+  .service-page,
+  .appointment-layout,
+  .opd-highlight,
+  .journey-grid,
+  .holistic,
+  .footer {
+    grid-template-columns: 1fr !important;
+  }
+
+  .about-hero-pro,
+  .about-area-hero,
+  .page-hero,
+  .treatment-category-hero,
+  .condition-hero {
+    min-height: auto;
+    margin-top: 1.25rem;
+    padding: clamp(1rem, 4vw, 1.5rem);
+    border-radius: 1rem;
+  }
+
+  .about-hero-pro > img,
+  .about-area-hero > img,
+  .page-hero img,
+  .treatment-category-hero > img,
+  .condition-hero > img,
+  .feature-page-grid img,
+  .service-page img {
+    width: 100%;
+    height: clamp(13rem, 45vw, 21rem);
+    object-fit: cover;
+    border-radius: 0.85rem;
+  }
+
+  .about-hero-pro h1,
+  .about-area-hero h1,
+  .page-hero h1,
+  .treatment-category-hero h1,
+  .condition-hero h1 {
+    font-size: clamp(2.4rem, 8vw, 4.25rem);
+    line-height: 1.05;
+  }
+
+  .section-heading,
+  .about-next,
+  .founder-blessing,
+  .opd {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .section-heading .button,
+  .about-next .button,
+  .opd .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-sticky-tabs,
+  .about-area-nav,
+  .treatment-category-nav {
+    display: flex;
+    width: calc(100% - 1rem);
+    max-width: calc(100% - 1rem);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding: 0.35rem;
+    gap: 0.45rem;
+  }
+
+  .about-sticky-tabs button,
+  .about-area-nav a,
+  .treatment-category-nav a {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    white-space: nowrap;
+  }
+
+  .about-explorer-panel {
+    grid-template-columns: 1fr !important;
+  }
+
+  .about-explorer-cards,
+  .about-area-cards,
+  .condition-page-grid,
+  .related-conditions > div:last-child,
+  .wellbeing-grid,
+  .ashram-gallery,
+  .ashram-branches,
+  .branch-grid,
+  .branch-page-grid,
+  .team-grid,
+  .facility-grid,
+  .gallery-grid,
+  .insights-grid,
+  .products-grid,
+  .faq-grid,
+  .process-grid,
+  .story-grid,
+  .image-row,
+  .treatment-process ol {
+    grid-template-columns: 1fr !important;
+  }
+
+  .wellbeing-grid > a,
+  .facility-card,
+  .feature-page-grid a,
+  .service-page a {
+    grid-template-columns: 1fr !important;
+  }
+
+  .wellbeing-grid img,
+  .facility-card img,
+  .gallery-grid img,
+  .insights-grid img,
+  .image-row img,
+  .ashram-gallery img {
+    height: clamp(13rem, 48vw, 19rem);
+  }
+
+  .treatment-accordion {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    height: auto !important;
+  }
+
+  .treatment-accordion-item,
+  .treatment-accordion-item.active {
+    min-height: auto !important;
+    height: auto !important;
+  }
+
+  .treatment-accordion-item:not(.active) {
+    min-height: 5rem !important;
+  }
+
+  .treatment-accordion-label {
+    writing-mode: horizontal-tb;
+    transform: none;
+    inset: auto 1rem 1rem;
+  }
+
+  .treatment-accordion-content {
+    min-height: auto;
+    padding: 1.25rem;
+  }
+
+  .condition-icon-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .journey-progress {
+    max-width: 100%;
+    gap: 0.6rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .journey-grid aside {
+    min-height: auto;
+    padding: 1.25rem;
+  }
+
+  .contact form,
+  .appointment-form {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact form textarea,
+  .contact form button,
+  .appointment-form > div,
+  .appointment-form textarea,
+  .appointment-form button {
+    grid-column: 1 / -1 !important;
+  }
+
+  .footer-nav-panel {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  :where(
+    .section,
+    .page-hero,
+    .about-hero-pro,
+    .about-area-hero,
+    .treatment-category-hero,
+    .condition-hero,
+    .journey-card,
+    .contact,
+    .quote,
+    .opd,
+    .footer
+  ) {
+    width: calc(100% - 1rem) !important;
+    max-width: calc(100% - 1rem) !important;
+  }
+
+  .section {
+    padding-block: 2.5rem;
+  }
+
+  .home-hero .hero-content h1 {
+    max-width: 11ch;
+    margin-inline: auto;
+    font-size: clamp(2.45rem, 13vw, 3.9rem);
+  }
+
+  .home-hero .hero-content p,
+  .home-hero .hero-content span {
+    font-size: 0.96rem;
+    line-height: 1.55;
+  }
+
+  .hero-actions,
+  .journey-actions,
+  .journey-complete > div,
+  .footer-actions,
+  .official-contact-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .button,
+  .nav-cta,
+  .hero-actions .button,
+  .journey-actions .button,
+  .journey-complete .button,
+  .footer-actions .button,
+  .official-contact-actions .button {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .about-stats,
+  .timeline-line,
+  .about-explorer-cards,
+  .about-area-cards,
+  .condition-icon-grid,
+  .opd-list,
+  .footer-nav-panel,
+  .footer-branch-list {
+    grid-template-columns: 1fr !important;
+  }
+
+  .section-band,
+  .detail-band,
+  .contact-card,
+  .appointment-form,
+  .appointment-aside,
+  .footer,
+  .about-meaning,
+  .about-timeline,
+  .about-mission,
+  .about-next,
+  .about-area-quote,
+  .journey-card {
+    padding: 1rem !important;
+    border-radius: 0.95rem;
+  }
+
+  .about-hero-pro h1,
+  .about-area-hero h1,
+  .page-hero h1,
+  .treatment-category-hero h1,
+  .condition-hero h1,
+  .section-heading h2,
+  .about-meaning h2,
+  .about-timeline h2,
+  .about-mission h2,
+  .about-next h2,
+  .wellbeing-intro h2,
+  .ashram-services h2,
+  .journey-card h2,
+  .contact h2,
+  .opd h2,
+  .quote h2 {
+    font-size: clamp(1.9rem, 10vw, 3rem);
+    line-height: 1.08;
+  }
+
+  .treatment-accordion-content h3,
+  .journey-question h3,
+  .journey-complete h3,
+  .products-grid h2,
+  .faq-grid h2,
+  .team-grid h3 {
+    font-size: clamp(1.45rem, 7vw, 2.25rem);
+    line-height: 1.12;
+  }
+
+  .contact form input,
+  .contact form select,
+  .contact form textarea,
+  .appointment-form input,
+  .appointment-form select,
+  .appointment-form textarea,
+  .journey-contact-fields input,
+  .footer .newsletter input {
+    min-height: 3rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+  }
+
+  .footer .newsletter {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav,
+  .home-hero > .nav {
+    width: calc(100% - 0.75rem) !important;
+    max-width: calc(100% - 0.75rem) !important;
+    padding: 0.45rem 0.55rem;
+  }
+
+  .nav .brand-logo,
+  .home-hero > .nav .brand-logo {
+    width: clamp(6.8rem, 46vw, 8.4rem);
+  }
+
+  .home-hero {
+    min-height: 88svh;
+  }
+
+  .home-hero .hero-content {
+    padding-top: 5.7rem;
+    padding-bottom: 3.8rem;
+  }
+
+  .home-hero > .hero-seal {
+    width: 2.4rem;
+    right: 0.6rem;
+    bottom: 3.05rem;
+    opacity: 0.55;
+  }
+
+  .about-sticky-tabs button,
+  .about-area-nav a,
+  .treatment-category-nav a {
+    padding: 0.7rem 0.85rem;
+    font-size: 0.68rem;
+  }
+
+  .branch-contact-links {
+    grid-template-columns: 1fr;
+  }
+
+  .branch-contact-links a {
+    width: 100%;
+  }
+
+  .choice-cloud {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .choice-cloud button,
+  .choice-cloud span {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-hero-pro > img,
+  .about-area-hero > img,
+  .page-hero img,
+  .treatment-category-hero > img,
+  .condition-hero > img,
+  .wellbeing-grid img,
+  .facility-card img,
+  .gallery-grid img,
+  .insights-grid img,
+  .image-row img,
+  .ashram-gallery img {
+    height: 12.5rem;
+  }
+}
