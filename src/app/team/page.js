@@ -3,7 +3,7 @@ import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
 import { doctors } from "../data";
 
 export const metadata = {
-  title: "Team | Balprada India",
+  title: "Team | Balprada Ayurvedic Hospital & Research Center",
 };
 
 export default function TeamPage() {

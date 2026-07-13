@@ -4,7 +4,7 @@ import { ContactPanel, Shell } from "../_components/SiteChrome";
 import { heroImages } from "../data";
 
 export const metadata = {
-  title: "About Balprada | Balprada India",
+  title: "About Balprada | Balprada Ayurvedic Hospital & Research Center",
 };
 
 const timeline = [
@@ -34,7 +34,7 @@ export default function AboutPage() {
           <p className="eyebrow">About Balprada</p>
           <h1>Trusted Ayurvedic Care Since 1991</h1>
           <p>
-            Balprada Jansewa Ashram Trust carries forward the spirit of seva,
+            Balprada Ayurvedic Hospital & Research Center carries forward the spirit of seva,
             ayurvedic healing and community care started by Sw. Vaidya Vijay Pal
             Singh Ji in 1991.
           </p>
@@ -71,6 +71,7 @@ export default function AboutPage() {
 
       <section className="about-timeline section">
         <h2>Legacy of Balprada</h2>
+        <div className="timeline-bird" aria-hidden="true"><span className="bird-shape" /></div>
         <div className="timeline-line">
           {timeline.map((item) => (
             <article key={item.year}>

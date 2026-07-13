@@ -4,7 +4,7 @@ import TreatmentAccordion from "../_components/TreatmentAccordion";
 import { treatments } from "../data";
 
 export const metadata = {
-  title: "Treatments | Balprada India",
+  title: "Treatments | Balprada Ayurvedic Hospital & Research Center",
 };
 
 export default function TreatmentsPage() {

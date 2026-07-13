@@ -1,7 +1,7 @@
 export const site = {
   name: "Balprada",
-  fullName: "Balprada Jansewa Ashram Trust",
-  tagline: "Ayurveda, Jansewa and Ashram care since 1991",
+  fullName: "Balprada Ayurvedic Hospital & Research Center",
+  tagline: "35 years of trusted Ayurveda, research and compassionate care",
   appointmentUrl: "https://wa.link/5x0ix8",
   email: "balpradaindia@gmail.com",
   primaryPhone: "9917114400",
@@ -16,10 +16,11 @@ export const site = {
 };
 
 export const opdInfo = {
-  title: "Daily OPD Information",
+  title: "Free OPD on the 15th of Every Month",
   summary:
     "Balprada Ashram and Clinic remains open throughout the week for guided consultation and follow-up care.",
   items: [
+    "Free OPD consultation is available on the 15th of every month.",
     "Ashram and clinic open 7 days a week.",
     "Consultation timing: 10:00 AM to 2:00 PM.",
     "Vaidya ji is available at the Moradabad branch on Sundays.",
@@ -161,8 +162,7 @@ export const facilities = [
   {
     slug: "yoga",
     title: "Yoga",
-    image:
-      "https://balpradaindia.com/wp-content/uploads/2023/07/herbal-compress-herbal-spa-treatment-equipments-put-dark-floor-1-scaled.webp",
+    image: "/wellness/yoga.jpg",
     text: "Yoga and Ayurveda support balance across body, mind and breath, helping patients build discipline, strength and calm.",
     highlights: [
       "Breath and posture practice",
@@ -173,22 +173,34 @@ export const facilities = [
   {
     slug: "naturopathy",
     title: "Naturopathy",
-    image:
-      "https://balpradaindia.com/wp-content/uploads/2023/07/IMG20230809154358-scaled.webp",
+    image: "/wellness/naturopathy.jpg",
     text: "Naturopathy works with the body's natural healing capacity through simple, nature-led practices and supportive routines.",
     highlights: ["Natural therapies", "Detox support", "Lifestyle correction"],
   },
   {
+    slug: "meditation",
+    title: "Meditation",
+    image: "/wellness/meditation.jpg",
+    text: "Guided meditation and breath awareness support emotional steadiness, restorative rest and a calmer healing journey.",
+    highlights: ["Guided meditation", "Breath awareness", "Stress and sleep support"],
+  },
+  {
     slug: "panchakarma",
     title: "Panchakarma",
-    image:
-      "https://balpradaindia.com/wp-content/uploads/2023/07/what-panchakarma.jpg",
+    image: "/wellness/panchakarma.jpg",
     text: "Panchakarma therapies are planned to support cleansing, balance and recovery according to individual assessment.",
     highlights: [
       "Traditional procedures",
       "Doctor-guided planning",
       "Recovery support",
     ],
+  },
+  {
+    slug: "physiotherapy",
+    title: "Physiotherapy",
+    image: "/wellness/physiotherapy.jpg",
+    text: "Professional physiotherapy supports safe movement, mobility, strength and recovery alongside the wider care plan.",
+    highlights: ["Mobility assessment", "Guided rehabilitation", "Strength and recovery support"],
   },
   {
     slug: "pathology",

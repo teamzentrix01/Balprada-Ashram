@@ -2,7 +2,7 @@ import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
 import { faqs, galleryImages } from "../data";
 
 export const metadata = {
-  title: "FAQ | Balprada India",
+  title: "FAQ | Balprada Ayurvedic Hospital & Research Center",
 };
 
 export default function FaqPage() {

@@ -3,7 +3,7 @@ import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
 import { facilities } from "../data";
 
 export const metadata = {
-  title: "Facilities | Balprada India",
+  title: "Facilities | Balprada Ayurvedic Hospital & Research Center",
 };
 
 export default function FacilitiesPage() {

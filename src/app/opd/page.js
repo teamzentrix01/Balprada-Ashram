@@ -3,7 +3,7 @@ import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
 import { branches, heroImages, opdInfo } from "../data";
 
 export const metadata = {
-  title: "OPD Timings | Balprada India",
+  title: "OPD Timings | Balprada Ayurvedic Hospital & Research Center",
 };
 
 export default function OpdPage() {

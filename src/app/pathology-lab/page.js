@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
 import { facilities } from "../data";
+import { pathologyTests } from "../catalogData";
 
 export const metadata = {
-  title: "Pathology Lab | Balprada India",
+  title: "Pathology Lab | Balprada Ayurvedic Hospital & Research Center",
 };
 
 const lab = facilities.find((item) => item.slug === "pathology");
@@ -15,8 +16,14 @@ export default function PathologyLabPage() {
         eyebrow="Pathology Lab"
         title="Reliable diagnostic support for guided care"
         text={lab.text}
-        image={lab.image}
+        image="/pathology-lab-hero.png"
       />
+      <section className="lab-trust-strip" aria-label="Laboratory highlights">
+        <span><strong>Modern</strong> diagnostic support</span>
+        <span><strong>Major</strong> routine tests</span>
+        <span><strong>Clear</strong> report guidance</span>
+        <span><strong>Easy</strong> phone enquiry</span>
+      </section>
       <section className="section-band detail-band">
         <div>
           <p className="eyebrow">Balprada Labs</p>
@@ -36,6 +43,24 @@ export default function PathologyLabPage() {
             View Facility Detail
           </Link>
         </div>
+      </section>
+      <section className="section catalog-section">
+        <div className="section-heading">
+          <div><p className="eyebrow">Test Directory</p><h2>Frequently requested pathology tests</h2></div>
+          <a className="button secondary" href="tel:9917114400">Call Lab</a>
+        </div>
+        <div className="professional-grid">
+          {pathologyTests.map((test, index) => (
+            <Link className="professional-card" href={`/pathology-lab/${test.slug}`} key={test.slug}>
+              <div className="card-image lab-card-image">
+                <img src={test.image} alt={`${test.title} diagnostic testing`} />
+                <span>{String(index + 1).padStart(2, "0")}</span>
+              </div>
+              <div><small>{test.sample}</small><h3>{test.title}</h3><p>{test.short}</p><strong>View test details -&gt;</strong></div>
+            </Link>
+          ))}
+        </div>
+        <p className="catalog-note">Other routine and doctor-advised investigations may also be available. Please contact the laboratory to confirm the exact test, preparation, price and reporting time.</p>
       </section>
       <ContactPanel />
     </Shell>

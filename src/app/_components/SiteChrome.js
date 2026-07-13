@@ -1,27 +1,67 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 import { branches, opdInfo, site } from "../data";
 
 export function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <header className="nav">
-      <Link className="brand" href="/" aria-label="Balprada India home">
+    <header className={`nav ${menuOpen ? "menu-open" : ""}`}>
+      <Link className="brand" href="/" aria-label="Balprada Ayurvedic Hospital & Research Center home">
         <img className="brand-logo" src="/balprada-logo.svg" alt="Balprada" />
         <span className="brand-copy">
           <strong>{site.name}</strong>
-          <small>Ayurvedic Chikitsalaya & Research Centre</small>
+          <small>Ayurvedic Hospital & Research Center</small>
         </span>
       </Link>
-      <nav aria-label="Primary navigation">
-        <Link href="/about">About</Link>
-        <Link href="/treatments">Treatments</Link>
-        <Link href="/wellbeing">Wellbeing</Link>
-        <Link href="/ashram">Ashram</Link>
-        <Link href="/insights">Insights</Link>
-        <Link href="/contact">Contact</Link>
-      </nav>
+      {!menuOpen ? (
+        <nav aria-label="Primary navigation" id="primary-navigation">
+          <Link href="/about">About</Link>
+          <Link href="/treatments">Treatments</Link>
+          <Link href="/pathology-lab">Pathology</Link>
+          <Link href="/ashram">Ashram</Link>
+          <Link href="/organic-food">Organic Food</Link>
+          <Link href="/contact">Contact</Link>
+        </nav>
+      ) : null}
       <Link className="nav-cta" href="/appointment">
         Book Appointment
       </Link>
+      <button
+        className="menu-toggle"
+        type="button"
+        aria-label={menuOpen ? "Close menu" : "Open menu"}
+        aria-expanded={menuOpen}
+        aria-controls="mobile-navigation"
+        onClick={() => setMenuOpen((open) => !open)}
+      >
+        <span /><span />
+      </button>
+      {menuOpen ? (
+        <div
+          className="mobile-nav-panel"
+          id="mobile-navigation"
+          role="navigation"
+          aria-label="Mobile navigation"
+        >
+          <ul>
+            <li><Link href="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
+            <li><Link href="/treatments" onClick={() => setMenuOpen(false)}>Treatments</Link></li>
+            <li><Link href="/pathology-lab" onClick={() => setMenuOpen(false)}>Pathology</Link></li>
+            <li><Link href="/ashram" onClick={() => setMenuOpen(false)}>Ashram</Link></li>
+            <li><Link href="/organic-food" onClick={() => setMenuOpen(false)}>Organic Food</Link></li>
+            <li><Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+          </ul>
+        </div>
+      ) : null}
+      <div className="service-ribbon">
+        <strong className="experience-ribbon">35 Years of Experience</strong>
+        <span aria-hidden="true">-</span>
+        <Link href="/opd"><b>Every month on 15th: Free OPD</b></Link>
+        <span aria-hidden="true">-</span>
+        <a href={site.appointmentUrl} target="_blank" rel="noreferrer">Courier service available - contact us</a>
+      </div>
     </header>
   );
 }
@@ -34,6 +74,7 @@ export function Footer() {
     ["Team", "/team"],
     ["Gallery", "/gallery"],
     ["Insights", "/insights"],
+    ["Organic Food", "/organic-food"],
   ];
 
   const patientLinks = [
@@ -62,7 +103,8 @@ export function Footer() {
           </span>
         </div>
         <p>
-          Balprada Jansewa Ashram Trust is guided by natural Ayurvedic care,
+          Balprada Ayurvedic Hospital & Research Center brings 35 years of
+          experience in natural Ayurvedic care,
           experienced doctors, disciplined routines and a service-first spirit.
         </p>
         <div className="footer-actions">
@@ -134,7 +176,7 @@ export function Footer() {
           <button type="submit">Send</button>
         </form>
         <small>
-          (c) 2026 Balprada India. Ayurvedic Chikitsalaya & Research Centre.
+          (c) 2026 Balprada Ayurvedic Hospital & Research Center. 35 years of experience.
         </small>
       </div>
     </footer>

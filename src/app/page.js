@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 import { ContactPanel, Footer, Header } from "./_components/SiteChrome";
 import TreatmentAccordion from "./_components/TreatmentAccordion";
 import TreatmentJourney from "./_components/TreatmentJourney";
@@ -35,8 +38,38 @@ const aboutCards = [
   },
 ];
 
+function HolisticSlider({ items }) {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  if (!items?.length) {
+    return null;
+  }
+
+  const activeItem = items[activeIndex];
+
+  return (
+    <div className="circle-care">
+      <img src={activeItem.image} alt={`${activeItem.title} at Balprada`} />
+      <span>{activeItem.title}</span>
+      <div className="holistic-counter">
+        <b>{String(activeIndex + 1).padStart(2, "0")}</b>
+        <i>/{String(items.length).padStart(2, "0")}</i>
+        <button
+          className="holistic-next"
+          type="button"
+          onClick={() =>
+            setActiveIndex((current) => (current + 1) % items.length)
+          }
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
-  const slides = [heroImages[1], galleryImages[5], heroImages[0], galleryImages[3]];
+  const slides = [heroImages[1], "/wellness/naturopathy.jpg", galleryImages[5], "/wellness/yoga.jpg", heroImages[0], "/wellness/panchakarma.jpg", "/wellness/physiotherapy.jpg"];
 
   return (
     <main className="site-shell">
@@ -121,7 +154,7 @@ export default function Home() {
         <TreatmentAccordion compact />
       </section>
 
-      <section className="holistic section">
+      <section className="holistic section" id="holistic-care">
         <div>
           <p className="eyebrow">Our Holistic Approach</p>
           <h2>Care that brings body, mind and lifestyle together</h2>
@@ -134,11 +167,10 @@ export default function Home() {
             Explore More
           </Link>
         </div>
-        <div className="circle-care">
-          <img src={galleryImages[0]} alt="Balprada care" />
-          <span>Personalized Doctor Care</span>
-        </div>
+        <HolisticSlider items={facilities.slice(0, 6)} />
       </section>
+
+      <div className="holistic-curve" aria-hidden="true" />
 
       <section className="care-process section">
         <div className="section-heading">
@@ -162,6 +194,11 @@ export default function Home() {
       </section>
 
       <TreatmentJourney />
+
+      <div className="analysis-bird" aria-hidden="true">
+        <span className="bird-shape" />
+        <p>We are analysing your requirements</p>
+      </div>
 
       <section className="section">
         <div className="section-heading centered-heading">

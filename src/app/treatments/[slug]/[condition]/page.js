@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
   const { slug, condition: conditionSlug } = await params;
   const { condition } = findTreatmentCondition(slug, conditionSlug);
   return {
-    title: condition ? `${condition.title} | Balprada India` : "Treatment | Balprada India",
+    title: condition ? `${condition.title} | Balprada Ayurvedic Hospital & Research Center` : "Treatment | Balprada Ayurvedic Hospital & Research Center",
   };
 }
 

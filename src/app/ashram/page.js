@@ -1,20 +1,66 @@
 import Link from "next/link";
 import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
-import { branches, galleryImages, heroImages, services } from "../data";
+import { branches, facilities, galleryImages, services, site } from "../data";
 
 export const metadata = {
-  title: "Balprada Ashram | Balprada India",
+  title: "Balprada Ashram | Balprada Ayurvedic Hospital & Research Center",
 };
 
 export default function AshramPage() {
+  const wellnessFacilities = facilities.filter((item) =>
+    ["naturopathy", "yoga", "meditation", "panchakarma", "physiotherapy"].includes(item.slug),
+  );
+  const naturopathy = wellnessFacilities.find((item) => item.slug === "naturopathy");
+
   return (
     <Shell>
       <PageHero
-        eyebrow="Balprada Ashram"
-        title="A peaceful environment for care and seva"
-        text="Balprada Jansewa Ashram brings treatment, disciplined living, emotional support and community service together."
-        image={heroImages[1]}
+        eyebrow="Ashram & Integrative Care"
+        title="Nature-led healing with clinical guidance"
+        text="Balprada Ayurvedic Hospital & Research Center brings Naturopathy, Yoga, Meditation, Panchakarma and Physiotherapy together in a peaceful care environment backed by 35 years of experience."
+        image="/wellness/naturopathy.jpg"
       />
+
+      <section className="experience-marquee" aria-label="Balprada experience">
+        <strong>35 Years of Experience</strong>
+        <span>Ayurvedic Hospital</span><i>-</i><span>Research Center</span><i>-</i><span>Holistic Care</span>
+      </section>
+
+      <section className="naturopathy-feature section">
+        <div className="naturopathy-visual">
+          <img src={naturopathy.image} alt="Professional naturopathy care at Balprada" />
+          <span>Primary Wellness Focus</span>
+        </div>
+        <div>
+          <p className="eyebrow">Most Highlighted Programme</p>
+          <h2>Naturopathy</h2>
+          <p className="feature-lead">Supporting the body's natural healing capacity through thoughtfully planned therapies, disciplined routines and close professional guidance.</p>
+          <ul className="nature-list">
+            {naturopathy.highlights.map((item) => <li key={item}>{item}</li>)}
+            <li>Food, rest and daily-routine guidance</li>
+            <li>Individual assessment before therapy</li>
+          </ul>
+          <div className="official-contact-actions">
+            <Link className="button primary" href="/facilities/naturopathy">Explore Naturopathy</Link>
+            <a className="button secondary" href={site.appointmentUrl} target="_blank" rel="noreferrer">Book Consultation</a>
+          </div>
+        </div>
+      </section>
+
+      <section className="section wellness-programmes">
+        <div className="section-heading">
+          <div><p className="eyebrow">Ashram Wellness</p><h2>One healing journey, five supportive disciplines</h2></div>
+          <strong className="experience-badge">35 Years<br /><small>of experience</small></strong>
+        </div>
+        <div className="wellness-programme-grid">
+          {wellnessFacilities.map((facility, index) => (
+            <Link className={facility.slug === "naturopathy" ? "featured" : ""} href={`/facilities/${facility.slug}`} key={facility.slug}>
+              <img src={facility.image} alt={`${facility.title} at Balprada`} />
+              <div><span>{String(index + 1).padStart(2, "0")}</span><h3>{facility.title}</h3><p>{facility.text}</p><strong>Discover programme -&gt;</strong></div>
+            </Link>
+          ))}
+        </div>
+      </section>
 
       <section className="ashram-gallery section">
         {galleryImages.slice(0, 4).map((image, index) => (

@@ -3,7 +3,7 @@ import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
 import { galleryImages, products } from "../data";
 
 export const metadata = {
-  title: "Products | Balprada India",
+  title: "Products | Balprada Ayurvedic Hospital & Research Center",
 };
 
 export default function ProductsPage() {

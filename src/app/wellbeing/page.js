@@ -3,7 +3,7 @@ import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
 import { facilities, galleryImages } from "../data";
 
 export const metadata = {
-  title: "Wellbeing | Balprada India",
+  title: "Wellbeing | Balprada Ayurvedic Hospital & Research Center",
 };
 
 export default function WellbeingPage() {

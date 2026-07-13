@@ -3,7 +3,7 @@ import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
 import { galleryImages, services } from "../data";
 
 export const metadata = {
-  title: "Jansewa | Balprada India",
+  title: "Jansewa | Balprada Ayurvedic Hospital & Research Center",
 };
 
 const jansewa = services.find((item) => item.slug === "jansewa-sansthan");

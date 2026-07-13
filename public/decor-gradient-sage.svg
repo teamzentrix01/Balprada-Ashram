@@ -1,0 +1,11 @@
+<svg width="820" height="680" viewBox="0 0 820 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="translate(398 326) rotate(86) scale(315 382)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C5D8BA" stop-opacity=".72"/>
+      <stop offset=".55" stop-color="#DFE8D5" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#F5F0E5" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="b" x="-80" y="-80" width="980" height="840"><feGaussianBlur stdDeviation="34"/></filter>
+  </defs>
+  <path filter="url(#b)" d="M91 335C78 167 225 40 401 65c172 24 357 98 335 265-21 163-187 296-374 285C181 604 104 501 91 335Z" fill="url(#a)"/>
+</svg>

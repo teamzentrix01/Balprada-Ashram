@@ -2,7 +2,7 @@ import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
 import { branches, heroImages, opdInfo, site, treatments } from "../data";
 
 export const metadata = {
-  title: "Book Appointment | Balprada India",
+  title: "Book Appointment | Balprada Ayurvedic Hospital & Research Center",
 };
 
 export default function AppointmentPage() {

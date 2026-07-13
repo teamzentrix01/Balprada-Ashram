@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const category = treatmentCategories.find((item) => item.slug === slug);
   return {
-    title: category ? `${category.title} | Balprada India` : "Treatment | Balprada India",
+    title: category ? `${category.title} | Balprada Ayurvedic Hospital & Research Center` : "Treatment | Balprada Ayurvedic Hospital & Research Center",
   };
 }
 

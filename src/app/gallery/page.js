@@ -2,7 +2,7 @@ import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
 import { galleryImages } from "../data";
 
 export const metadata = {
-  title: "Gallery | Balprada India",
+  title: "Gallery | Balprada Ayurvedic Hospital & Research Center",
 };
 
 export default function GalleryPage() {
@@ -18,7 +18,7 @@ export default function GalleryPage() {
         {galleryImages.map((image, index) => (
           <figure key={image}>
             <img src={image} alt={`Balprada gallery ${index + 1}`} />
-            <figcaption>Balprada India {String(index + 1).padStart(2, "0")}</figcaption>
+            <figcaption>Balprada Ayurvedic Hospital & Research Center {String(index + 1).padStart(2, "0")}</figcaption>
           </figure>
         ))}
       </section>

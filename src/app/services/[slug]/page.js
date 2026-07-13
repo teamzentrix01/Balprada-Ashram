@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const service = services.find((item, index) => (item.slug || `service-${index + 1}`) === slug);
   return {
-    title: service ? `${service.title} | Balprada India` : "Service | Balprada India",
+    title: service ? `${service.title} | Balprada Ayurvedic Hospital & Research Center` : "Service | Balprada Ayurvedic Hospital & Research Center",
   };
 }
 
