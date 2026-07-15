@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Eye, HeartHandshake } from "lucide-react";
 import AboutExplorer from "../_components/AboutExplorer";
 import { ContactPanel, SectionHeading, Shell } from "../_components/SiteChrome";
 import { heroImages } from "../data";
@@ -81,6 +82,9 @@ export default function AboutPage() {
 
       <section className="about-mission section">
         <article>
+          <span className="mission-icon" aria-hidden="true">
+            <HeartHandshake />
+          </span>
           <SectionHeading
             title="Our Mission"
             text="To provide reliable ayurvedic care for chronic and serious health conditions through consultation, self-prepared medicines, lifestyle guidance and compassionate service."
@@ -91,6 +95,9 @@ export default function AboutPage() {
           </p>
         </article>
         <article className="vision-card">
+          <span className="vision-icon" aria-hidden="true">
+            <Eye />
+          </span>
           <SectionHeading
             title="Our Vision"
             text="To become a trusted ayurvedic wellness and jansewa center where traditional knowledge, modern organization and community care work together for healthier lives."
@@ -107,18 +114,7 @@ export default function AboutPage() {
         </p>
         <strong>- Late Vaidya Shri Vijaypal Singh Ji</strong>
       </section>
-
-      <section className="about-next section">
-        <SectionHeading title="Begin your Balprada journey" />
-        <div>
-          <Link className="button primary gradient" href="/treatments">
-            Explore Treatments
-          </Link>
-          <Link className="button secondary" href="/contact">
-            Contact Us
-          </Link>
-        </div>
-      </section>
+ 
 
       <ContactPanel />
     </Shell>

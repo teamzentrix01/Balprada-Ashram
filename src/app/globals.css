@@ -1886,7 +1886,7 @@ section[id],
 }
 
 .about-mission article {
-  min-height: 30rem;
+  min-height: clamp(18rem, 32vw, 25rem);
   padding: clamp(2rem, 5vw, 4rem);
   border-radius: 1.3rem;
   background: rgba(255, 255, 255, 0.58);
@@ -2188,7 +2188,7 @@ section[id],
 .about-mission article {
   position: relative;
   overflow: hidden;
-  min-height: 25rem;
+  min-height: clamp(18rem, 32vw, 25rem);
   transition:
     transform 280ms ease,
     box-shadow 280ms ease;
@@ -9701,4 +9701,575 @@ svg {
   margin: clamp(22px, 3vw, 34px) auto 0 !important;
   align-self: center !important;
   justify-self: center !important;
+}
+
+/* Keep the About banner in normal layout on tablets and phones. Earlier
+   responsive rules made the hero auto-height while its image and copy stayed
+   absolutely positioned, which collapsed the banner into a narrow strip. */
+@media (max-width: 980px) {
+  .site-shell > .nav {
+    margin-bottom: 0 !important;
+  }
+
+  .about-hero-pro {
+    position: relative !important;
+    isolation: isolate;
+    display: flex !important;
+    align-items: flex-end !important;
+    width: calc(100% - 1rem) !important;
+    max-width: 1180px !important;
+    min-height: clamp(30rem, 72svh, 39rem) !important;
+    max-height: none !important;
+    margin: 0.75rem auto 1rem !important;
+    padding: clamp(1.25rem, 5vw, 2.5rem) !important;
+    overflow: hidden !important;
+    border-radius: clamp(1rem, 3vw, 1.4rem) !important;
+  }
+
+  .about-hero-pro::after {
+    z-index: 0;
+    background:
+      linear-gradient(180deg, rgba(8, 30, 23, 0.08) 18%, rgba(8, 30, 23, 0.9) 100%),
+      linear-gradient(90deg, rgba(8, 30, 23, 0.42), transparent 75%);
+  }
+
+  .about-hero-pro > img {
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: -1;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: inherit !important;
+  }
+
+  .about-hero-pro > .section-heading-block {
+    position: relative !important;
+    inset: auto !important;
+    z-index: 1;
+    width: min(100%, 42rem) !important;
+    max-width: 42rem !important;
+    margin: 0 !important;
+  }
+
+  .about-hero-pro h1 {
+    margin-bottom: 0.75rem !important;
+    font-size: clamp(2.35rem, 8vw, 4.25rem) !important;
+    line-height: 1.02 !important;
+    text-wrap: balance;
+  }
+
+  .about-hero-pro .section-heading-block > p:not(.eyebrow) {
+    max-width: 38rem;
+    font-size: clamp(0.92rem, 2.5vw, 1.05rem) !important;
+    line-height: 1.55 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-pro {
+    min-height: clamp(31rem, 145vw, 36rem) !important;
+    padding: 1.1rem !important;
+  }
+
+  .about-hero-pro h1 {
+    font-size: clamp(2.05rem, 10.5vw, 3rem) !important;
+  }
+}
+
+/* About mission cards: a compact mobile rhythm and a visual cue for Vision. */
+.about-mission .vision-card {
+  border: 1px solid rgba(18, 59, 50, 0.1);
+  background:
+    radial-gradient(circle at 88% 12%, rgba(255, 250, 240, 0.7), transparent 11rem),
+    linear-gradient(145deg, #e5f2cf, #d7e8bd) !important;
+}
+
+.about-mission .vision-card .section-heading-block h2 {
+  color: var(--deep) !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: var(--deep);
+}
+
+.about-mission .vision-card .section-heading-block > p:not(.eyebrow) {
+  color: #435b52 !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #435b52;
+}
+
+:is(.vision-icon, .mission-icon) {
+  display: inline-grid;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1.35rem;
+  place-items: center;
+  flex: 0 0 auto;
+  border: 1px solid rgba(18, 59, 50, 0.16);
+  border-radius: 50%;
+  background: rgba(255, 250, 240, 0.58);
+  color: var(--deep);
+  box-shadow: 0 10px 28px rgba(18, 59, 50, 0.08);
+  animation: visionIconFloat 3.6s ease-in-out infinite;
+  transition: transform 450ms var(--ease-editorial), background 350ms ease, color 350ms ease;
+}
+
+:is(.vision-icon, .mission-icon) svg {
+  width: 1.55rem;
+  height: 1.55rem;
+  stroke-width: 1.6;
+}
+
+.about-mission article:hover :is(.vision-icon, .mission-icon) {
+  color: #fffaf0;
+  background: var(--deep);
+  transform: translateY(-3px) rotate(-7deg) scale(1.08);
+}
+
+@keyframes visionIconFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* Restore contrast for the dark About CTA panel and both of its actions. */
+.about-next .section-heading-block h2 {
+  display: block !important;
+  visibility: visible !important;
+  color: #fffaf0 !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #fffaf0;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.2);
+}
+
+.about-next .button.primary {
+  color: #fffaf0 !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #fffaf0;
+}
+
+.about-next .button.secondary {
+  border-color: rgba(255, 250, 240, 0.58) !important;
+  background: transparent !important;
+  color: #fffaf0 !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #fffaf0;
+}
+
+.about-next .button.secondary:hover,
+.about-next .button.secondary:focus-visible {
+  border-color: #fffaf0 !important;
+  background: #fffaf0 !important;
+  color: var(--deep) !important;
+  -webkit-text-fill-color: var(--deep);
+}
+
+@media (max-width: 760px) {
+  .about-mission {
+    gap: 0.85rem !important;
+    align-items: start !important;
+  }
+
+  .about-mission article,
+  .about-mission .vision-card {
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    padding: 1.5rem !important;
+    align-self: start !important;
+  }
+
+  .about-mission .vision-card {
+    justify-content: flex-start !important;
+  }
+
+  .about-mission .vision-card .section-heading-block {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  :is(.vision-icon, .mission-icon) {
+    width: 3.15rem;
+    height: 3.15rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-mission h2 {
+    margin-bottom: 0.65rem !important;
+  }
+
+  .about-mission p {
+    margin-bottom: 0 !important;
+    line-height: 1.6 !important;
+  }
+
+  .about-next {
+    display: flex !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    gap: 1.35rem !important;
+    padding: 1.5rem !important;
+  }
+
+  .about-next .section-heading-block {
+    display: block !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    opacity: 1 !important;
+  }
+
+  .about-next > div {
+    width: 100%;
+  }
+
+  .about-meaning h2 {
+    line-height: 1.18 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(.vision-icon, .mission-icon) {
+    animation: none !important;
+  }
+}
+
+/* Compact, balanced About CTA. The generic .section spacing was previously
+   making this small call-to-action as tall as a full content section. */
+.about-next.section {
+  position: relative;
+  isolation: isolate;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  min-height: 0 !important;
+  padding: clamp(1.75rem, 3.5vw, 2.75rem) !important;
+  align-items: center !important;
+  gap: clamp(1.5rem, 4vw, 4rem) !important;
+  overflow: hidden;
+  border: 1px solid rgba(255, 250, 240, 0.12);
+  background:
+    radial-gradient(circle at 88% 10%, rgba(143, 168, 120, 0.2), transparent 18rem),
+    linear-gradient(135deg, #123b32, #0e332b) !important;
+  box-shadow: 0 22px 55px rgba(18, 59, 50, 0.13);
+}
+
+.about-next.section::before {
+  position: absolute;
+  right: -5rem;
+  bottom: -7rem;
+  z-index: -1;
+  width: 18rem;
+  height: 18rem;
+  content: "";
+  border: 1px solid rgba(255, 250, 240, 0.1);
+  border-radius: 50%;
+}
+
+.about-next .section-heading-block,
+.about-next > div {
+  position: relative;
+  z-index: 1;
+}
+
+.about-next .section-heading-block h2 {
+  max-width: 11ch;
+  font-size: clamp(2.55rem, 4.5vw, 4.5rem) !important;
+  line-height: 1.02 !important;
+}
+
+.about-next > div {
+  display: flex !important;
+  width: auto;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem !important;
+}
+
+.about-next > div .button {
+  margin: 0 !important;
+}
+
+@media (max-width: 760px) {
+  .about-next.section {
+    grid-template-columns: 1fr !important;
+    padding: 1.35rem !important;
+    gap: 1.15rem !important;
+  }
+
+  .about-next .section-heading-block h2 {
+    max-width: 9ch;
+    font-size: clamp(2rem, 10vw, 3rem) !important;
+    line-height: 1.02 !important;
+  }
+
+  .about-next > div {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100% !important;
+    gap: 0.65rem !important;
+  }
+
+  .about-next > div .button {
+    width: 100% !important;
+    min-height: 2.8rem !important;
+    padding-inline: 0.75rem !important;
+    font-size: 0.62rem !important;
+  }
+}
+
+/* Project-wide button interaction: the accent color rises from the bottom.
+   Navigation toggles and slider dots keep their purpose-built interactions. */
+:is(
+  .site-shell .button,
+  .site-shell .nav-cta,
+  .site-shell button:not(.menu-toggle):not([aria-label^="Show hero image"])
+) {
+  --button-hover-fill: #587564;
+  position: relative;
+  z-index: 0;
+  isolation: isolate;
+  overflow: hidden;
+  transition:
+    color 320ms ease,
+    border-color 320ms ease,
+    box-shadow 320ms ease,
+    transform 420ms var(--ease-editorial) !important;
+}
+
+:is(
+  .site-shell .button,
+  .site-shell .nav-cta,
+  .site-shell button:not(.menu-toggle):not([aria-label^="Show hero image"])
+)::before {
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  content: "";
+  border-radius: inherit;
+  background: var(--button-hover-fill);
+  transform: translateY(105%);
+  transform-origin: bottom;
+  transition: transform 420ms var(--ease-editorial);
+}
+
+@media (hover: hover) {
+  :is(
+    .site-shell .button,
+    .site-shell .nav-cta,
+    .site-shell button:not(.menu-toggle):not([aria-label^="Show hero image"])
+  ):not(:disabled):hover {
+    border-color: var(--button-hover-fill) !important;
+    color: #fffaf0 !important;
+    -webkit-text-fill-color: #fffaf0;
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(18, 59, 50, 0.22) !important;
+  }
+
+  :is(
+    .site-shell .button,
+    .site-shell .nav-cta,
+    .site-shell button:not(.menu-toggle):not([aria-label^="Show hero image"])
+  ):not(:disabled):hover::before {
+    transform: translateY(0);
+  }
+}
+
+:is(
+  .site-shell .button,
+  .site-shell .nav-cta,
+  .site-shell button:not(.menu-toggle):not([aria-label^="Show hero image"])
+):not(:disabled):focus-visible {
+  border-color: var(--button-hover-fill) !important;
+  color: #fffaf0 !important;
+  -webkit-text-fill-color: #fffaf0;
+  outline: 3px solid rgba(88, 117, 100, 0.3);
+  outline-offset: 3px;
+}
+
+:is(
+  .site-shell .button,
+  .site-shell .nav-cta,
+  .site-shell button:not(.menu-toggle):not([aria-label^="Show hero image"])
+):not(:disabled):focus-visible::before,
+:is(
+  .site-shell .button,
+  .site-shell .nav-cta,
+  .site-shell button:not(.menu-toggle):not([aria-label^="Show hero image"])
+):not(:disabled):active::before {
+  transform: translateY(0);
+}
+
+/* The About secondary CTA previously swapped instantly to a light fill. It
+   now uses the same animated accent layer as every other project button. */
+.about-next .button.secondary:hover,
+.about-next .button.secondary:focus-visible {
+  border-color: var(--button-hover-fill) !important;
+  background: transparent !important;
+  color: #fffaf0 !important;
+  -webkit-text-fill-color: #fffaf0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(
+    .site-shell .button,
+    .site-shell .nav-cta,
+    .site-shell button:not(.menu-toggle):not([aria-label^="Show hero image"])
+  ),
+  :is(
+    .site-shell .button,
+    .site-shell .nav-cta,
+    .site-shell button:not(.menu-toggle):not([aria-label^="Show hero image"])
+  )::before {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* The Treatments hero uses an anatomical illustration rather than a photo.
+   Preserve its complete intrinsic frame instead of cropping it with cover. */
+.site-shell > .page-hero.treatments-page-hero > img {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  border-radius: 1rem !important;
+  background: rgba(255, 250, 240, 0.56);
+}
+
+@media (max-width: 980px) {
+  .site-shell > .page-hero.treatments-page-hero > img {
+    width: min(100%, 42rem) !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    margin-inline: auto;
+  }
+}
+
+/* Branch cards use a dark surface: keep both contact actions readable and in
+   one balanced row, including on narrow phones. */
+.branch-page-grid .branch-contact-links {
+  display: grid !important;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr) !important;
+  width: 100% !important;
+  align-items: stretch !important;
+  gap: 0.65rem !important;
+}
+
+.branch-page-grid .branch-contact-links a,
+.branch-page-grid .branch-contact-links a:first-child,
+.branch-page-grid .branch-contact-links a + a {
+  display: inline-flex !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 2.45rem !important;
+  padding: 0.55rem 0.65rem !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 1px solid rgba(255, 250, 240, 0.28) !important;
+  background: rgba(255, 250, 240, 0.07) !important;
+  color: #fffaf0 !important;
+  font-size: clamp(0.58rem, 1.7vw, 0.76rem) !important;
+  line-height: 1.15 !important;
+  text-align: center !important;
+  overflow-wrap: anywhere !important;
+  -webkit-text-fill-color: #fffaf0;
+}
+
+.branch-page-grid .branch-contact-links a:hover,
+.branch-page-grid .branch-contact-links a:focus-visible {
+  border-color: rgba(255, 250, 240, 0.62) !important;
+  background: rgba(255, 250, 240, 0.15) !important;
+  color: #fffaf0 !important;
+  transform: translateY(-2px);
+}
+
+/* Ashram branch actions are a separate component from branch-contact-links. */
+.ashram-branch-actions {
+  display: grid !important;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr) !important;
+  width: 100% !important;
+  margin-top: 1.25rem;
+  align-items: stretch;
+  gap: 0.65rem !important;
+}
+
+.site-shell .ashram-branch-actions .button {
+  display: inline-flex !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 2.75rem !important;
+  margin: 0 !important;
+  padding: 0.65rem 0.75rem !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: clamp(0.58rem, 1.35vw, 0.72rem) !important;
+  line-height: 1.15 !important;
+  text-align: center !important;
+  overflow-wrap: anywhere !important;
+}
+
+.site-shell .ashram-branch-actions .button.primary {
+  border: 1px solid #fffaf0 !important;
+  background: #fffaf0 !important;
+  color: var(--deep) !important;
+  -webkit-text-fill-color: var(--deep);
+}
+
+.site-shell .ashram-branch-actions .button.secondary {
+  border: 1px solid rgba(255, 250, 240, 0.45) !important;
+  background: rgba(255, 250, 240, 0.08) !important;
+  color: #fffaf0 !important;
+  -webkit-text-fill-color: #fffaf0;
+}
+
+.site-shell .ashram-branch-actions .button:hover,
+.site-shell .ashram-branch-actions .button:focus-visible {
+  border-color: var(--button-hover-fill) !important;
+  color: #fffaf0 !important;
+  -webkit-text-fill-color: #fffaf0;
+}
+
+/* Mobile card rails remain swipeable without exposing native scrollbars. */
+@media (max-width: 640px) {
+  :is(.image-row, .treatment-grid, .story-grid, .process-grid) {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+  }
+
+  :is(.image-row, .treatment-grid, .story-grid, .process-grid)::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  /* Process steps should read top-to-bottom on phones, with no clipped next
+     card and no horizontal scrolling surface. */
+  .care-process .process-grid,
+  .treatment-process .process-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    scroll-snap-type: none !important;
+    gap: 0.85rem !important;
+  }
+
+  .care-process .process-grid > *,
+  .treatment-process .process-grid > * {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    flex: none !important;
+    scroll-snap-align: none !important;
+  }
 }

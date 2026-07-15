@@ -102,12 +102,14 @@ export default function AshramPage() {
         {branches.map((branch) => (
           <article key={branch.title}>
             <SectionHeading eyebrow={branch.title} title={branch.address} />
-            <a className="button primary gradient" href={`tel:${branch.phone}`}>
-              Call {branch.phone}
-            </a>
-            <a className="button secondary" href={`mailto:${branch.email}`}>
-              {branch.email}
-            </a>
+            <div className="ashram-branch-actions">
+              <a className="button primary gradient" href={`tel:${branch.phone}`}>
+                Call {branch.phone}
+              </a>
+              <a className="button secondary" href={`mailto:${branch.email}`}>
+                {branch.email}
+              </a>
+            </div>
           </article>
         ))}
       </section>

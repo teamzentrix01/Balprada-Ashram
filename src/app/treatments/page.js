@@ -11,13 +11,14 @@ export default function TreatmentsPage() {
   return (
     <Shell>
       <PageHero
+        className="treatments-page-hero"
         eyebrow="Our Treatments"
         title="Ayurvedic Treatment and Holistic Care"
         text="Personalized consultation is available for kidney, liver, cancer supportive care, heart and lifestyle disorders, diabetes and women's health."
         image={treatments[0].image}
       />
 
-      <section className="treatment-overview section">
+      <section className="treatments-stage treatment-overview section">
         <div className="section-heading">
           <SectionHeading
             eyebrow="Our Range of Treatments"
@@ -27,7 +28,7 @@ export default function TreatmentsPage() {
             Book Consultation
           </Link>
         </div>
-        <TreatmentAccordion />
+        <TreatmentAccordion compact />
       </section>
 
       <section className="treatment-process section">
