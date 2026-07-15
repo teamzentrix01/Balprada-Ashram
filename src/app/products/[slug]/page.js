@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ContactPanel, PageHero, Shell } from "../../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../../_components/SiteChrome";
 import { products, site } from "../../data";
 
 export function generateStaticParams() {
@@ -34,16 +34,12 @@ export default async function ProductDetailPage({ params }) {
         image={product.image}
       />
       <section className="section-band detail-band">
+        <SectionHeading
+          eyebrow="Balprada Enterprises"
+          title="Product inquiry and availability"
+          text="Balprada product availability can vary by preparation and suitability. Please connect with the team before ordering or using any wellness product as part of a health routine."
+        />
         <div>
-          <p className="eyebrow">Balprada Enterprises</p>
-          <h2>Product inquiry and availability</h2>
-        </div>
-        <div>
-          <p>
-            Balprada product availability can vary by preparation and
-            suitability. Please connect with the team before ordering or using
-            any wellness product as part of a health routine.
-          </p>
           <ul className="detail-list">
             {product.points.map((point) => (
               <li key={point}>{point}</li>

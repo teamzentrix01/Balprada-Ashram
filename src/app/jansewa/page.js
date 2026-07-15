@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/SiteChrome";
 import { galleryImages, services } from "../data";
 
 export const metadata = {
@@ -18,16 +18,12 @@ export default function JansewaPage() {
         image={galleryImages[4]}
       />
       <section className="section-band detail-band">
+        <SectionHeading
+          eyebrow="Balprada Jansewa Sansthan"
+          title="Ashram care, dignity and community support"
+          text="Balprada's service work carries the same spirit as its chikitsalaya: dignity, discipline and compassionate support for people who need shelter, care and community."
+        />
         <div>
-          <p className="eyebrow">Balprada Jansewa Sansthan</p>
-          <h2>Ashram care, dignity and community support</h2>
-        </div>
-        <div>
-          <p>
-            Balprada's service work carries the same spirit as its chikitsalaya:
-            dignity, discipline and compassionate support for people who need
-            shelter, care and community.
-          </p>
           <ul className="detail-list">
             {jansewa.points.map((point) => (
               <li key={point}>{point}</li>

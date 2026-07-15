@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/SiteChrome";
 import { branches, facilities, galleryImages, services, site } from "../data";
 
 export const metadata = {
@@ -32,9 +32,12 @@ export default function AshramPage() {
           <span>Primary Wellness Focus</span>
         </div>
         <div>
-          <p className="eyebrow">Most Highlighted Programme</p>
-          <h2>Naturopathy</h2>
-          <p className="feature-lead">Supporting the body's natural healing capacity through thoughtfully planned therapies, disciplined routines and close professional guidance.</p>
+          <SectionHeading
+            className="feature-lead-heading"
+            eyebrow="Most Highlighted Programme"
+            title="Naturopathy"
+            text="Supporting the body's natural healing capacity through thoughtfully planned therapies, disciplined routines and close professional guidance."
+          />
           <ul className="nature-list">
             {naturopathy.highlights.map((item) => <li key={item}>{item}</li>)}
             <li>Food, rest and daily-routine guidance</li>
@@ -49,14 +52,17 @@ export default function AshramPage() {
 
       <section className="section wellness-programmes">
         <div className="section-heading">
-          <div><p className="eyebrow">Ashram Wellness</p><h2>One healing journey, five supportive disciplines</h2></div>
+          <SectionHeading
+            eyebrow="Ashram Wellness"
+            title="One healing journey, five supportive disciplines"
+          />
           <strong className="experience-badge">35 Years<br /><small>of experience</small></strong>
         </div>
         <div className="wellness-programme-grid">
           {wellnessFacilities.map((facility, index) => (
             <Link className={facility.slug === "naturopathy" ? "featured" : ""} href={`/facilities/${facility.slug}`} key={facility.slug}>
               <img src={facility.image} alt={`${facility.title} at Balprada`} />
-              <div><span>{String(index + 1).padStart(2, "0")}</span><h3>{facility.title}</h3><p>{facility.text}</p><strong>Discover programme -&gt;</strong></div>
+              <div><span>{String(index + 1).padStart(2, "0")}</span><h3>{facility.title}</h3><p>{facility.text}</p><strong>Discover programme</strong></div>
             </Link>
           ))}
         </div>
@@ -81,10 +87,7 @@ export default function AshramPage() {
       </section>
 
       <section className="ashram-services section">
-        <div>
-          <p className="eyebrow">Jansewa</p>
-          <h2>Service beyond the clinic</h2>
-        </div>
+        <SectionHeading eyebrow="Jansewa" title="Service beyond the clinic" />
         <div>
           {services.map((service) => (
             <Link href={`/services/${service.slug}`} key={service.slug}>
@@ -98,8 +101,7 @@ export default function AshramPage() {
       <section className="ashram-branches section">
         {branches.map((branch) => (
           <article key={branch.title}>
-            <p className="eyebrow">{branch.title}</p>
-            <h2>{branch.address}</h2>
+            <SectionHeading eyebrow={branch.title} title={branch.address} />
             <a className="button primary gradient" href={`tel:${branch.phone}`}>
               Call {branch.phone}
             </a>

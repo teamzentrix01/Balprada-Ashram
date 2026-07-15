@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/SiteChrome";
 import { facilities, galleryImages } from "../data";
 
 export const metadata = {
@@ -17,15 +17,11 @@ export default function WellbeingPage() {
       />
 
       <section className="wellbeing-intro section">
-        <div>
-          <p className="eyebrow">Holistic Wellbeing</p>
-          <h2>Balance body, mind and daily life</h2>
-        </div>
-        <p>
-          Balprada combines supportive therapies with consultation and
-          medicines. Every facility is recommended according to the patient's
-          condition, comfort and treatment plan.
-        </p>
+        <SectionHeading
+          eyebrow="Holistic Wellbeing"
+          title="Balance body, mind and daily life"
+          text="Balprada combines supportive therapies with consultation and medicines. Every facility is recommended according to the patient's condition, comfort and treatment plan."
+        />
       </section>
 
       <section className="wellbeing-grid section">
@@ -34,8 +30,7 @@ export default function WellbeingPage() {
             <span>{String(index + 1).padStart(2, "0")}</span>
             <img src={item.image} alt={item.title} />
             <div>
-              <h2>{item.title}</h2>
-              <p>{item.text}</p>
+              <SectionHeading title={item.title} text={item.text} level={3} />
               <strong>Explore facility</strong>
             </div>
           </Link>

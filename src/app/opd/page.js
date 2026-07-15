@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/SiteChrome";
 import { branches, heroImages, opdInfo } from "../data";
 
 export const metadata = {
@@ -17,12 +17,11 @@ export default function OpdPage() {
       />
       <section className="opd-highlight section">
         <div>
-          <p className="eyebrow">Daily OPD</p>
-          <h2>{opdInfo.title}</h2>
-          <p>
-            Call before visiting to confirm branch-specific availability and
-            consultation flow.
-          </p>
+          <SectionHeading
+            eyebrow="Daily OPD"
+            title={opdInfo.title}
+            text="Call before visiting to confirm branch-specific availability and consultation flow."
+          />
           <Link className="button primary gradient" href="/appointment">
             Book Appointment
           </Link>
@@ -36,8 +35,11 @@ export default function OpdPage() {
       <section className="section branch-page-grid">
         {branches.map((branch) => (
           <article key={branch.title}>
-            <h2>{branch.title}</h2>
-            <p>{branch.address}</p>
+            <SectionHeading
+              title={branch.title}
+              text={branch.address}
+              level={3}
+            />
             <small>{branch.timing}</small>
             <span className="branch-contact-links">
               <a href={`tel:${branch.phone}`}>{branch.phone}</a>

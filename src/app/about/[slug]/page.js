@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ContactPanel, Shell } from "../../_components/SiteChrome";
+import { ContactPanel, SectionHeading, Shell } from "../../_components/SiteChrome";
 import { aboutAreas } from "../../aboutData";
 
 export function generateStaticParams() {
@@ -27,11 +27,12 @@ export default async function AboutAreaPage({ params }) {
     <Shell>
       <section className="about-area-hero">
         <img src={area.hero} alt={area.title} />
-        <div>
-          <p className="eyebrow">{area.eyebrow}</p>
-          <h1>{area.title}</h1>
-          <p>{area.summary}</p>
-        </div>
+        <SectionHeading
+          eyebrow={area.eyebrow}
+          title={area.title}
+          text={area.summary}
+          level={1}
+        />
       </section>
 
       <nav className="about-area-nav" aria-label="About Balprada sections">
@@ -47,11 +48,11 @@ export default async function AboutAreaPage({ params }) {
       </nav>
 
       <section className="about-area-intro section">
-        <div>
-          <p className="eyebrow">The Balprada Approach</p>
-          <h2>{area.title}</h2>
-        </div>
-        <p>{area.detail}</p>
+        <SectionHeading
+          eyebrow="The Balprada Approach"
+          title={area.title}
+          text={area.detail}
+        />
       </section>
 
       <section className="about-area-cards section">

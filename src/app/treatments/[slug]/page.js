@@ -1,7 +1,7 @@
 import * as Icons from "lucide-react";
 import Link from "next/link";
 import { notFound, permanentRedirect } from "next/navigation";
-import { ContactPanel, Shell } from "../../_components/SiteChrome";
+import { ContactPanel, SectionHeading, Shell } from "../../_components/SiteChrome";
 import { treatmentCategories } from "../../treatmentArchitecture";
 
 const legacyRoutes = {
@@ -45,11 +45,12 @@ export default async function TreatmentCategoryPage({ params }) {
     <Shell>
       <section className="treatment-category-hero">
         <img src={category.image} alt={category.title} />
-        <div>
-          <p className="eyebrow">Balprada Treatment</p>
-          <h1>{category.title}</h1>
-          <p>{category.summary}</p>
-        </div>
+        <SectionHeading
+          eyebrow="Balprada Treatment"
+          title={category.title}
+          text={category.summary}
+          level={1}
+        />
       </section>
 
       <nav className="treatment-category-nav" aria-label="Treatment categories">
@@ -65,11 +66,11 @@ export default async function TreatmentCategoryPage({ params }) {
       </nav>
 
       <section className="treatment-category-intro section">
-        <div>
-          <p className="eyebrow">Our Approach</p>
-          <h2>Personalized Ayurvedic care</h2>
-        </div>
-        <p>{category.overview}</p>
+        <SectionHeading
+          eyebrow="Our Approach"
+          title="Personalized Ayurvedic care"
+          text={category.overview}
+        />
       </section>
 
       <section className="condition-page-grid section">

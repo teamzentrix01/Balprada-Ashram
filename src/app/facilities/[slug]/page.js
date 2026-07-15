@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ContactPanel, PageHero, Shell } from "../../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../../_components/SiteChrome";
 import { facilities } from "../../data";
 
 export function generateStaticParams() {
@@ -33,17 +33,12 @@ export default async function FacilityDetailPage({ params }) {
         <span>Integrated Ayurvedic support</span>
       </section>
       <section className="section-band detail-band">
+        <SectionHeading
+          eyebrow="Balprada Wellness Programme"
+          title={`${facility.title}, planned around the individual`}
+          text="With 35 years of experience behind Balprada's care ecosystem, this programme works alongside Ayurvedic consultation to strengthen the patient's complete journey. Frequency and suitability are decided after individual assessment."
+        />
         <div>
-          <p className="eyebrow">Balprada Wellness Programme</p>
-          <h2>{facility.title}, planned around the individual</h2>
-        </div>
-        <div>
-          <p>
-            With 35 years of experience behind Balprada's care ecosystem, this
-            programme works alongside Ayurvedic consultation to strengthen the
-            patient's complete journey. Frequency and suitability are decided
-            after individual assessment.
-          </p>
           {facility.highlights ? (
             <ul className="detail-list">
               {facility.highlights.map((highlight) => (
@@ -59,7 +54,7 @@ export default async function FacilityDetailPage({ params }) {
       {facility.slug !== "pathology" ? (
         <section className="programme-image-band section">
           <img src={facility.image} alt={`${facility.title} programme`} />
-          <div><p className="eyebrow">What to Expect</p><h2>Careful guidance in a calm environment</h2><p>Our team explains the programme, supports safe participation and coordinates it with the wider treatment plan. Please share existing conditions, medicines and mobility concerns before beginning.</p><Link className="button secondary" href="/ashram">Explore Ashram Care</Link></div>
+          <div><SectionHeading eyebrow="What to Expect" title="Careful guidance in a calm environment" text="Our team explains the programme, supports safe participation and coordinates it with the wider treatment plan. Please share existing conditions, medicines and mobility concerns before beginning." /><Link className="button secondary" href="/ashram">Explore Ashram Care</Link></div>
         </section>
       ) : null}
       <ContactPanel />

@@ -24,6 +24,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { treatmentCategories } from "../treatmentArchitecture";
+import { SectionHeading } from "./SiteChrome";
 
 const iconMap = {
   Activity,
@@ -68,14 +69,17 @@ export default function TreatmentAccordion({ compact = false }) {
             {isActive ? (
               <div className="treatment-accordion-content">
                 <div>
-                  <p className="eyebrow">Balprada Treatment</p>
-                  <h3>{category.title}</h3>
-                  <p>{category.summary}</p>
+                  <SectionHeading
+                    eyebrow="Balprada Treatment"
+                    title={category.title}
+                    text={category.summary}
+                    level={3}
+                  />
                 </div>
 
                 <p className="treatment-includes">Our treatments include</p>
                 <div className="condition-icon-grid">
-                  {category.conditions.map((condition) => {
+                  {category.conditions.slice(0, 3).map((condition) => {
                     const Icon = iconMap[condition.icon] || Activity;
                     return (
                       <Link

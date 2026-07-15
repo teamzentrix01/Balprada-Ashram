@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/SiteChrome";
 import { galleryImages, treatments } from "../data";
 
 export const metadata = {
@@ -44,9 +44,12 @@ export default function InsightsPage() {
           <Link href={item.href} key={item.title}>
             <img src={item.image} alt={item.title} />
             <div>
-              <p className="eyebrow">Insight</p>
-              <h2>{item.title}</h2>
-              <p>{item.text}</p>
+              <SectionHeading
+                eyebrow="Insight"
+                title={item.title}
+                text={item.text}
+                level={3}
+              />
             </div>
           </Link>
         ))}

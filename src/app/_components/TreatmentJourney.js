@@ -1,8 +1,9 @@
 "use client";
 
-import { Check, ChevronLeft, ChevronRight, ClipboardCheck } from "lucide-react";
+import { Check, ClipboardCheck } from "lucide-react";
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { SectionHeading } from "./SiteChrome";
 
 const steps = [
   {
@@ -109,7 +110,10 @@ export default function TreatmentJourney() {
 
   return (
     <section className="journey-card">
-      <h2>Get started on your treatment journey</h2>
+      <SectionHeading
+        align="center"
+        title="Get started on your treatment journey"
+      />
 
       <div className="journey-progress" aria-label={`Step ${step + 1} of 6`}>
         <span style={{ width: `${progress}%` }} />
@@ -121,12 +125,12 @@ export default function TreatmentJourney() {
           <span>
             <ClipboardCheck aria-hidden="true" />
           </span>
-          <p className="eyebrow">Journey Complete</p>
-          <h3>Thank you, {contact.name}</h3>
-          <p>
-            Based on your selections, we have prepared a relevant treatment path.
-            Our team can further guide you after reviewing your health details.
-          </p>
+          <SectionHeading
+            eyebrow="Journey Complete"
+            title={`Thank you, ${contact.name}`}
+            text="Based on your selections, we have prepared a relevant treatment path. Our team can further guide you after reviewing your health details."
+            level={3}
+          />
           <div>
             <Link className="button primary gradient" href={recommendedLink}>
               View Recommended Care
@@ -139,8 +143,7 @@ export default function TreatmentJourney() {
       ) : (
         <div className="journey-grid">
           <div className="journey-question" key={current.key}>
-            <h3>{current.title}</h3>
-            <p>{current.text}</p>
+            <SectionHeading title={current.title} text={current.text} level={3} />
 
             {step < steps.length - 1 ? (
               <div className="choice-cloud">
@@ -184,7 +187,6 @@ export default function TreatmentJourney() {
             <div className="journey-actions">
               {step > 0 ? (
                 <button className="button secondary" onClick={back} type="button">
-                  <ChevronLeft aria-hidden="true" />
                   Back
                 </button>
               ) : null}
@@ -194,20 +196,10 @@ export default function TreatmentJourney() {
                 type="button"
               >
                 {step === steps.length - 1 ? "Finish" : "Next"}
-                <ChevronRight aria-hidden="true" />
               </button>
             </div>
           </div>
 
-          <aside>
-            <div className="bird-mark">B</div>
-            <p>We are analysing your requirements</p>
-            <small>
-              {Object.entries(answers).map(([key, value]) => (
-                <span key={key}>{value}</span>
-              ))}
-            </small>
-          </aside>
         </div>
       )}
     </section>

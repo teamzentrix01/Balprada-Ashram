@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/SiteChrome";
 import TreatmentAccordion from "../_components/TreatmentAccordion";
 import { treatments } from "../data";
 
@@ -19,10 +19,10 @@ export default function TreatmentsPage() {
 
       <section className="treatment-overview section">
         <div className="section-heading">
-          <div>
-            <p className="eyebrow">Our Range of Treatments</p>
-            <h2>Choose your health concern</h2>
-          </div>
+          <SectionHeading
+            eyebrow="Our Range of Treatments"
+            title="Choose your health concern"
+          />
           <Link className="button primary gradient" href="/contact">
             Book Consultation
           </Link>
@@ -31,10 +31,10 @@ export default function TreatmentsPage() {
       </section>
 
       <section className="treatment-process section">
-        <div>
-          <p className="eyebrow">Treatment Journey</p>
-          <h2>A clear path from consultation to follow-up</h2>
-        </div>
+        <SectionHeading
+          eyebrow="Treatment Journey"
+          title="A clear path from consultation to follow-up"
+        />
         <ol>
           <li>
             <span>01</span>

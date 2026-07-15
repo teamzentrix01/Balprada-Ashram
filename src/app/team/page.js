@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/SiteChrome";
 import { doctors } from "../data";
 
 export const metadata = {
@@ -19,8 +19,7 @@ export default function TeamPage() {
         {doctors.map((doctor) => (
           <article key={doctor.name}>
             <img src={doctor.image} alt={doctor.name} />
-            <h3>{doctor.name}</h3>
-            <strong>{doctor.role}</strong>
+            <SectionHeading title={doctor.name} text={doctor.role} level={3} />
             <p>{doctor.text}</p>
             {doctor.focus ? (
               <div className="doctor-focus">

@@ -1,4 +1,4 @@
-import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/SiteChrome";
 import { branches, heroImages, opdInfo, site, treatments } from "../data";
 
 export const metadata = {
@@ -20,10 +20,7 @@ export default function AppointmentPage() {
           action={site.appointmentUrl}
           target="_blank"
         >
-          <div>
-            <p className="eyebrow">Patient Details</p>
-            <h2>Appointment Request</h2>
-          </div>
+          <SectionHeading eyebrow="Patient Details" title="Appointment Request" />
           <input
             type="text"
             placeholder="Patient Name"
@@ -57,9 +54,11 @@ export default function AppointmentPage() {
           </button>
         </form>
         <aside className="appointment-aside">
-          <p className="eyebrow">Before You Visit</p>
-          <h2>{opdInfo.title}</h2>
-          <p>{opdInfo.summary}</p>
+          <SectionHeading
+            eyebrow="Before You Visit"
+            title={opdInfo.title}
+            text={opdInfo.summary}
+          />
           <div className="opd-list">
             {opdInfo.items.map((item) => (
               <span key={item}>{item}</span>

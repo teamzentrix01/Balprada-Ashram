@@ -1,7 +1,7 @@
 import * as Icons from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ContactPanel, Shell } from "../../../_components/SiteChrome";
+import { ContactPanel, SectionHeading, Shell } from "../../../_components/SiteChrome";
 import {
   findTreatmentCondition,
   treatmentCategories,
@@ -43,8 +43,7 @@ export default async function ConditionPage({ params }) {
           <span className="condition-icon">
             <Icon aria-hidden="true" strokeWidth={1.35} />
           </span>
-          <h1>{condition.title}</h1>
-          <p>{condition.text}</p>
+          <SectionHeading title={condition.title} text={condition.text} level={1} />
           <Link className="button primary gradient" href="/contact">
             Book Consultation
           </Link>
@@ -54,32 +53,25 @@ export default async function ConditionPage({ params }) {
 
       <section className="condition-content section">
         <article>
-          <p className="eyebrow">Understanding the Concern</p>
-          <h2>Care begins with the complete health picture</h2>
-          <p>
-            Symptoms, medical history, current treatment, food habits, sleep,
-            stress and daily routine are considered before any Ayurvedic guidance
-            is suggested. Diagnostic reports may be reviewed where relevant.
-          </p>
+          <SectionHeading
+            eyebrow="Understanding the Concern"
+            title="Care begins with the complete health picture"
+            text="Symptoms, medical history, current treatment, food habits, sleep, stress and daily routine are considered before any Ayurvedic guidance is suggested. Diagnostic reports may be reviewed where relevant."
+          />
         </article>
         <article>
-          <p className="eyebrow">Balprada Approach</p>
-          <h2>Consultation, routine and regular review</h2>
-          <p>
-            The care plan may include Ayurvedic medicines, diet guidance,
-            lifestyle correction and supportive facilities. Progress is reviewed
-            regularly so guidance can remain practical and responsible.
-          </p>
+          <SectionHeading
+            eyebrow="Balprada Approach"
+            title="Consultation, routine and regular review"
+            text="The care plan may include Ayurvedic medicines, diet guidance, lifestyle correction and supportive facilities. Progress is reviewed regularly so guidance can remain practical and responsible."
+          />
         </article>
         <img src={treatmentSupportImage} alt="Balprada Ayurvedic care" />
       </section>
 
       <section className="related-conditions section">
         <div className="section-heading">
-          <div>
-            <p className="eyebrow">Related Care</p>
-            <h2>Explore this treatment category</h2>
-          </div>
+          <SectionHeading eyebrow="Related Care" title="Explore this treatment category" />
         </div>
         <div>
           {category.conditions

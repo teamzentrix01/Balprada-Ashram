@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-import { ContactPanel, Footer, Header } from "./_components/SiteChrome";
+import { useEffect, useState } from "react";
+import { CalendarDays, Clock3, Hospital, PhoneCall } from "lucide-react";
+import { ContactPanel, Footer, Header, SectionHeading } from "./_components/SiteChrome";
 import TreatmentAccordion from "./_components/TreatmentAccordion";
 import TreatmentJourney from "./_components/TreatmentJourney";
 import {
@@ -38,6 +39,25 @@ const aboutCards = [
   },
 ];
 
+const opdCards = [
+  {
+    icon: CalendarDays,
+    text: opdInfo.items[0],
+  },
+  {
+    icon: Hospital,
+    text: opdInfo.items[1],
+  },
+  {
+    icon: Clock3,
+    text: opdInfo.items[2],
+  },
+  {
+    icon: PhoneCall,
+    text: "Vaidya ji is available at the Moradabad branch on Sundays. Please call or WhatsApp before visiting.",
+  },
+];
+
 function HolisticSlider({ items }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -70,6 +90,15 @@ function HolisticSlider({ items }) {
 
 export default function Home() {
   const slides = [heroImages[1], "/wellness/naturopathy.jpg", galleryImages[5], "/wellness/yoga.jpg", heroImages[0], "/wellness/panchakarma.jpg", "/wellness/physiotherapy.jpg"];
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  useEffect(() => {
+    const sliderTimer = window.setInterval(() => {
+      setActiveSlide((current) => (current + 1) % slides.length);
+    }, 5500);
+
+    return () => window.clearInterval(sliderTimer);
+  }, [slides.length]);
 
   return (
     <main className="site-shell">
@@ -77,7 +106,7 @@ export default function Home() {
         <div className="hero-slider" aria-label="Balprada hero image slider">
           {slides.map((image, index) => (
             <img
-              className="hero-slide"
+              className={`hero-slide ${index === activeSlide ? "active" : ""}`}
               key={image}
               src={image}
               alt={`Balprada wellness slide ${index + 1}`}
@@ -87,11 +116,14 @@ export default function Home() {
         <div className="hero-overlay" />
         <Header />
         <img className="hero-seal" src="/balprada-seal.svg" alt="" aria-hidden="true" />
-        <div className="hero-content">
-          <p>{site.tagline}</p>
-          <h1>{site.fullName}</h1>
-          <span>{site.mantra}</span>
-          <div className="hero-actions center">
+        <div className="hero-content home-hero-copy">
+          <p className="home-hero-tagline">{site.tagline}</p>
+          <h1 className="home-hero-title" aria-label={site.fullName}>
+            <span>Balprada Ayurvedic</span>
+            <span>Hospital &amp; Research Center</span>
+          </h1>
+          <span className="home-hero-mantra">{site.mantra}</span>
+          <div className="hero-actions home-hero-actions">
             <Link className="button primary gradient" href="/contact">
               Book Now
             </Link>
@@ -100,34 +132,47 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="hero-dots" aria-hidden="true">
+        <div className="hero-dots" aria-label="Choose hero image">
           {slides.map((image, index) => (
-            <span key={`${image}-dot`} className={index === 0 ? "active" : ""} />
+            <button
+              type="button"
+              key={`${image}-dot`}
+              className={index === activeSlide ? "active" : ""}
+              aria-label={`Show hero image ${index + 1}`}
+              aria-pressed={index === activeSlide}
+              onClick={() => setActiveSlide(index)}
+            />
           ))}
         </div>
       </section>
 
       <section className="opd-highlight section">
         <div>
-          <p className="eyebrow">Daily OPD</p>
-          <h2>{opdInfo.title}</h2>
-          <p>{opdInfo.summary}</p>
+          <SectionHeading
+            eyebrow="Daily OPD"
+            title={opdInfo.title}
+            text={opdInfo.summary}
+          />
         </div>
-        <div className="opd-list">
-          {opdInfo.items.map((item) => (
-            <span key={item}>{item}</span>
+        <div className="opd-list opd-card-grid">
+          {opdCards.map(({ icon: Icon, text }, index) => (
+            <article className="opd-info-card" key={text} style={{ "--opd-card-index": index }}>
+              <span className="opd-card-icon" aria-hidden="true">
+                <Icon size={22} strokeWidth={1.8} />
+              </span>
+              <p>{text}</p>
+            </article>
           ))}
         </div>
       </section>
 
       <section className="about-showcase section">
-        <p className="eyebrow center-text">About Us</p>
-        <h2>Healing Rooted in Balprada Tradition</h2>
-        <p>
-          Built on the seva sankalp of Sw. Vaidya Vijay Pal Singh Ji, Balprada
-          blends Ayurvedic wisdom, in-house herbal medicines, experienced doctors,
-          and a peaceful ashram environment for long-term healing.
-        </p>
+        <SectionHeading
+          align="center"
+          eyebrow="About Us"
+          title="Healing Rooted in Balprada Tradition"
+          text="Built on the seva sankalp of Sw. Vaidya Vijay Pal Singh Ji, Balprada blends Ayurvedic wisdom, in-house herbal medicines, experienced doctors, and a peaceful ashram environment for long-term healing."
+        />
         <div className="image-row">
           {aboutCards.map((item, index) => (
             <figure key={item.title}>
@@ -143,10 +188,10 @@ export default function Home() {
 
       <section className="treatments-stage section" id="treatments">
         <div className="section-heading">
-          <div>
-            <p className="eyebrow">Our Treatments</p>
-            <h2>Health concerns we support with Ayurvedic care</h2>
-          </div>
+          <SectionHeading
+            eyebrow="Our Treatments"
+            title="Health concerns we support with Ayurvedic care"
+          />
           <Link className="button primary gradient" href="/treatments">
             Explore Our Treatments
           </Link>
@@ -156,13 +201,11 @@ export default function Home() {
 
       <section className="holistic section" id="holistic-care">
         <div>
-          <p className="eyebrow">Our Holistic Approach</p>
-          <h2>Care that brings body, mind and lifestyle together</h2>
-          <p>
-            Balprada combines consultation, Ayurvedic medicines, yoga,
-            panchakarma, naturopathy, diet guidance and follow-up care to make
-            the treatment journey more complete.
-          </p>
+          <SectionHeading
+            eyebrow="Our Holistic Approach"
+            title="Care that brings body, mind and lifestyle together"
+            text="Balprada combines consultation, Ayurvedic medicines, yoga, panchakarma, naturopathy, diet guidance and follow-up care to make the treatment journey more complete."
+          />
           <Link className="button primary gradient" href="/facilities">
             Explore More
           </Link>
@@ -174,10 +217,10 @@ export default function Home() {
 
       <section className="care-process section">
         <div className="section-heading">
-          <div>
-            <p className="eyebrow">Care Process</p>
-            <h2>A clear path from consultation to follow-up</h2>
-          </div>
+          <SectionHeading
+            eyebrow="Care Process"
+            title="A clear path from consultation to follow-up"
+          />
           <Link className="button secondary" href="/contact">
             Plan Your Visit
           </Link>
@@ -186,8 +229,7 @@ export default function Home() {
           {careProcess.map((item, index) => (
             <article key={item.title}>
               <span>{String(index + 1).padStart(2, "0")}</span>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
+              <SectionHeading title={item.title} text={item.text} level={3} />
             </article>
           ))}
         </div>
@@ -195,37 +237,33 @@ export default function Home() {
 
       <TreatmentJourney />
 
-      <div className="analysis-bird" aria-hidden="true">
-        <span className="bird-shape" />
-        <p>We are analysing your requirements</p>
-      </div>
-
       <section className="section">
         <div className="section-heading centered-heading">
-          <div>
-            <p className="eyebrow">Facilities</p>
-            <h2>Facilities</h2>
-          </div>
-          <Link className="button secondary" href="/facilities">
-            View All
-          </Link>
+          <SectionHeading eyebrow="Facilities" title="Facilities" />
+          
         </div>
         <div className="facility-grid">
           {facilities.map((item) => (
             <Link className="facility-card" href={`/facilities/${item.slug}`} key={item.slug}>
               <img src={item.image} alt={item.title} />
               <div>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
+                <SectionHeading title={item.title} text={item.text} level={3} />
               </div>
             </Link>
           ))}
         </div>
+        <Link className="button secondary" href="/facilities">
+            View All
+          </Link>
       </section>
+      
 
       <section className="stories section">
-        <p className="eyebrow center-text">Stories of Trust and Healing</p>
-        <h2>Blessings and Experiences</h2>
+        <SectionHeading
+          align="center"
+          eyebrow="Stories of Trust and Healing"
+          title="Blessings and Experiences"
+        />
         <div className="story-grid">
           {testimonials.map((item) => (
             <article key={item.name}>
@@ -237,16 +275,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      <section className="founder-blessing section">
-        <img src="/balprada-seal.svg" alt="" aria-hidden="true" />
-        <div>
-          <p className="eyebrow">Aashirvachan</p>
-          <h2>{site.founderQuote}</h2>
-          <strong>- {site.founder}</strong>
-        </div>
-      </section>
-
       <ContactPanel />
       <Footer />
     </main>

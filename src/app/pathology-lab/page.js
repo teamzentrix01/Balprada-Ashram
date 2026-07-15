@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/SiteChrome";
 import { facilities } from "../data";
 import { pathologyTests } from "../catalogData";
 
@@ -25,15 +25,12 @@ export default function PathologyLabPage() {
         <span><strong>Easy</strong> phone enquiry</span>
       </section>
       <section className="section-band detail-band">
+        <SectionHeading
+          eyebrow="Balprada Labs"
+          title="Reports that support clearer consultation"
+          text="Testing support helps doctors understand patient condition, review progress and coordinate the ayurvedic care journey with more clarity."
+        />
         <div>
-          <p className="eyebrow">Balprada Labs</p>
-          <h2>Reports that support clearer consultation</h2>
-        </div>
-        <div>
-          <p>
-            Testing support helps doctors understand patient condition, review
-            progress and coordinate the ayurvedic care journey with more clarity.
-          </p>
           <ul className="detail-list">
             {lab.highlights.map((highlight) => (
               <li key={highlight}>{highlight}</li>
@@ -46,7 +43,10 @@ export default function PathologyLabPage() {
       </section>
       <section className="section catalog-section">
         <div className="section-heading">
-          <div><p className="eyebrow">Test Directory</p><h2>Frequently requested pathology tests</h2></div>
+          <SectionHeading
+            eyebrow="Test Directory"
+            title="Frequently requested pathology tests"
+          />
           <a className="button secondary" href="tel:9917114400">Call Lab</a>
         </div>
         <div className="professional-grid">
@@ -56,7 +56,7 @@ export default function PathologyLabPage() {
                 <img src={test.image} alt={`${test.title} diagnostic testing`} />
                 <span>{String(index + 1).padStart(2, "0")}</span>
               </div>
-              <div><small>{test.sample}</small><h3>{test.title}</h3><p>{test.short}</p><strong>View test details -&gt;</strong></div>
+              <div><small>{test.sample}</small><h3>{test.title}</h3><p>{test.short}</p><strong>View test details</strong></div>
             </Link>
           ))}
         </div>

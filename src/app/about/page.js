@@ -1,6 +1,6 @@
 import Link from "next/link";
 import AboutExplorer from "../_components/AboutExplorer";
-import { ContactPanel, Shell } from "../_components/SiteChrome";
+import { ContactPanel, SectionHeading, Shell } from "../_components/SiteChrome";
 import { heroImages } from "../data";
 
 export const metadata = {
@@ -30,25 +30,21 @@ export default function AboutPage() {
     <Shell>
       <section className="about-hero-pro">
         <img src={heroImages[0]} alt="Balprada Ashram" />
-        <div>
-          <p className="eyebrow">About Balprada</p>
-          <h1>Trusted Ayurvedic Care Since 1991</h1>
-          <p>
-            Balprada Ayurvedic Hospital & Research Center carries forward the spirit of seva,
-            ayurvedic healing and community care started by Sw. Vaidya Vijay Pal
-            Singh Ji in 1991.
-          </p>
-        </div>
+        <SectionHeading
+          eyebrow="About Balprada"
+          title="Trusted Ayurvedic Care Since 1991"
+          text="Balprada Ayurvedic Hospital & Research Center carries forward the spirit of seva, ayurvedic healing and community care started by Sw. Vaidya Vijay Pal Singh Ji in 1991."
+          level={1}
+        />
       </section>
 
       <section className="about-meaning section">
-        <p className="eyebrow center-text">Welcome to Balprada</p>
-        <h2>Balprada: strength, healing and seva for every life</h2>
-        <p>
-          The institution brings together ayurvedic chikitsalaya, research,
-          herbal wellness, pathology, yoga, naturopathy and ashram-based social
-          service under one trusted ecosystem.
-        </p>
+        <SectionHeading
+          align="center"
+          eyebrow="Welcome to Balprada"
+          title="Balprada: strength, healing and seva for every life"
+          text="The institution brings together ayurvedic chikitsalaya, research, herbal wellness, pathology, yoga, naturopathy and ashram-based social service under one trusted ecosystem."
+        />
         <div className="about-stats">
           <div>
             <strong>1991</strong>
@@ -70,7 +66,7 @@ export default function AboutPage() {
       </section>
 
       <section className="about-timeline section">
-        <h2>Legacy of Balprada</h2>
+        <SectionHeading title="Legacy of Balprada" />
         <div className="timeline-bird" aria-hidden="true"><span className="bird-shape" /></div>
         <div className="timeline-line">
           {timeline.map((item) => (
@@ -85,24 +81,20 @@ export default function AboutPage() {
 
       <section className="about-mission section">
         <article>
-          <h2>Our Mission</h2>
-          <p>
-            To provide reliable ayurvedic care for chronic and serious health
-            conditions through consultation, self-prepared medicines, lifestyle
-            guidance and compassionate service.
-          </p>
+          <SectionHeading
+            title="Our Mission"
+            text="To provide reliable ayurvedic care for chronic and serious health conditions through consultation, self-prepared medicines, lifestyle guidance and compassionate service."
+          />
           <p>
             Balprada aims to help patients and families find a calmer, clearer
             path through illness with discipline, hope and natural healing.
           </p>
         </article>
         <article className="vision-card">
-          <h2>Our Vision</h2>
-          <p>
-            To become a trusted ayurvedic wellness and jansewa center where
-            traditional knowledge, modern organization and community care work
-            together for healthier lives.
-          </p>
+          <SectionHeading
+            title="Our Vision"
+            text="To become a trusted ayurvedic wellness and jansewa center where traditional knowledge, modern organization and community care work together for healthier lives."
+          />
         </article>
       </section>
 
@@ -117,7 +109,7 @@ export default function AboutPage() {
       </section>
 
       <section className="about-next section">
-        <h2>Begin your Balprada journey</h2>
+        <SectionHeading title="Begin your Balprada journey" />
         <div>
           <Link className="button primary gradient" href="/treatments">
             Explore Treatments

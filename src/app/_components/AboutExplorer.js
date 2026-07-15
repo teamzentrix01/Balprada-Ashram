@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { aboutAreas } from "../aboutData";
+import { SectionHeading } from "./SiteChrome";
 
 export default function AboutExplorer() {
   const [activeSlug, setActiveSlug] = useState(aboutAreas[0].slug);
@@ -11,8 +12,11 @@ export default function AboutExplorer() {
   return (
     <section className="about-explorer section">
       <div className="about-explorer-heading">
-        <p className="eyebrow center-text">Explore Balprada</p>
-        <h2>What makes the care experience different</h2>
+        <SectionHeading
+          align="center"
+          eyebrow="Explore Balprada"
+          title="What makes the care experience different"
+        />
       </div>
 
       <div className="about-sticky-tabs" aria-label="Balprada experience areas">
@@ -30,9 +34,12 @@ export default function AboutExplorer() {
 
       <div className="about-explorer-panel" key={active.slug}>
         <div className="about-explorer-copy">
-          <p className="eyebrow">{active.eyebrow}</p>
-          <h3>{active.title}</h3>
-          <p>{active.summary}</p>
+          <SectionHeading
+            eyebrow={active.eyebrow}
+            title={active.title}
+            text={active.summary}
+            level={3}
+          />
           <Link className="button primary gradient" href={`/about/${active.slug}`}>
             Explore Full Page
           </Link>
@@ -45,8 +52,7 @@ export default function AboutExplorer() {
           <article key={card.title}>
             <img src={card.image} alt={card.title} />
             <div>
-              <h3>{card.title}</h3>
-              <p>{card.text}</p>
+              <SectionHeading title={card.title} text={card.text} level={3} />
             </div>
           </article>
         ))}

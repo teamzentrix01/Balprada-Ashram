@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/SiteChrome";
 import { facilities } from "../data";
 
 export const metadata = {
@@ -20,8 +20,7 @@ export default function FacilitiesPage() {
           <Link className="facility-detail-card" href={`/facilities/${item.slug}`} key={item.slug}>
             <img src={item.image} alt={item.title} />
             <div>
-              <h2>{item.title}</h2>
-              <p>{item.text}</p>
+              <SectionHeading title={item.title} text={item.text} level={3} />
               {item.highlights ? (
                 <ul>
                   {item.highlights.map((highlight) => (

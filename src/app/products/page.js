@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/SiteChrome";
 import { galleryImages, products } from "../data";
 
 export const metadata = {
@@ -18,9 +18,12 @@ export default function ProductsPage() {
       <section className="section products-grid">
         {products.map((product) => (
           <Link href={`/products/${product.slug}`} key={product.slug}>
-            <span>{product.category}</span>
-            <h2>{product.title}</h2>
-            <p>{product.text}</p>
+            <SectionHeading
+              eyebrow={product.category}
+              title={product.title}
+              text={product.text}
+              level={3}
+            />
             <strong>View product</strong>
           </Link>
         ))}

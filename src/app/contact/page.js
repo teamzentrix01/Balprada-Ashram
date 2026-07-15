@@ -1,4 +1,4 @@
-import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/SiteChrome";
 import { branches, heroImages, opdInfo } from "../data";
 
 export const metadata = {
@@ -15,10 +15,7 @@ export default function ContactPage() {
         image={heroImages[2]}
       />
       <section className="opd contact-opd">
-        <div>
-          <p className="eyebrow">Daily OPD</p>
-          <h2>{opdInfo.title}</h2>
-        </div>
+        <SectionHeading eyebrow="Daily OPD" title={opdInfo.title} />
         <ul>
           {opdInfo.items.map((item) => (
             <li key={item}>{item}</li>
@@ -28,8 +25,11 @@ export default function ContactPage() {
       <section className="section branch-page-grid">
         {branches.map((branch) => (
           <article key={branch.title}>
-            <h2>{branch.title}</h2>
-            <p>{branch.address}</p>
+            <SectionHeading
+              title={branch.title}
+              text={branch.address}
+              level={3}
+            />
             <small>{branch.timing}</small>
             <span className="branch-contact-links">
               <a href={`tel:${branch.phone}`}>{branch.phone}</a>

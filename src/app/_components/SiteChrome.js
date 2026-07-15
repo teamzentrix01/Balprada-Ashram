@@ -55,13 +55,7 @@ export function Header() {
           </ul>
         </div>
       ) : null}
-      <div className="service-ribbon">
-        <strong className="experience-ribbon">35 Years of Experience</strong>
-        <span aria-hidden="true">-</span>
-        <Link href="/opd"><b>Every month on 15th: Free OPD</b></Link>
-        <span aria-hidden="true">-</span>
-        <a href={site.appointmentUrl} target="_blank" rel="noreferrer">Courier service available - contact us</a>
-      </div>
+
     </header>
   );
 }
@@ -121,7 +115,7 @@ export function Footer() {
       </div>
       <div className="footer-nav-panel">
         <div className="footer-link-group">
-          <h3>Explore</h3>
+          <SectionHeading title="Explore" level={3} />
           {quickLinks.map(([label, href]) => (
             <Link href={href} key={href}>
               {label}
@@ -129,7 +123,7 @@ export function Footer() {
           ))}
         </div>
         <div className="footer-link-group">
-          <h3>Patients</h3>
+          <SectionHeading title="Patients" level={3} />
           {patientLinks.map(([label, href]) => (
             <Link href={href} key={href}>
               {label}
@@ -137,7 +131,7 @@ export function Footer() {
           ))}
         </div>
         <div className="footer-link-group">
-          <h3>Trust</h3>
+          <SectionHeading title="Trust" level={3} />
           {trustLinks.map(([label, href]) => (
             <Link href={href} key={href}>
               {label}
@@ -146,11 +140,12 @@ export function Footer() {
         </div>
       </div>
       <div className="footer-visit-panel">
-        <div>
-          <p className="eyebrow">Plan Your Visit</p>
-          <h3>{opdInfo.title}</h3>
-          <p>{opdInfo.items[1]}</p>
-        </div>
+        <SectionHeading
+          eyebrow="Plan Your Visit"
+          title={opdInfo.title}
+          text={opdInfo.items[1]}
+          level={3}
+        />
         <div className="footer-branch-list">
           {branches.map((branch) => (
             <article key={branch.title}>
@@ -183,14 +178,29 @@ export function Footer() {
   );
 }
 
+export function SectionHeading({
+  eyebrow,
+  title,
+  text,
+  align = "left",
+  level = 2,
+  className = "",
+}) {
+  const HeadingTag = `h${level}`;
+
+  return (
+    <div className={`section-heading-block ${align === "center" ? "center" : ""} ${className}`.trim()}>
+      {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
+      {title ? <HeadingTag>{title}</HeadingTag> : null}
+      {text ? <p>{text}</p> : null}
+    </div>
+  );
+}
+
 export function PageHero({ eyebrow, title, text, image }) {
   return (
     <section className="page-hero">
-      <div>
-        <p className="eyebrow">{eyebrow}</p>
-        <h1>{title}</h1>
-        {text ? <p>{text}</p> : null}
-      </div>
+      <SectionHeading eyebrow={eyebrow} title={title} text={text} level={1} />
       {image ? <img src={image} alt="" /> : null}
     </section>
   );
@@ -200,14 +210,15 @@ export function ContactPanel() {
   return (
     <section className="contact contact-tight" id="contact">
       <div className="contact-card">
-        <p className="eyebrow">Contact</p>
-        <h2>Contact us for appointments and more information</h2>
-        <p>{opdInfo.summary}</p>
+        <SectionHeading
+          eyebrow="Contact"
+          title="Contact us for appointments and more information"
+          text={opdInfo.summary}
+        />
         <div className="branch-grid">
           {branches.map((branch) => (
             <article key={branch.title}>
-              <h3>{branch.title}</h3>
-              <p>{branch.address}</p>
+              <SectionHeading title={branch.title} text={branch.address} level={3} />
               <small>{branch.timing}</small>
               <span className="branch-contact-links">
                 <a href={`tel:${branch.phone}`}>{branch.phone}</a>

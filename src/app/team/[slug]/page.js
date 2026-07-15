@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ContactPanel, PageHero, Shell } from "../../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../../_components/SiteChrome";
 import { doctors } from "../../data";
 
 export function generateStaticParams() {
@@ -27,12 +27,12 @@ export default async function DoctorDetailPage({ params }) {
     <Shell>
       <PageHero eyebrow="Doctor Profile" title={doctor.name} text={doctor.role} image={doctor.image} />
       <section className="section-band detail-band">
+        <SectionHeading
+          eyebrow="Clinical Focus"
+          title="Experience-led guidance for patients and families"
+          text={doctor.detail}
+        />
         <div>
-          <p className="eyebrow">Clinical Focus</p>
-          <h2>Experience-led guidance for patients and families</h2>
-        </div>
-        <div>
-          <p>{doctor.detail}</p>
           <ul className="detail-list">
             {doctor.focus.map((item) => (
               <li key={item}>{item}</li>

@@ -1,4 +1,4 @@
-import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/SiteChrome";
 import { faqs, galleryImages } from "../data";
 
 export const metadata = {
@@ -17,8 +17,7 @@ export default function FaqPage() {
       <section className="section faq-grid">
         {faqs.map((item) => (
           <article key={item.question}>
-            <h2>{item.question}</h2>
-            <p>{item.answer}</p>
+            <SectionHeading title={item.question} text={item.answer} level={3} />
           </article>
         ))}
       </section>

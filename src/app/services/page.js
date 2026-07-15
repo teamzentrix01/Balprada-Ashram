@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ContactPanel, PageHero, Shell } from "../_components/SiteChrome";
+import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/SiteChrome";
 import { galleryImages, services } from "../data";
 
 export const metadata = {
@@ -19,8 +19,7 @@ export default function ServicesPage() {
         {services.map((service, index) => (
           <Link href={`/services/${service.slug}`} key={service.title}>
             <span>{String(index + 1).padStart(2, "0")}</span>
-            <h2>{service.title}</h2>
-            <p>{service.text}</p>
+            <SectionHeading title={service.title} text={service.text} level={3} />
             {service.points ? (
               <ul>
                 {service.points.map((point) => (
