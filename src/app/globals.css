@@ -9151,6 +9151,24 @@ body {
   }
 }
 
+/* Keep every item in the compact contact panel on the same left edge. */
+.contact.contact-tight .contact-card,
+.contact.contact-tight .section-heading-block,
+.contact.contact-tight .branch-grid article,
+.contact.contact-tight .branch-contact-links a,
+.contact.contact-tight .official-contact-actions .button {
+  text-align: left !important;
+}
+
+.contact.contact-tight .branch-contact-links a,
+.contact.contact-tight .official-contact-actions .button {
+  justify-content: flex-start !important;
+}
+
+.contact.contact-tight .official-contact-actions .button:nth-child(3) {
+  justify-self: stretch !important;
+}
+
 /* Give the treatments heading more line length on narrow screens. */
 @media (max-width: 760px) {
   .treatments-stage > .section-heading,
