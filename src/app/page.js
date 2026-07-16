@@ -10,11 +10,38 @@ import {
   facilities,
   careProcess,
   galleryImages,
-  heroImages,
   opdInfo,
   site,
   testimonials,
 } from "./data";
+
+const homeBannerSlides = [
+  {
+    src: "/home-banners/01-ayurvedic-treatment.png",
+    alt: "Traditional Ayurvedic herbal body treatment",
+    position: "center center",
+  },
+  {
+    src: "/home-banners/02-facial-oil-therapy.png",
+    alt: "Ayurvedic facial oil therapy",
+    position: "center 45%",
+  },
+  {
+    src: "/home-banners/03-ayurvedic-herbs.png",
+    alt: "Ayurvedic herbs, oils and traditional preparations",
+    position: "center 58%",
+  },
+  {
+    src: "/home-banners/04-panchakarma-therapy-room.png",
+    alt: "Traditional Panchakarma therapy room",
+    position: "center center",
+  },
+  {
+    src: "/home-banners/05-herbal-medicines.png",
+    alt: "Traditional herbal medicines and mortar",
+    position: "center center",
+  },
+];
 
 const aboutCards = [
   {
@@ -89,27 +116,29 @@ function HolisticSlider({ items }) {
 }
 
 export default function Home() {
-  const slides = [heroImages[1], "/wellness/naturopathy.jpg", galleryImages[5], "/wellness/yoga.jpg", heroImages[0], "/wellness/panchakarma.jpg", "/wellness/physiotherapy.jpg"];
   const [activeSlide, setActiveSlide] = useState(0);
 
   useEffect(() => {
     const sliderTimer = window.setInterval(() => {
-      setActiveSlide((current) => (current + 1) % slides.length);
+      setActiveSlide((current) => (current + 1) % homeBannerSlides.length);
     }, 5500);
 
     return () => window.clearInterval(sliderTimer);
-  }, [slides.length]);
+  }, []);
 
   return (
     <main className="site-shell">
       <section className="home-hero">
         <div className="hero-slider" aria-label="Balprada hero image slider">
-          {slides.map((image, index) => (
+          {homeBannerSlides.map((slide, index) => (
             <img
               className={`hero-slide ${index === activeSlide ? "active" : ""}`}
-              key={image}
-              src={image}
-              alt={`Balprada wellness slide ${index + 1}`}
+              key={slide.src}
+              src={slide.src}
+              alt={slide.alt}
+              style={{ objectPosition: slide.position }}
+              loading={index === 0 ? "eager" : "lazy"}
+              fetchPriority={index === 0 ? "high" : "auto"}
             />
           ))}
         </div>
@@ -133,10 +162,10 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-dots" aria-label="Choose hero image">
-          {slides.map((image, index) => (
+          {homeBannerSlides.map((slide, index) => (
             <button
               type="button"
-              key={`${image}-dot`}
+              key={`${slide.src}-dot`}
               className={index === activeSlide ? "active" : ""}
               aria-label={`Show hero image ${index + 1}`}
               aria-pressed={index === activeSlide}
