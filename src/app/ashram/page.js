@@ -7,9 +7,16 @@ export const metadata = {
 };
 
 export default function AshramPage() {
-  const wellnessFacilities = facilities.filter((item) =>
-    ["naturopathy", "yoga", "meditation", "panchakarma", "physiotherapy"].includes(item.slug),
-  );
+  const wellnessOrder = [
+    "panchakarma",
+    "yoga",
+    "naturopathy",
+    "meditation",
+    "physiotherapy",
+  ];
+  const wellnessFacilities = wellnessOrder
+    .map((slug) => facilities.find((item) => item.slug === slug))
+    .filter(Boolean);
   const naturopathy = wellnessFacilities.find((item) => item.slug === "naturopathy");
 
   return (

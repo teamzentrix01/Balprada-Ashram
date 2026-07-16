@@ -9169,6 +9169,37 @@ body {
   justify-self: stretch !important;
 }
 
+/* Embedded branch locations in the compact contact cards. */
+.contact.contact-tight .branch-map {
+  width: 100%;
+  height: clamp(150px, 15vw, 210px);
+  margin-top: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(238, 244, 232, .32);
+  border-radius: 12px;
+  background: rgba(5, 45, 36, .45);
+}
+
+.contact.contact-tight .branch-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 520px) {
+  .contact.contact-tight .branch-map {
+    height: 135px;
+    border-radius: 9px;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact.contact-tight .branch-map {
+    height: 170px;
+  }
+}
+
 /* Give the treatments heading more line length on narrow screens. */
 @media (max-width: 760px) {
   .treatments-stage > .section-heading,
@@ -10158,6 +10189,74 @@ svg {
   object-position: center !important;
   border-radius: 1rem !important;
   background: rgba(255, 250, 240, 0.56);
+}
+
+/* Treatment detail header: account for all six categories and keep the
+   image-overlay hero from collapsing when the mobile layout is applied. */
+.treatment-category-nav {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+@media (max-width: 640px) {
+  .site-shell > .treatment-category-hero {
+    width: calc(100% - 16px) !important;
+    max-width: calc(100% - 16px) !important;
+    min-height: 31rem !important;
+    margin: 1.25rem auto 1rem !important;
+    padding: 0 !important;
+    border-radius: 1rem !important;
+  }
+
+  .site-shell > .treatment-category-hero > img {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0 !important;
+    object-fit: cover !important;
+  }
+
+  .site-shell > .treatment-category-hero > .section-heading-block {
+    position: absolute !important;
+    right: 1.25rem !important;
+    bottom: 1.5rem !important;
+    left: 1.25rem !important;
+    z-index: 2 !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  .site-shell > .treatment-category-hero h1 {
+    font-size: clamp(2.35rem, 11vw, 3.4rem) !important;
+    overflow-wrap: normal !important;
+  }
+
+  .site-shell > .treatment-category-hero p:not(.eyebrow) {
+    font-size: 0.92rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .site-shell > .treatment-category-nav {
+    position: relative !important;
+    top: auto !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: calc(100% - 16px) !important;
+    max-width: calc(100% - 16px) !important;
+    margin-inline: auto !important;
+    padding: 0.45rem !important;
+    gap: 0.35rem !important;
+    overflow: visible !important;
+    border-radius: 1rem !important;
+  }
+
+  .site-shell > .treatment-category-nav a {
+    min-width: 0 !important;
+    min-height: 2.9rem !important;
+    padding: 0.55rem 0.4rem !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
 }
 
 @media (max-width: 980px) {

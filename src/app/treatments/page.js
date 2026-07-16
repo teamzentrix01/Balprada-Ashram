@@ -14,7 +14,7 @@ export default function TreatmentsPage() {
         className="treatments-page-hero"
         eyebrow="Our Treatments"
         title="Ayurvedic Treatment and Holistic Care"
-        text="Personalized consultation is available for kidney, liver, cancer supportive care, heart and lifestyle disorders, diabetes and women's health."
+        text="Personalized consultation is available for kidney, liver, cancer supportive care, heart and lifestyle disorders, diabetes, thyroid concerns and women's health."
         image={treatments[0].image}
       />
 

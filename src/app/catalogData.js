@@ -75,7 +75,36 @@ export const pathologyTests = [
 
 export const organicFoods = [
   { slug: "jaivik-aalu", image: "/catalog/organic/jaivik-aalu.jpg", title: "Jaivik Aalu", category: "Fresh Produce", text: "Naturally grown potatoes selected for everyday family cooking.", points: ["Seasonal availability", "Farm-fresh selection", "Courier enquiry available"] },
-  { slug: "jaivik-tamatar", image: "/catalog/organic/jaivik-tamatar.jpg", title: "Jaivik Tamatar", category: "Fresh Produce", text: "Fresh, flavourful organic tomatoes sourced according to the harvest season.", points: ["Naturally grown", "Fresh harvest", "Bulk enquiry available"] },
+  {
+    slug: "barley-daliya",
+    image: "/catalog/organic/barley-daliya.png",
+    title: "Barley Daliya",
+    category: "Wholesome Grains",
+    text: "Coarsely broken barley prepared as a versatile whole-grain staple for light, nourishing everyday meals.",
+    detail:
+      "Barley Daliya can be cooked into a simple savoury meal, porridge or khichdi-style preparation. Its naturally coarse texture makes it a practical pantry choice for families looking to include more whole grains in their regular food routine.",
+    availability: "Packaged pantry product — contact the team for current pack sizes and stock.",
+    points: [
+      "Coarsely milled barley grain",
+      "Suitable for sweet or savoury recipes",
+      "Pack-size and courier enquiry available",
+    ],
+  },
+  {
+    slug: "multigrain-atta",
+    image: "/catalog/organic/multigrain-atta.png",
+    title: "Multigrain Atta",
+    category: "Everyday Flour",
+    text: "A thoughtfully prepared blend of grains for wholesome rotis and everyday family meals.",
+    detail:
+      "Multigrain Atta brings selected grains together in one convenient flour blend for regular home cooking. It can be used for rotis, parathas and other familiar preparations while adding variety to the family's daily grain choices.",
+    availability: "Packaged pantry product — ask about the current grain blend, pack sizes and stock.",
+    points: [
+      "Blended from selected wholesome grains",
+      "Made for rotis and everyday cooking",
+      "Pack-size and courier enquiry available",
+    ],
+  },
   { slug: "fresh-aamla", image: "/catalog/organic/fresh-aamla.jpg", title: "Fresh Aamla", category: "Seasonal Wellness", text: "Fresh Indian gooseberry valued in traditional food and wellness routines.", points: ["Seasonal fresh stock", "Whole fruit", "Availability on enquiry"] },
   { slug: "raw-honey", image: "/catalog/organic/raw-honey.jpg", title: "Natural Raw Honey", category: "Natural Pantry", text: "Naturally sourced honey for food and traditional household use.", points: ["Natural sweetness", "Small-batch availability", "Courier enquiry available"] },
   { slug: "seasonal-mangoes", image: "/catalog/organic/seasonal-mangoes.jpg", title: "Seasonal Mangoes", category: "Seasonal Fruit", text: "Carefully selected seasonal mangoes offered during the fresh harvest window.", points: ["Seasonal varieties", "Naturally ripened selection", "Pre-booking enquiry"] },

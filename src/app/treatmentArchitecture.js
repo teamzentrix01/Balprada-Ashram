@@ -146,6 +146,42 @@ export const treatmentCategories = [
     ],
   },
   {
+    slug: "diabetes-thyroid",
+    title: "Diabetes & Thyroid Care",
+    shortTitle: "Diabetes & Thyroid",
+    image: "/treatments/diabetes-thyroid-care.png",
+    summary:
+      "Personalized Ayurvedic and lifestyle support for blood sugar, thyroid function, energy, weight and metabolic balance.",
+    overview:
+      "Balprada approaches diabetes and thyroid concerns through medical-history review, current reports, food and activity guidance, suitable Ayurvedic care and regular follow-up. Prescribed medicines should only be changed under the guidance of the treating doctor.",
+    conditions: [
+      {
+        slug: "diabetes",
+        title: "Diabetes",
+        icon: "TestTube",
+        text: "Food discipline, physical activity, prescribed care and regular blood-sugar monitoring support long-term diabetes management.",
+      },
+      {
+        slug: "hypothyroidism",
+        title: "Hypothyroidism",
+        icon: "BatteryCharging",
+        text: "Consultation considers low energy, weight changes, digestion, routine and thyroid reports while planning supportive care.",
+      },
+      {
+        slug: "hyperthyroidism",
+        title: "Hyperthyroidism",
+        icon: "Activity",
+        text: "A careful review of thyroid reports, heart rate, sleep, appetite and current medicines helps guide responsible support.",
+      },
+      {
+        slug: "metabolic-balance",
+        title: "Metabolic & Weight Balance",
+        icon: "Scale",
+        text: "Sustainable food, movement, sleep and stress routines support healthier weight and metabolic balance.",
+      },
+    ],
+  },
+  {
     slug: "women-wellness",
     title: "Women's Wellness",
     shortTitle: "Women Health",

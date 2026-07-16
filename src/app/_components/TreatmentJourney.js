@@ -10,7 +10,15 @@ const steps = [
     key: "concern",
     title: "What is your primary concern?",
     text: "Choose the main purpose of your visit.",
-    options: ["Kidney", "Liver", "Cancer Support", "Heart", "Diabetes", "Women Health"],
+    options: [
+      "Kidney",
+      "Liver",
+      "Cancer Support",
+      "Heart",
+      "Diabetes",
+      "Thyroid",
+      "Women Health",
+    ],
   },
   {
     key: "duration",
@@ -49,7 +57,8 @@ const treatmentLinks = {
   Liver: "/treatments/liver-digestive",
   "Cancer Support": "/treatments/cancer-support",
   Heart: "/treatments/heart-metabolic",
-  Diabetes: "/treatments/heart-metabolic/diabetes",
+  Diabetes: "/treatments/diabetes-thyroid/diabetes",
+  Thyroid: "/treatments/diabetes-thyroid",
   "Women Health": "/treatments/women-wellness",
 };
 

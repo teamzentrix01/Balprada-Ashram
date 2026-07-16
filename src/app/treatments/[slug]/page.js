@@ -9,7 +9,8 @@ const legacyRoutes = {
   liver: "/treatments/liver-digestive",
   cancer: "/treatments/cancer-support",
   heart: "/treatments/heart-metabolic",
-  diabetes: "/treatments/heart-metabolic/diabetes",
+  diabetes: "/treatments/diabetes-thyroid/diabetes",
+  thyroid: "/treatments/diabetes-thyroid",
   "women-health": "/treatments/women-wellness",
 };
 

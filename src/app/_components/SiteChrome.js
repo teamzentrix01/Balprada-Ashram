@@ -224,6 +224,15 @@ export function ContactPanel() {
                 <a href={`tel:${branch.phone}`}>{branch.phone}</a>
                 <a href={`mailto:${branch.email}`}>{branch.email}</a>
               </span>
+              <div className="branch-map">
+                <iframe
+                  src={`https://www.google.com/maps?q=${encodeURIComponent(branch.address)}&output=embed`}
+                  title={`${branch.title} location on Google Maps`}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
+              </div>
             </article>
           ))}
         </div>

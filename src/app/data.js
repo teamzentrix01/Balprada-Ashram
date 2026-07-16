@@ -129,15 +129,19 @@ export const treatments = [
   },
   {
     slug: "diabetes",
-    title: "Diabetes Care",
-    label: "Diabetes Care",
-    image:
-      "https://balpradaindia.com/wp-content/uploads/2023/07/herbal-compress-herbal-spa-treatment-equipments-put-dark-floor-1-scaled.webp",
+    title: "Diabetes & Thyroid Care",
+    label: "Diabetes & Thyroid",
+    image: "/treatments/diabetes-thyroid-care.png",
     summary:
-      "Diabetes and lifestyle disorders need food discipline, daily routine, monitoring and guided Ayurvedic support.",
+      "Diabetes and thyroid concerns benefit from food discipline, daily routine, regular testing and guided Ayurvedic support.",
     detail:
-      "Diabetes can affect several body systems over time. Balprada supports patients with personalized diet and lifestyle guidance, suitable Ayurvedic medicines and regular testing advice.",
-    concerns: ["Diabetes", "Weakness", "Obesity", "Lifestyle disorders"],
+      "Diabetes and thyroid imbalance can influence metabolism, energy, weight and several body systems over time. Balprada supports patients with personalized consultation, diet and lifestyle guidance, suitable Ayurvedic medicines and responsible testing advice alongside their primary medical care.",
+    concerns: [
+      "Diabetes",
+      "Hypothyroidism",
+      "Hyperthyroidism",
+      "Weight and metabolic imbalance",
+    ],
   },
   {
     slug: "women-health",
