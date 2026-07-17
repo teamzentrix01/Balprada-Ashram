@@ -1,4 +1,5 @@
 import "./globals.css";
+import AppointmentPopup from "./_components/AppointmentPopup";
 
 export const metadata = {
   title: "Balprada Ayurvedic Hospital & Research Center",
@@ -14,7 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="hi">
-      <body>{children}</body>
+      <body>
+        {children}
+        <AppointmentPopup />
+      </body>
     </html>
   );
 }

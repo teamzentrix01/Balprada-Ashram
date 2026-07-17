@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/SiteChrome";
-import { facilities } from "../data";
+import { facilities, site } from "../data";
 import { pathologyTests } from "../catalogData";
 
 export const metadata = {
@@ -47,7 +47,7 @@ export default function PathologyLabPage() {
             eyebrow="Test Directory"
             title="Frequently requested pathology tests"
           />
-          <a className="button secondary" href="tel:9917114400">Call Lab</a>
+          <a className="button secondary" href={`tel:${site.primaryPhone}`}>Call Lab</a>
         </div>
         <div className="professional-grid">
           {pathologyTests.map((test, index) => (
