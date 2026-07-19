@@ -2,9 +2,9 @@ export const site = {
   name: "Balprada",
   fullName: "Balprada Ayurvedic Hospital & Research Center",
   tagline: "35 years of trusted Ayurveda, research and compassionate care",
-  appointmentUrl: "https://wa.me/917248800839",
+  appointmentUrl: "https://wa.me/918126364606",
   email: "balpradaindia@gmail.com",
-  primaryPhone: "7248800839",
+  primaryPhone: "8126364606",
   secondaryPhone: "9410447000",
   mantra:
     "May all be happy, may all be healthy, may all see what is auspicious, and may no one suffer.",
@@ -385,7 +385,7 @@ export const branches = [
     title: "Main Branch",
     address:
       "Mohalla Vijaynagar, Village Bhidwari, P.O. Guarau, Tehsil Bilari, District Moradabad, Uttar Pradesh 244415",
-    phone: "7248800839",
+    phone: "8126364606",
     email: "balpradaindia@gmail.com",
     map: "https://maps.app.goo.gl/",
     timing: "Daily, 10:00 AM to 2:00 PM",

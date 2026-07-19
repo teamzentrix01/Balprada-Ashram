@@ -10864,3 +10864,96 @@ svg {
     object-position: center !important;
   }
 }
+
+/* Persistent primary contact controls. The Moradabad number remains confined
+   to its branch-specific cards and actions. */
+.nav-call {
+  display: inline-flex !important;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  flex: 0 0 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(16, 77, 62, .28);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .72);
+  color: var(--deep);
+  box-shadow: 0 8px 24px rgba(8, 49, 39, .1);
+  text-decoration: none;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.nav-call:hover,
+.nav-call:focus-visible {
+  background: #fff;
+  transform: translateY(-2px);
+}
+
+.home-hero > .nav > .nav-call {
+  border-color: rgba(255, 255, 255, .6);
+  background: rgba(255, 255, 255, .16);
+  color: #fff;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .18);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.floating-whatsapp {
+  position: fixed;
+  left: max(16px, env(safe-area-inset-left));
+  bottom: max(18px, env(safe-area-inset-bottom));
+  z-index: 1000;
+  display: inline-flex;
+  width: 58px;
+  height: 58px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, .92);
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff !important;
+  box-shadow: 0 12px 30px rgba(10, 70, 42, .3);
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.floating-whatsapp:hover,
+.floating-whatsapp:focus-visible {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 16px 34px rgba(10, 70, 42, .38);
+}
+
+@media (max-width: 767px) {
+  .home-hero .hero-slide {
+    object-fit: contain !important;
+    object-position: center !important;
+  }
+
+  .home-hero .hero-slider {
+    background: #102d25;
+  }
+
+  .nav-call {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    min-height: 42px;
+    flex-basis: 42px;
+    margin-left: auto;
+  }
+
+  .nav-call + .nav-cta {
+    display: none !important;
+  }
+
+  .nav-call + .nav-cta + .menu-toggle {
+    margin-left: 0 !important;
+  }
+
+  .floating-whatsapp {
+    width: 54px;
+    height: 54px;
+  }
+}

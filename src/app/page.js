@@ -18,31 +18,31 @@ import {
 const homeBannerSlides = [
   {
     src: "/home-banners/01-ayurvedic-treatment.png",
-    mobileSrc: "/home-banners/mobile/01-ayurvedic-treatment.webp",
+    mobileSrc: "/home-banners/mobile-v2/01-ayurvedic-treatment.webp",
     alt: "Traditional Ayurvedic herbal body treatment",
     position: "center center",
   },
   {
     src: "/home-banners/02-facial-oil-therapy.png",
-    mobileSrc: "/home-banners/mobile/02-facial-oil-therapy.webp",
+    mobileSrc: "/home-banners/mobile-v2/02-facial-oil-therapy.webp",
     alt: "Ayurvedic facial oil therapy",
     position: "center 45%",
   },
   {
     src: "/home-banners/03-ayurvedic-herbs.png",
-    mobileSrc: "/home-banners/mobile/03-ayurvedic-herbs.webp",
+    mobileSrc: "/home-banners/mobile-v2/03-ayurvedic-herbs.webp",
     alt: "Ayurvedic herbs, oils and traditional preparations",
     position: "center 58%",
   },
   {
     src: "/home-banners/04-panchakarma-therapy-room.png",
-    mobileSrc: "/home-banners/mobile/04-panchakarma-therapy-room.webp",
+    mobileSrc: "/home-banners/mobile-v2/04-panchakarma-therapy-room.webp",
     alt: "Traditional Panchakarma therapy room",
     position: "center center",
   },
   {
     src: "/home-banners/05-herbal-medicines.png",
-    mobileSrc: "/home-banners/mobile/05-herbal-medicines.webp",
+    mobileSrc: "/home-banners/mobile-v2/05-herbal-medicines.webp",
     alt: "Traditional herbal medicines and mortar",
     position: "center center",
   },
@@ -137,7 +137,7 @@ export default function Home() {
         <div className="hero-slider" aria-label="Balprada hero image slider">
           {homeBannerSlides.map((slide, index) => (
             <picture key={slide.src}>
-              <source media="(max-width: 520px)" srcSet={slide.mobileSrc} />
+              <source media="(max-width: 767px)" srcSet={slide.mobileSrc} />
               <img
                 className={`hero-slide ${index === activeSlide ? "active" : ""}`}
                 src={slide.src}

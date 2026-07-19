@@ -1,5 +1,6 @@
 import "./globals.css";
 import AppointmentPopup from "./_components/AppointmentPopup";
+import { FloatingWhatsApp } from "./_components/SiteChrome";
 
 export const metadata = {
   title: "Balprada Ayurvedic Hospital & Research Center",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="hi">
       <body>
         {children}
+        <FloatingWhatsApp />
         <AppointmentPopup />
       </body>
     </html>

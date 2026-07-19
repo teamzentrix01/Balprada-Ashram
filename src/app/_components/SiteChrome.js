@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { MessageCircle, Phone } from "lucide-react";
 import { branches, opdInfo, site } from "../data";
 
 export function Header() {
@@ -25,6 +26,14 @@ export function Header() {
           <Link href="/contact">Contact</Link>
         </nav>
       ) : null}
+      <a
+        className="nav-call"
+        href={`tel:${site.primaryPhone}`}
+        aria-label={`Call main branch on ${site.primaryPhone}`}
+        title={`Call ${site.primaryPhone}`}
+      >
+        <Phone size={20} strokeWidth={2} aria-hidden="true" />
+      </a>
       <Link className="nav-cta" href="/appointment">
         Book Appointment
       </Link>
@@ -57,6 +66,21 @@ export function Header() {
       ) : null}
 
     </header>
+  );
+}
+
+export function FloatingWhatsApp() {
+  return (
+    <a
+      className="floating-whatsapp"
+      href={site.appointmentUrl}
+      target="_blank"
+      rel="noreferrer"
+      aria-label={`WhatsApp main branch on ${site.primaryPhone}`}
+      title={`WhatsApp ${site.primaryPhone}`}
+    >
+      <MessageCircle size={27} strokeWidth={2.2} aria-hidden="true" />
+    </a>
   );
 }
 
