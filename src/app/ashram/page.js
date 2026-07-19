@@ -17,7 +17,7 @@ export default function AshramPage() {
   const wellnessFacilities = wellnessOrder
     .map((slug) => facilities.find((item) => item.slug === slug))
     .filter(Boolean);
-  const naturopathy = wellnessFacilities.find((item) => item.slug === "naturopathy");
+  const panchakarma = wellnessFacilities.find((item) => item.slug === "panchakarma");
 
   return (
     <Shell>
@@ -35,23 +35,23 @@ export default function AshramPage() {
 
       <section className="naturopathy-feature section">
         <div className="naturopathy-visual">
-          <img src={naturopathy.image} alt="Professional naturopathy care at Balprada" />
+          <img src={panchakarma.image} alt="Professional Panchakarma care at Balprada" />
           <span>Primary Wellness Focus</span>
         </div>
         <div>
           <SectionHeading
             className="feature-lead-heading"
             eyebrow="Most Highlighted Programme"
-            title="Naturopathy"
-            text="Supporting the body's natural healing capacity through thoughtfully planned therapies, disciplined routines and close professional guidance."
+            title="Panchakarma"
+            text="Supporting cleansing, balance and recovery through thoughtfully planned traditional therapies and close professional guidance."
           />
           <ul className="nature-list">
-            {naturopathy.highlights.map((item) => <li key={item}>{item}</li>)}
+            {panchakarma.highlights.map((item) => <li key={item}>{item}</li>)}
             <li>Food, rest and daily-routine guidance</li>
             <li>Individual assessment before therapy</li>
           </ul>
           <div className="official-contact-actions">
-            <Link className="button primary" href="/facilities/naturopathy">Explore Naturopathy</Link>
+            <Link className="button primary" href="/facilities/panchakarma">Explore Panchakarma</Link>
             <a className="button secondary" href={site.appointmentUrl} target="_blank" rel="noreferrer">Book Consultation</a>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function AshramPage() {
         </div>
         <div className="wellness-programme-grid">
           {wellnessFacilities.map((facility, index) => (
-            <Link className={facility.slug === "naturopathy" ? "featured" : ""} href={`/facilities/${facility.slug}`} key={facility.slug}>
+            <Link className={facility.slug === "panchakarma" ? "featured" : ""} href={`/facilities/${facility.slug}`} key={facility.slug}>
               <img src={facility.image} alt={`${facility.title} at Balprada`} />
               <div><span>{String(index + 1).padStart(2, "0")}</span><h3>{facility.title}</h3><p>{facility.text}</p><strong>Discover programme</strong></div>
             </Link>
