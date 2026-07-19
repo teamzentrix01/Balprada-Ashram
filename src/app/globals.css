@@ -10957,3 +10957,45 @@ svg {
     height: 54px;
   }
 }
+
+/* On compact navigation the call action belongs inside the opened menu. */
+@media (max-width: 859px) {
+  .nav > .nav-call,
+  .home-hero > .nav > .nav-call {
+    display: none !important;
+  }
+
+  .nav-call + .nav-cta + .menu-toggle,
+  .home-hero > .nav > .nav-call + .nav-cta + .menu-toggle {
+    margin-left: auto !important;
+  }
+
+  .mobile-nav-panel .mobile-menu-contact {
+    margin-top: 10px !important;
+  }
+
+  .mobile-nav-panel .mobile-menu-call {
+    display: flex !important;
+    width: 100% !important;
+    min-height: 52px !important;
+    padding: 12px 16px !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 10px !important;
+    border-radius: 8px !important;
+    background: var(--deep) !important;
+    color: #fffaf0 !important;
+    text-decoration: none !important;
+  }
+
+  .mobile-nav-panel .mobile-menu-call span {
+    flex: 1;
+    color: inherit !important;
+  }
+
+  .mobile-nav-panel .mobile-menu-call strong {
+    color: inherit !important;
+    font-size: .86rem !important;
+    letter-spacing: .04em !important;
+  }
+}

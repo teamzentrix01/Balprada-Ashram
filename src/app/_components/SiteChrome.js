@@ -61,6 +61,17 @@ export function Header() {
             <li><Link href="/ashram" onClick={() => setMenuOpen(false)}>Ashram</Link></li>
             <li><Link href="/organic-food" onClick={() => setMenuOpen(false)}>Organic Food</Link></li>
             <li><Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+            <li className="mobile-menu-contact">
+              <a
+                className="mobile-menu-call"
+                href={`tel:${site.primaryPhone}`}
+                onClick={() => setMenuOpen(false)}
+              >
+                <Phone size={19} strokeWidth={2} aria-hidden="true" />
+                <span>Call Main Branch</span>
+                <strong>{site.primaryPhone}</strong>
+              </a>
+            </li>
           </ul>
         </div>
       ) : null}
