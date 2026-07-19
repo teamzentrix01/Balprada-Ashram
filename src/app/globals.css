@@ -10998,4 +10998,19 @@ svg {
     font-size: .86rem !important;
     letter-spacing: .04em !important;
   }
+
+  .nav > .mobile-nav-panel li.mobile-menu-contact > a.mobile-menu-call,
+  .home-hero > .nav > .mobile-nav-panel li.mobile-menu-contact > a.mobile-menu-call {
+    color: #fffaf0 !important;
+    -webkit-text-fill-color: #fffaf0 !important;
+  }
+
+  .nav > .mobile-nav-panel li.mobile-menu-contact > a.mobile-menu-call > *,
+  .home-hero > .nav > .mobile-nav-panel li.mobile-menu-contact > a.mobile-menu-call > * {
+    display: inline-flex !important;
+    visibility: visible !important;
+    color: #fffaf0 !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: #fffaf0 !important;
+  }
 }
