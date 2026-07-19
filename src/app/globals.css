@@ -10849,3 +10849,18 @@ svg {
     scroll-snap-align: none !important;
   }
 }
+
+/* Mobile artwork is authored at 2:3. This final override keeps the hero at
+   that exact ratio, so portrait photos render edge-to-edge without cropping. */
+@media (max-width: 520px) {
+  .home-hero {
+    height: 150vw !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+
+  .home-hero .hero-slide {
+    object-fit: contain !important;
+    object-position: center !important;
+  }
+}
