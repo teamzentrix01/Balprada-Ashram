@@ -404,17 +404,26 @@ export const branches = [
 export const testimonials = [
   {
     name: "Balprada Patient Family",
-    text: "The Ayurvedic care, medical consultation and calm ashram environment make the healing journey feel trustworthy and supported.",
+    text: "From our first consultation, the Balprada team gave us the time and attention needed to understand every concern clearly. The doctors explained the suggested Ayurvedic care, daily routine and food guidance in a calm and practical way, which helped the entire family feel involved in the journey. The peaceful ashram environment, attentive staff and disciplined approach to care created a reassuring experience throughout our visit. We especially appreciated that our questions were answered patiently and that every recommendation was explained before the next step. The combination of thoughtful consultation, personal guidance and a supportive atmosphere made our time at Balprada feel organized, respectful and trustworthy.",
     tag: "Patient Care",
+    image: "/testimonials/patient-family.jpg",
+    imageAlt: "Smiling Indian couple",
+    imageCredit: "Photo by Ketut Subiyanto on Pexels",
   },
   {
     name: "Service Experience",
-    text: "Along with treatment, the ashram provides a sense of service, steady guidance and emotional support for patients and families.",
+    text: "What stood out during our stay was the genuine spirit of service present across the ashram. The team remained approachable throughout the day and guided us carefully through consultations, medicines, meals and the recommended routine. Whenever we needed clarification, someone was available to listen and help without making the process feel rushed. That steady support made it easier for both the patient and accompanying family members to settle into the environment. Beyond the formal care, small gestures of kindness and attention made a meaningful difference to our experience. Balprada felt like a place where medical guidance, personal discipline and compassionate service were brought together with sincerity.",
     tag: "Ashram Experience",
+    image: "/testimonials/service-experience.jpg",
+    imageAlt: "Healthcare professional ready for a consultation",
+    imageCredit: "Photo by Gustavo Fring on Pexels",
   },
   {
     name: "Follow-up Experience",
-    text: "The team explains diet, routine and follow-up clearly, which helps families stay disciplined during long treatment journeys.",
+    text: "The follow-up guidance gave us a clear structure to continue the recommended routine after returning home. The team explained how diet, daily habits, medicines and future consultations fit together, and they presented each instruction in language that was easy for the family to understand. Having that clarity helped us remain more consistent instead of feeling uncertain about what to do next. We also valued the opportunity to ask questions about practical challenges that can arise while following a disciplined routine at home. The experience showed us that Balprada's support extends beyond a single appointment, with continued emphasis on communication, responsibility and steady long-term guidance for patients and their families.",
     tag: "Guidance",
+    image: "/testimonials/follow-up-experience.jpg",
+    imageAlt: "Smiling senior Indian woman in traditional clothing",
+    imageCredit: "Photo by Chalta Phirta on Pexels",
   },
 ];
