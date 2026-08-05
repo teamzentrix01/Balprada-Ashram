@@ -72,6 +72,7 @@ export default async function TreatmentCategoryPage({ params }) {
           title="Personalized Ayurvedic care"
           text={category.overview}
         />
+        <img src={category.approachImage} alt={`${category.title} approach at Balprada`} />
       </section>
 
       <section className="condition-page-grid section">

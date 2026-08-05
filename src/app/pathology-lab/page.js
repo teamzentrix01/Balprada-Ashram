@@ -24,13 +24,13 @@ export default function PathologyLabPage() {
         <span><strong>Clear</strong> report guidance</span>
         <span><strong>Easy</strong> phone enquiry</span>
       </section>
-      <section className="section-band detail-band">
+      <section className="section-band detail-band lab-overview">
         <SectionHeading
           eyebrow="Balprada Labs"
           title="Reports that support clearer consultation"
           text="Testing support helps doctors understand patient condition, review progress and coordinate the ayurvedic care journey with more clarity."
         />
-        <div>
+        <div className="lab-detail-actions">
           <ul className="detail-list">
             {lab.highlights.map((highlight) => (
               <li key={highlight}>{highlight}</li>

@@ -175,6 +175,7 @@ export function Footer() {
         </div>
       </div>
       <div className="footer-visit-panel">
+        <img className="footer-seal" src="/balprada-seal.svg" alt="" aria-hidden="true" />
         <SectionHeading
           eyebrow="Plan Your Visit"
           title={opdInfo.title}

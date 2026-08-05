@@ -25,6 +25,19 @@ import {
   testimonials,
 } from "./data";
 
+const homeFacilityOrder = [
+  "panchakarma",
+  "yoga",
+  "naturopathy",
+  "meditation",
+  "physiotherapy",
+  "pathology",
+];
+
+const homeFacilities = homeFacilityOrder
+  .map((slug) => facilities.find((item) => item.slug === slug))
+  .filter(Boolean);
+
 const homeBannerSlides = [
   {
     src: "/home-banners/01-ayurvedic-treatment.png",
@@ -396,7 +409,6 @@ export default function Home() {
         </div>
         <div className="hero-overlay" />
         <Header />
-        <img className="hero-seal" src="/balprada-seal.svg" alt="" aria-hidden="true" />
         <div className="hero-content home-hero-copy">
           <p className="home-hero-tagline">{site.tagline}</p>
           <h1 className="home-hero-title" aria-label={site.fullName}>
@@ -491,7 +503,7 @@ export default function Home() {
             Explore More
           </Link>
         </div>
-        <HolisticSlider items={facilities.slice(0, 6)} />
+        <HolisticSlider items={homeFacilities} />
       </section>
 
       <div className="holistic-curve" aria-hidden="true" />
@@ -524,7 +536,7 @@ export default function Home() {
           
         </div>
         <div className="facility-grid">
-          {facilities.map((item) => (
+          {homeFacilities.map((item) => (
             <Link className="facility-card" href={`/facilities/${item.slug}`} key={item.slug}>
               <img src={item.image} alt={item.title} />
               <div>

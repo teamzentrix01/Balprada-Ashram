@@ -471,6 +471,33 @@
   }
 }
 
+/* Stack the two overview CTAs beneath their full-width content. */
+.site-shell > .organic-promise.section-band,
+.site-shell > .lab-overview.section-band {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 1.5rem !important;
+}
+
+.site-shell > .organic-promise .section-heading-block,
+.site-shell > .lab-overview .section-heading-block,
+.site-shell > .organic-promise .section-heading-block > p:not(.eyebrow),
+.site-shell > .lab-overview .section-heading-block > p:not(.eyebrow) {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.site-shell > .organic-promise .organic-promise-actions,
+.site-shell > .lab-overview .lab-detail-actions {
+  display: flex !important;
+  width: 100% !important;
+  margin-top: auto !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-end !important;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -2890,6 +2917,22 @@ section[id],
 .medical-note { padding: 14px 16px; border: 1px solid var(--line); color: var(--muted); font-size: 13px; line-height: 1.6; }
 
 .organic-promise { margin-top: clamp(4rem,7vw,7rem); }
+.organic-promise,
+.lab-overview {
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+.organic-promise > .section-heading-block,
+.lab-overview > .section-heading-block,
+.organic-promise > .section-heading-block > p:not(.eyebrow),
+.lab-overview > .section-heading-block > p:not(.eyebrow) {
+  max-width: none !important;
+}
+.organic-promise-actions,
+.lab-detail-actions {
+  align-self: auto;
+  width: 100%;
+}
 .organic-card-image { height: 250px; }
 .organic-card-image span { background: #123b32; color: #fbf7ef; }
 .organic-detail { background: linear-gradient(135deg,rgba(232,224,206,.82),rgba(219,228,210,.75)); }
@@ -3932,8 +3975,17 @@ section[id],
 
 .treatment-category-intro {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-columns: 1fr 0.8fr;
+  align-items: center;
   gap: clamp(2rem, 6vw, 5rem);
+}
+
+.treatment-category-intro > img {
+  width: 100%;
+  height: clamp(20rem, 32vw, 25rem);
+  border-radius: 45% 45% 1.2rem 1.2rem;
+  object-fit: cover;
+  box-shadow: 0 24px 60px rgba(24, 54, 42, 0.15);
 }
 
 .treatment-category-intro h2,
@@ -4147,6 +4199,11 @@ section[id],
   .treatment-category-intro,
   .condition-hero {
     grid-template-columns: 1fr;
+  }
+
+  .treatment-category-intro > img {
+    height: clamp(18rem, 58vw, 24rem);
+    border-radius: 1.2rem;
   }
 
   .treatment-category-nav {
@@ -9855,10 +9912,24 @@ body {
   display: flex !important;
   flex-direction: column !important;
   gap: 10px !important;
+  position: relative !important;
 }
 
 .footer-visit-panel .section-heading-block {
   max-width: 100% !important;
+  padding-right: clamp(5.5rem, 8vw, 7rem) !important;
+}
+
+.footer-visit-panel .footer-seal {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: clamp(4.8rem, 6vw, 6.2rem);
+  height: auto;
+  z-index: 1;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 16px rgba(8, 45, 29, 0.14));
+  pointer-events: none;
 }
 
 .footer-visit-panel .eyebrow {
@@ -10027,6 +10098,16 @@ body {
 
   .footer-branch-list {
     grid-template-columns: 1fr !important;
+  }
+
+  .footer-visit-panel .footer-seal {
+    top: 10px;
+    right: 10px;
+    width: 4.5rem;
+  }
+
+  .footer-visit-panel .section-heading-block {
+    padding-right: 5rem !important;
   }
 }
 
@@ -11048,8 +11129,8 @@ svg {
 }
 
 .testimonial-showcase {
-  --testimonial-card-width: min(1040px, calc(100vw - 240px));
-  --testimonial-gap: 20px;
+  --testimonial-card-width: min(860px, calc(100vw - 280px));
+  --testimonial-gap: 18px;
   margin-top: clamp(2.25rem, 4vw, 3.25rem);
   animation: testimonial-reveal 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
@@ -11343,11 +11424,11 @@ svg {
 
 .testimonial-card {
   display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
+  grid-template-columns: 230px minmax(0, 1fr);
   width: var(--testimonial-card-width);
-  min-height: 370px;
-  padding: 24px;
-  gap: 36px;
+  min-height: 292px;
+  padding: 18px;
+  gap: 28px;
   align-items: stretch;
   border: 1px solid rgba(32, 51, 41, 0.1);
   border-radius: 8px;
@@ -11380,7 +11461,7 @@ svg {
 
 .testimonial-portrait {
   position: relative;
-  min-height: 320px;
+  min-height: 254px;
   overflow: hidden;
   border-radius: 8px;
   background: #18362a;
@@ -11410,9 +11491,9 @@ svg {
 .testimonial-portrait > div {
   position: absolute;
   z-index: 1;
-  right: 20px;
-  bottom: 22px;
-  left: 20px;
+  right: 16px;
+  bottom: 17px;
+  left: 16px;
   color: #fff;
   text-align: left;
 }
@@ -11424,7 +11505,7 @@ svg {
 
 .testimonial-portrait strong {
   max-width: 10ch;
-  font-size: clamp(1.45rem, 1.8vw, 1.9rem);
+  font-size: clamp(1.25rem, 1.6vw, 1.6rem);
   font-weight: 400;
   line-height: 1.08;
 }
@@ -11445,14 +11526,14 @@ svg {
   align-self: center;
   justify-content: center;
   flex-direction: column;
-  padding-right: clamp(0rem, 3vw, 2rem);
+  padding-right: clamp(0rem, 2vw, 1rem);
   text-align: left;
 }
 
 .testimonial-copy svg {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 14px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 8px;
   color: #cce6ad;
   fill: currentColor;
   stroke-width: 1;
@@ -11461,8 +11542,8 @@ svg {
 .testimonial-copy p {
   margin: 0;
   color: #25352e;
-  font-size: clamp(1.08rem, 1.4vw, 1.3rem);
-  line-height: 1.68;
+  font-size: clamp(0.98rem, 1.2vw, 1.12rem);
+  line-height: 1.58;
 }
 
 .testimonial-controls {
@@ -11520,12 +11601,12 @@ svg {
   }
 
   .testimonial-showcase {
-    --testimonial-card-width: calc(100vw - 80px);
+    --testimonial-card-width: calc(100vw - 112px);
   }
 
   .testimonial-card {
-    grid-template-columns: 240px minmax(0, 1fr);
-    gap: 24px;
+    grid-template-columns: 210px minmax(0, 1fr);
+    gap: 20px;
   }
 
   .testimonial-video-panel {
@@ -11583,18 +11664,18 @@ svg {
     min-height: 0;
     padding: 12px;
     flex-direction: column;
-    gap: 18px;
+    gap: 14px;
   }
 
   .testimonial-portrait {
     width: 100%;
-    min-height: 300px;
-    aspect-ratio: 4 / 3;
+    min-height: 210px;
+    aspect-ratio: 16 / 9;
   }
 
   .testimonial-copy {
     max-width: none;
-    padding: 0 10px 14px;
+    padding: 0 8px 10px;
   }
 
   .testimonial-copy svg {
@@ -11604,8 +11685,8 @@ svg {
   }
 
   .testimonial-copy p {
-    font-size: 1rem;
-    line-height: 1.65;
+    font-size: 0.94rem;
+    line-height: 1.55;
   }
 
   .testimonial-video-panel {

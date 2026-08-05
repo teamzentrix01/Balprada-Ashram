@@ -10,7 +10,7 @@ export default function OrganicFoodPage() {
     <PageHero eyebrow="Farm to Family" title="Fresh, wholesome organic food" text="Explore naturally grown vegetables, seasonal fruit, raw honey, grains and farm products. Contact us to check today's availability and courier eligibility." image="/organic-food-hero.png" />
     <section className="organic-promise section-band">
       <SectionHeading eyebrow="Balprada Organic" title="Simple food, grown closer to nature" text="Availability follows the harvest and season. Connect directly with the Balprada team for current stock, quantity, price, pickup and courier options." />
-      <div><a className="button primary" href={site.appointmentUrl} target="_blank" rel="noreferrer">Ask Current Availability</a></div>
+      <div className="organic-promise-actions"><a className="button primary" href={site.appointmentUrl} target="_blank" rel="noreferrer">Ask Current Availability</a></div>
     </section>
     <section className="section catalog-section">
       <div className="section-heading"><SectionHeading eyebrow="Organic Selection" title="Fresh food and pantry essentials" /></div>

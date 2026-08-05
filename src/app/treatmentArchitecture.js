@@ -6,6 +6,7 @@ export const treatmentCategories = [
     title: "Kidney and Urinary Care",
     shortTitle: "Kidney",
     image: treatments[0].image,
+    approachImage: "/catalog/pathology/kidney.jpg",
     summary:
       "Ayurvedic consultation and lifestyle care for kidney function, swelling, stones and diabetes-linked kidney concerns.",
     overview:
@@ -42,6 +43,7 @@ export const treatmentCategories = [
     title: "Liver and Digestive Care",
     shortTitle: "Liver",
     image: treatments[1].image,
+    approachImage: "/catalog/pathology/liver.jpg",
     summary:
       "Medicine, diet and routine-based care for liver health, fatty liver, jaundice and weak digestion.",
     overview:
@@ -78,6 +80,7 @@ export const treatmentCategories = [
     title: "Cancer Supportive Care",
     shortTitle: "Cancer Support",
     image: treatments[2].image,
+    approachImage: "/wellness/meditation.jpg",
     summary:
       "Sensitive Ayurvedic supportive care for strength, diet, energy and emotional balance during serious illness.",
     overview:
@@ -114,6 +117,7 @@ export const treatmentCategories = [
     title: "Heart and Lifestyle Care",
     shortTitle: "Heart Care",
     image: treatments[3].image,
+    approachImage: "/catalog/pathology/lipid.jpg",
     summary:
       "Integrated Ayurvedic and lifestyle care for heart, blood pressure, diabetes, weight and stress concerns.",
     overview:
@@ -150,6 +154,7 @@ export const treatmentCategories = [
     title: "Diabetes & Thyroid Care",
     shortTitle: "Diabetes & Thyroid",
     image: "/treatments/diabetes-thyroid-care.png",
+    approachImage: "/catalog/pathology/diabetes.jpg",
     summary:
       "Personalized Ayurvedic and lifestyle support for blood sugar, thyroid function, energy, weight and metabolic balance.",
     overview:
@@ -186,6 +191,7 @@ export const treatmentCategories = [
     title: "Women's Wellness",
     shortTitle: "Women Health",
     image: treatments[5].image,
+    approachImage: "/wellness/naturopathy.jpg",
     summary:
       "Private, sensitive and personalized Ayurvedic care for women's health, hormonal balance and weakness.",
     overview:
