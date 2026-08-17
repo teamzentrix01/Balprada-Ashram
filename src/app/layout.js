@@ -7,9 +7,9 @@ export const metadata = {
   description:
     "Balprada Ayurvedic Hospital & Research Center in Moradabad, Uttar Pradesh, backed by 35 years of trusted care.",
   icons: {
-    icon: "/icon.svg",
-    shortcut: "/icon.svg",
-    apple: "/icon.svg",
+    icon: [{ url: "/icon.png?v=balprada-logo-2", type: "image/png" }],
+    shortcut: "/icon.png?v=balprada-logo-2",
+    apple: "/icon.png?v=balprada-logo-2",
   },
 };
 

@@ -1002,7 +1002,7 @@ h3 {
   border-radius: 2rem;
   background:
     linear-gradient(rgba(24, 54, 42, 0.72), rgba(24, 54, 42, 0.78)),
-    url("https://balpradaindia.com/wp-content/uploads/2023/07/aashram-71-scaled.jpg")
+    url("/home-banners/04-panchakarma-therapy-room.png")
       center/cover;
   color: #fff6df;
 }
@@ -4857,7 +4857,7 @@ body {
       transparent 18rem
     ),
     linear-gradient(rgba(8, 49, 31, 0.79), rgba(8, 49, 31, 0.83)),
-    url("https://balpradaindia.com/wp-content/uploads/2023/07/aashram-71-scaled.jpg")
+    url("/home-banners/04-panchakarma-therapy-room.png")
       center/cover;
 }
 
@@ -6153,7 +6153,7 @@ body {
       rgba(244, 123, 32, 0.26),
       transparent 24rem
     ),
-    url("https://balpradaindia.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-04-03-at-4.45.29-PM-2.jpeg")
+    url("/home-banners/01-ayurvedic-treatment.png")
       center/cover !important;
   box-shadow: 0 28px 80px rgba(9, 50, 32, 0.18);
 }
@@ -6955,7 +6955,7 @@ body {
 
 .about-timeline { position:relative; overflow:hidden; background:linear-gradient(135deg,#e8dfcd,#f7f1e6 54%,#dbe5d5); padding-inline:clamp(24px,5vw,72px); }
 .timeline-bird { position:absolute; top:54px; right:8%; color:var(--deep); }
-.about-quote { position:relative; padding:clamp(5rem,10vw,9rem) max(24px,calc((100vw - 1040px)/2)); background:linear-gradient(90deg,rgba(18,59,50,.82),rgba(18,59,50,.56)),url("https://balpradaindia.com/wp-content/uploads/2023/07/aashram-71-scaled.jpg") center/cover; color:var(--cream); }
+.about-quote { position:relative; padding:clamp(5rem,10vw,9rem) max(24px,calc((100vw - 1040px)/2)); background:linear-gradient(90deg,rgba(18,59,50,.82),rgba(18,59,50,.56)),url("/home-banners/04-panchakarma-therapy-room.png") center/cover; color:var(--cream); }
 .about-quote p { color:inherit; font-size:clamp(2rem,4vw,4.2rem); line-height:1.12; font-weight:400; }
 
 .contact-card { border-radius:2px; }

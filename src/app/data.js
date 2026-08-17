@@ -48,18 +48,18 @@ export const careProcess = [
 ];
 
 export const heroImages = [
-  "https://balpradaindia.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-04-03-at-4.45.29-PM-2.jpeg",
-  "https://balpradaindia.com/wp-content/uploads/2023/07/aashram-71-scaled.jpg",
-  "https://balpradaindia.com/wp-content/uploads/2026/05/DSC02612.jpg",
+  "/home-banners/01-ayurvedic-treatment.png",
+  "/home-banners/04-panchakarma-therapy-room.png",
+  "/home-banners/05-herbal-medicines.png",
 ];
 
 export const galleryImages = [
-  "https://balpradaindia.com/wp-content/uploads/2026/05/DSC02612.jpg",
-  "https://balpradaindia.com/wp-content/uploads/2026/05/DSC02610.jpg",
-  "https://balpradaindia.com/wp-content/uploads/2026/05/DSC02532.jpg",
-  "https://balpradaindia.com/wp-content/uploads/2026/05/IMG_20260406_142609-scaled.jpg",
-  "https://balpradaindia.com/wp-content/uploads/2023/07/aashram-71-scaled.jpg",
-  "https://balpradaindia.com/wp-content/uploads/2023/07/IMG20230809154358-scaled.webp",
+  "/home-banners/01-ayurvedic-treatment.png",
+  "/wellness/naturopathy.jpg",
+  "/home-banners/05-herbal-medicines.png",
+  "/home-banners/03-ayurvedic-herbs.png",
+  "/home-banners/04-panchakarma-therapy-room.png",
+  "/wellness/yoga.jpg",
 ];
 
 export const treatments = [
@@ -67,7 +67,7 @@ export const treatments = [
     slug: "kidney",
     title: "Kidney Care",
     label: "Kidney Care",
-    image: "https://balpradaindia.com/wp-content/uploads/2024/01/1-1.webp",
+    image: "/home-banners/03-ayurvedic-herbs.png",
     summary:
       "Kidney concerns may be linked with diabetes, high blood pressure, swelling, infection or stones, and need careful guidance.",
     detail:
@@ -83,7 +83,7 @@ export const treatments = [
     slug: "liver",
     title: "Liver Care",
     label: "Liver Care",
-    image: "https://balpradaindia.com/wp-content/uploads/2024/01/2-2.webp",
+    image: "/home-banners/05-herbal-medicines.png",
     summary:
       "The liver supports digestion, immunity and metabolism, and requires disciplined care when lifestyle patterns disturb its function.",
     detail:
@@ -99,7 +99,7 @@ export const treatments = [
     slug: "cancer",
     title: "Cancer Support",
     label: "Cancer Support",
-    image: "https://balpradaindia.com/wp-content/uploads/2024/01/3-2.webp",
+    image: "/wellness/meditation.jpg",
     summary:
       "Supportive Ayurvedic care focuses on strength, digestion, emotional steadiness and quality of life during serious illness.",
     detail:
@@ -115,7 +115,7 @@ export const treatments = [
     slug: "heart",
     title: "Heart Care",
     label: "Heart Care",
-    image: "https://balpradaindia.com/wp-content/uploads/2024/01/4-2.webp",
+    image: "/wellness/yoga.jpg",
     summary:
       "Heart health benefits from coordinated lifestyle correction, food discipline, stress care and Ayurvedic consultation.",
     detail:
@@ -147,8 +147,7 @@ export const treatments = [
     slug: "women-health",
     title: "Women's Health",
     label: "Women Health",
-    image:
-      "https://balpradaindia.com/wp-content/uploads/2023/07/IMG20230809154358-scaled.webp",
+    image: "/wellness/naturopathy.jpg",
     summary:
       "Women's health concerns are handled with privacy, sensitivity and individualized Ayurvedic consultation.",
     detail:
@@ -209,7 +208,7 @@ export const facilities = [
   {
     slug: "pathology",
     title: "Balprada Pathology Lab",
-    image: "https://balpradaindia.com/wp-content/uploads/2026/05/DSC02532.jpg",
+    image: "/pathology-lab-hero.png",
     text: "Balprada Labs provides reliable blood, urine and diagnostic testing support for a more complete care journey.",
     highlights: [
       "Blood and urine tests",
@@ -224,7 +223,7 @@ export const doctors = [
     slug: "dr-u-s-sharma",
     name: "Dr. U. S. Sharma",
     role: "CMS, Balprada Ayurvedic Hospital and Research Centre",
-    image: "https://balpradaindia.com/wp-content/uploads/2023/07/ussharma.jpg",
+    image: "/appointment-consultation.png",
     text: "Dr. U. S. Sharma has more than 20 years of experience in Ayurvedic practice and consults for kidney, liver and other chronic health concerns.",
     focus: [
       "Kidney and liver concerns",
@@ -238,8 +237,7 @@ export const doctors = [
     slug: "dr-chetan-anand",
     name: "Dr. Chetan Anand",
     role: "Balprada Herbal Wellness Private Limited",
-    image:
-      "https://balpradaindia.com/wp-content/uploads/2023/08/All-staff-pic-1024x744.jpg",
+    image: "/home-banners/05-herbal-medicines.png",
     text: "He brings more than 7 years of experience in herbal product research and development, along with advisory work in free health camps.",
     focus: [
       "Herbal product research",
