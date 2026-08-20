@@ -3,7 +3,31 @@ import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/Si
 import { galleryImages, services } from "../data";
 
 export const metadata = {
-  title: "Jansewa | Balprada Ayurvedic Hospital & Research Center",
+  title: "Jan Sewa | Free Ayurvedic Healthcare | Balprada",
+  description:
+    "Balprada's Jan Sewa initiative offers free and subsidised Ayurvedic healthcare and consultations for underprivileged patients since 1991.",
+  keywords: [
+    "Balprada Jan Sewa",
+    "Free Ayurvedic Treatment",
+    "Charitable Healthcare Moradabad",
+    "Subsidised Ayurvedic Care",
+  ],
+  alternates: { canonical: "https://www.balpradaindia.com/jansewa" },
+  openGraph: {
+    title: "Jan Sewa | Free Ayurvedic Healthcare | Balprada",
+    description:
+      "Free and subsidised Ayurvedic healthcare for underprivileged patients since 1991.",
+    url: "https://www.balpradaindia.com/jansewa",
+    type: "website",
+    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Balprada Jan Sewa" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jan Sewa | Free Ayurvedic Healthcare | Balprada",
+    description: "Free and subsidised Ayurvedic healthcare initiative.",
+    images: ["/icon.png"],
+  },
 };
 
 const jansewa = services.find((item) => item.slug === "jansewa-sansthan");

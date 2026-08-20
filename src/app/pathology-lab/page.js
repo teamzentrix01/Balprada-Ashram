@@ -4,9 +4,32 @@ import { facilities, site } from "../data";
 import { pathologyTests } from "../catalogData";
 
 export const metadata = {
-  title: "Pathology Lab | Balprada Ayurvedic Hospital & Research Center",
+  title: "Pathology Lab | Balprada Ayurvedic Hospital",
+  description:
+    "Balprada's in-house pathology lab offers accurate diagnostic testing to support Ayurvedic treatment for kidney, liver, cancer and diabetes patients.",
+  keywords: [
+    "Balprada Pathology Lab",
+    "Diagnostic Lab Moradabad",
+    "Ayurvedic Hospital Lab Tests",
+    "Kidney Liver Diagnostic Testing",
+  ],
+  alternates: { canonical: "https://www.balpradaindia.com/pathology-lab" },
+  openGraph: {
+    title: "Pathology Lab | Balprada Ayurvedic Hospital",
+    description:
+      "In-house diagnostic testing supporting Ayurvedic treatment for kidney, liver, cancer and diabetes.",
+    url: "https://www.balpradaindia.com/pathology-lab",
+    type: "website",
+    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Balprada Pathology Lab" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pathology Lab | Balprada Ayurvedic Hospital",
+    description: "In-house diagnostic testing for accurate treatment.",
+    images: ["/icon.png"],
+  },
 };
-
 const lab = facilities.find((item) => item.slug === "pathology");
 
 export default function PathologyLabPage() {

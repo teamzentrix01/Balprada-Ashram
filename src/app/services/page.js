@@ -3,7 +3,31 @@ import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/Si
 import { galleryImages, services } from "../data";
 
 export const metadata = {
-  title: "Other Services | Balprada Ayurvedic Hospital & Research Center",
+  title: "Our Services | Balprada Ayurvedic Hospital",
+  description:
+    "Explore Ayurvedic services at Balprada Hospital including panchakarma, yoga, naturopathy, physiotherapy and specialised disease treatment.",
+  keywords: [
+    "Balprada Services",
+    "Panchakarma Services",
+    "Ayurvedic Physiotherapy",
+    "Naturopathy Services",
+  ],
+  alternates: { canonical: "https://www.balpradaindia.com/services" },
+  openGraph: {
+    title: "Our Services | Balprada Ayurvedic Hospital",
+    description:
+      "Panchakarma, yoga, naturopathy, physiotherapy and specialised disease treatment services.",
+    url: "https://www.balpradaindia.com/services",
+    type: "website",
+    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Balprada Services" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Services | Balprada Ayurvedic Hospital",
+    description: "Panchakarma, yoga, naturopathy and physiotherapy.",
+    images: ["/icon.png"],
+  },
 };
 
 export default function ServicesPage() {

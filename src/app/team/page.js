@@ -3,7 +3,31 @@ import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/Si
 import { doctors } from "../data";
 
 export const metadata = {
-  title: "Team | Balprada Ayurvedic Hospital & Research Center",
+  title: "Our Doctors & Team | Balprada Ayurvedic Hospital",
+  description:
+    "Meet the experienced Ayurvedic doctors and healthcare team at Balprada Ayurvedic Hospital, dedicated to patient care since 1991.",
+  keywords: [
+    "Balprada Doctors",
+    "Ayurvedic Doctors Moradabad",
+    "Balprada Team",
+    "Ayurvedic Hospital Staff",
+  ],
+  alternates: { canonical: "https://www.balpradaindia.com/team" },
+  openGraph: {
+    title: "Our Doctors & Team | Balprada Ayurvedic Hospital",
+    description:
+      "Experienced Ayurvedic doctors and healthcare team, dedicated to patient care since 1991.",
+    url: "https://www.balpradaindia.com/team",
+    type: "website",
+    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Balprada Doctors & Team" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Doctors & Team | Balprada Ayurvedic Hospital",
+    description: "Experienced Ayurvedic doctors and healthcare team.",
+    images: ["/icon.png"],
+  },
 };
 
 export default function TeamPage() {

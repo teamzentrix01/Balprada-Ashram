@@ -2,7 +2,31 @@ import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/Si
 import { branches, heroImages, opdInfo, site, treatments } from "../data";
 
 export const metadata = {
-  title: "Book Appointment | Balprada Ayurvedic Hospital & Research Center",
+  title: "Book an Appointment | Balprada Ayurvedic Hospital",
+  description:
+    "Book your OPD appointment at Balprada Ayurvedic Hospital. Consult our Ayurvedic doctors for kidney, liver, cancer, diabetes and holistic treatment.",
+  keywords: [
+    "Book Ayurvedic Appointment",
+    "Balprada OPD Booking",
+    "Ayurvedic Doctor Consultation",
+    "Ayurvedic Hospital Appointment",
+  ],
+  alternates: { canonical: "https://www.balpradaindia.com/appointment" },
+  openGraph: {
+    title: "Book an Appointment | Balprada Ayurvedic Hospital",
+    description:
+      "Book your OPD appointment for kidney, liver, cancer and diabetes Ayurvedic treatment.",
+    url: "https://www.balpradaindia.com/appointment",
+    type: "website",
+    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Book Appointment at Balprada" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Book an Appointment | Balprada Ayurvedic Hospital",
+    description: "Book your OPD appointment online.",
+    images: ["/icon.png"],
+  },
 };
 
 export default function AppointmentPage() {

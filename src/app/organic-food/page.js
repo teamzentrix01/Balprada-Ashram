@@ -3,8 +3,33 @@ import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/Si
 import { organicFoods } from "../catalogData";
 import { site } from "../data";
 
-export const metadata = { title: "Organic Food | Balprada Ayurvedic Hospital & Research Center", description: "Explore Balprada organic vegetables, fruits, honey, grains and seasonal farm products." };
-
+export const metadata = {
+  title: "Organic Food | Balprada Ayurvedic Hospital",
+  description:
+    "Discover organic, chemical-free food products from Balprada, supporting Ayurvedic healing and a healthy lifestyle alongside your treatment.",
+  keywords: [
+    "Balprada Organic Food",
+    "Chemical-Free Food",
+    "Ayurvedic Diet Products",
+    "Organic Healthy Food Moradabad",
+  ],
+  alternates: { canonical: "https://www.balpradaindia.com/organic-food" },
+  openGraph: {
+    title: "Organic Food | Balprada Ayurvedic Hospital",
+    description:
+      "Organic, chemical-free food products supporting Ayurvedic healing and healthy living.",
+    url: "https://www.balpradaindia.com/organic-food",
+    type: "website",
+    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Balprada Organic Food" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Organic Food | Balprada Ayurvedic Hospital",
+    description: "Organic, chemical-free food supporting Ayurvedic healing.",
+    images: ["/icon.png"],
+  },
+};
 export default function OrganicFoodPage() {
   return <Shell>
     <PageHero eyebrow="Farm to Family" title="Fresh, wholesome organic food" text="Explore naturally grown vegetables, seasonal fruit, raw honey, grains and farm products. Contact us to check today's availability and courier eligibility." image="/organic-food-hero.png" />

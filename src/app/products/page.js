@@ -3,9 +3,32 @@ import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/Si
 import { galleryImages, products } from "../data";
 
 export const metadata = {
-  title: "Products | Balprada Ayurvedic Hospital & Research Center",
+  title: "Ayurvedic Products | Balprada Ayurvedic Hospital",
+  description:
+    "Shop authentic in-house herbal and Ayurvedic products from Balprada Ayurvedic Hospital, trusted for quality since 1991.",
+  keywords: [
+    "Balprada Ayurvedic Products",
+    "Herbal Medicines",
+    "In-House Ayurvedic Products",
+    "Ayurvedic Medicine Online",
+  ],
+  alternates: { canonical: "https://www.balpradaindia.com/products" },
+  openGraph: {
+    title: "Ayurvedic Products | Balprada Ayurvedic Hospital",
+    description:
+      "Authentic in-house herbal and Ayurvedic products, trusted for quality since 1991.",
+    url: "https://www.balpradaindia.com/products",
+    type: "website",
+    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Balprada Ayurvedic Products" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ayurvedic Products | Balprada Ayurvedic Hospital",
+    description: "Authentic in-house herbal and Ayurvedic products.",
+    images: ["/icon.png"],
+  },
 };
-
 export default function ProductsPage() {
   return (
     <Shell>

@@ -4,7 +4,32 @@ import TreatmentAccordion from "../_components/TreatmentAccordion";
 import { treatments } from "../data";
 
 export const metadata = {
-  title: "Treatments | Balprada Ayurvedic Hospital & Research Center",
+  title: "Ayurvedic Treatments for Kidney, Liver & Cancer | Balprada",
+  description:
+    "Explore Ayurvedic treatments at Balprada Hospital for kidney disease, liver disorders, cancer support, diabetes and more holistic care.",
+  keywords: [
+    "Ayurvedic Treatment for Kidney",
+    "Ayurvedic Treatment for Liver",
+    "Ayurvedic Cancer Support",
+    "Ayurvedic Diabetes Treatment",
+    "Balprada Treatments",
+  ],
+  alternates: { canonical: "https://www.balpradaindia.com/treatments" },
+  openGraph: {
+    title: "Ayurvedic Treatments for Kidney, Liver & Cancer | Balprada",
+    description:
+      "Ayurvedic treatments for kidney disease, liver disorders, cancer support, diabetes and more.",
+    url: "https://www.balpradaindia.com/treatments",
+    type: "website",
+    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Balprada Ayurvedic Treatments" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ayurvedic Treatments for Kidney, Liver & Cancer | Balprada",
+    description: "Treatments for kidney, liver, cancer and diabetes.",
+    images: ["/icon.png"],
+  },
 };
 
 export default function TreatmentsPage() {

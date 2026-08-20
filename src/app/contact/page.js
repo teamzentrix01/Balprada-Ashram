@@ -2,7 +2,31 @@ import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/Si
 import { branches, heroImages, opdInfo } from "../data";
 
 export const metadata = {
-  title: "Contact | Balprada Ayurvedic Hospital & Research Center",
+  title: "Contact Us | Balprada Ayurvedic Hospital Moradabad",
+  description:
+    "Get in touch with Balprada Ayurvedic Hospital & Research Center in Moradabad. Find our address, phone number, OPD timings and directions here.",
+  keywords: [
+    "Contact Balprada Ayurvedic Hospital",
+    "Balprada Moradabad Address",
+    "Ayurvedic Hospital Contact Number",
+    "OPD Timings Moradabad",
+  ],
+  alternates: { canonical: "https://www.balpradaindia.com/contact" },
+  openGraph: {
+    title: "Contact Us | Balprada Ayurvedic Hospital Moradabad",
+    description:
+      "Address, phone number, OPD timings and directions for Balprada Ayurvedic Hospital, Moradabad.",
+    url: "https://www.balpradaindia.com/contact",
+    type: "website",
+    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Contact Balprada Ayurvedic Hospital" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | Balprada Ayurvedic Hospital Moradabad",
+    description: "Address, phone number and OPD timings.",
+    images: ["/icon.png"],
+  },
 };
 
 export default function ContactPage() {

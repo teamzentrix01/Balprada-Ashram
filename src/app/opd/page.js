@@ -3,7 +3,31 @@ import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/Si
 import { branches, heroImages, opdInfo } from "../data";
 
 export const metadata = {
-  title: "OPD Timings | Balprada Ayurvedic Hospital & Research Center",
+  title: "OPD Services | Balprada Ayurvedic Hospital",
+  description:
+    "Visit the OPD at Balprada Ayurvedic Hospital for expert consultation on kidney, liver, cancer, diabetes and other Ayurvedic treatments.",
+  keywords: [
+    "Balprada OPD",
+    "Ayurvedic OPD Services",
+    "OPD Consultation",
+    "Ayurvedic Doctor OPD",
+  ],
+  alternates: { canonical: "https://www.balpradaindia.com/opd" },
+  openGraph: {
+    title: "OPD Services | Balprada Ayurvedic Hospital",
+    description:
+      "Expert OPD consultation for kidney, liver, cancer, diabetes and other Ayurvedic treatments.",
+    url: "https://www.balpradaindia.com/opd",
+    type: "website",
+    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Balprada OPD Services" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "OPD Services | Balprada Ayurvedic Hospital",
+    description: "Expert OPD consultation for Ayurvedic treatment.",
+    images: ["/icon.png"],
+  },
 };
 
 export default function OpdPage() {

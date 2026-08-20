@@ -3,7 +3,32 @@ import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/Si
 import { galleryImages, treatments } from "../data";
 
 export const metadata = {
-  title: "Insights | Balprada Ayurvedic Hospital & Research Center",
+  title: "Health Insights & Ayurveda Articles | Balprada",
+  description:
+    "Read expert Ayurveda articles and health insights from Balprada Ayurvedic Hospital on kidney, liver, cancer care, panchakarma and holistic wellness.",
+  keywords: [
+    "Ayurveda Articles",
+    "Balprada Insights",
+    "Ayurvedic Health Blog",
+    "Kidney Liver Cancer Ayurveda",
+    "Panchakarma Articles",
+  ],
+  alternates: { canonical: "https://www.balpradaindia.com/insights" },
+  openGraph: {
+    title: "Health Insights & Ayurveda Articles | Balprada",
+    description:
+      "Expert Ayurveda articles on kidney, liver, cancer care, panchakarma and holistic wellness.",
+    url: "https://www.balpradaindia.com/insights",
+    type: "website",
+    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Balprada Health Insights" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Health Insights & Ayurveda Articles | Balprada",
+    description: "Expert Ayurveda articles and health insights.",
+    images: ["/icon.png"],
+  },
 };
 
 const insights = [

@@ -3,7 +3,32 @@ import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/Si
 import { branches, facilities, galleryImages, services, site } from "../data";
 
 export const metadata = {
-  title: "Balprada Ashram | Balprada Ayurvedic Hospital & Research Center",
+  title: "Ashram | Balprada Ayurvedic Hospital & Research Center",
+  description:
+    "Experience holistic healing at Balprada Ashram, combining traditional Ayurveda, yoga and naturopathy for complete mind-body wellness since 1991.",
+  keywords: [
+    "Balprada Ashram",
+    "Ayurvedic Ashram",
+    "Ashram Moradabad",
+    "Holistic Healing Ashram",
+    "Yoga and Naturopathy",
+  ],
+  alternates: { canonical: "https://www.balpradaindia.com/ashram" },
+  openGraph: {
+    title: "Ashram | Balprada Ayurvedic Hospital & Research Center",
+    description:
+      "Holistic healing through traditional Ayurveda, yoga and naturopathy since 1991.",
+    url: "https://www.balpradaindia.com/ashram",
+    type: "website",
+    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Balprada Ashram" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ashram | Balprada Ayurvedic Hospital & Research Center",
+    description: "Holistic healing through Ayurveda, yoga and naturopathy.",
+    images: ["/icon.png"],
+  },
 };
 
 export default function AshramPage() {

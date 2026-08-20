@@ -3,7 +3,31 @@ import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/Si
 import { facilities, galleryImages } from "../data";
 
 export const metadata = {
-  title: "Wellbeing | Balprada Ayurvedic Hospital & Research Center",
+  title: "Wellbeing | Balprada Ayurvedic Hospital",
+  description:
+    "Discover holistic wellbeing tips and Ayurvedic lifestyle guidance from Balprada Ayurvedic Hospital for a healthier mind and body.",
+  keywords: [
+    "Balprada Wellbeing",
+    "Ayurvedic Lifestyle Tips",
+    "Holistic Wellness",
+    "Ayurveda Mind Body Health",
+  ],
+  alternates: { canonical: "https://www.balpradaindia.com/wellbeing" },
+  openGraph: {
+    title: "Wellbeing | Balprada Ayurvedic Hospital",
+    description:
+      "Holistic wellbeing tips and Ayurvedic lifestyle guidance for a healthier mind and body.",
+    url: "https://www.balpradaindia.com/wellbeing",
+    type: "website",
+    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Balprada Wellbeing" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wellbeing | Balprada Ayurvedic Hospital",
+    description: "Holistic wellbeing and Ayurvedic lifestyle guidance.",
+    images: ["/icon.png"],
+  },
 };
 
 export default function WellbeingPage() {

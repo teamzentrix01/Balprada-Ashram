@@ -5,7 +5,32 @@ import { ContactPanel, SectionHeading, Shell } from "../_components/SiteChrome";
 import { heroImages } from "../data";
 
 export const metadata = {
-  title: "About Balprada | Balprada Ayurvedic Hospital & Research Center",
+  title: "About Us | Balprada Ayurvedic Hospital Since 1991",
+  description:
+    "Learn about Balprada Ayurvedic Hospital & Research Center, serving patients since 1991 with authentic Ayurvedic treatment, panchakarma and holistic care.",
+  keywords: [
+    "Balprada Ayurvedic Hospital",
+    "About Balprada",
+    "Ayurvedic Hospital since 1991",
+    "Ayurveda history",
+    "Ayurvedic Research Center",
+  ],
+  alternates: { canonical: "https://www.balpradaindia.com/about" },
+  openGraph: {
+    title: "About Us | Balprada Ayurvedic Hospital Since 1991",
+    description:
+      "Serving patients since 1991 with authentic Ayurvedic treatment, panchakarma and holistic care.",
+    url: "https://www.balpradaindia.com/about",
+    type: "website",
+    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    images: [{ url: "/icon.png", width: 1200, height: 630, alt: "About Balprada Ayurvedic Hospital" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | Balprada Ayurvedic Hospital Since 1991",
+    description: "Authentic Ayurvedic care since 1991.",
+    images: ["/icon.png"],
+  },
 };
 
 const timeline = [
