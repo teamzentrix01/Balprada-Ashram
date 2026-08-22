@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { Eye, HeartHandshake } from "lucide-react";
 import AboutExplorer from "../_components/AboutExplorer";
-import { ContactPanel, SectionHeading, Shell } from "../_components/SiteChrome";
+import ContactPanel from "../_components/ContactPanel";
+import SectionHeading from "../_components/SectionHeading";
+import Shell from "../_components/Shell";
 import { heroImages } from "../data";
 
 export const metadata = {

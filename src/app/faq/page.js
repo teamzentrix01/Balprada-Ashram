@@ -1,4 +1,7 @@
-import { ContactPanel, PageHero, SectionHeading, Shell } from "../_components/SiteChrome";
+import ContactPanel from "../_components/ContactPanel";
+import PageHero from "../_components/PageHero";
+import SectionHeading from "../_components/SectionHeading";
+import Shell from "../_components/Shell";
 import { faqs, galleryImages } from "../data";
 
 export const metadata = {

@@ -3,7 +3,7 @@
 import { Check, ClipboardCheck } from "lucide-react";
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { SectionHeading } from "./SiteChrome";
+import SectionHeading from "./SectionHeading";
 
 const steps = [
   {

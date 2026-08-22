@@ -1,7 +1,9 @@
 import * as Icons from "lucide-react";
 import Link from "next/link";
 import { notFound, permanentRedirect } from "next/navigation";
-import { ContactPanel, SectionHeading, Shell } from "../../_components/SiteChrome";
+import ContactPanel from "../../_components/ContactPanel";
+import SectionHeading from "../../_components/SectionHeading";
+import Shell from "../../_components/Shell";
 import { treatmentCategories } from "../../treatmentArchitecture";
 
 const legacyRoutes = {

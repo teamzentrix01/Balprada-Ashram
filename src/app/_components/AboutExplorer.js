@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { aboutAreas } from "../aboutData";
-import { SectionHeading } from "./SiteChrome";
+import SectionHeading from "./SectionHeading";
 
 export default function AboutExplorer() {
   const [activeSlug, setActiveSlug] = useState(aboutAreas[0].slug);

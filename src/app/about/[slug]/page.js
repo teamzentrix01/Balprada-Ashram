@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ContactPanel, SectionHeading, Shell } from "../../_components/SiteChrome";
+import ContactPanel from "../../_components/ContactPanel";
+import SectionHeading from "../../_components/SectionHeading";
+import Shell from "../../_components/Shell";
 import { aboutAreas } from "../../aboutData";
 
 export function generateStaticParams() {

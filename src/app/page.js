@@ -1,4 +1,13 @@
-import PageClient from "./PageClient";
+import AboutShowcase from "./_components/AboutShowcase";
+import CareProcess from "./_components/CareProcess";
+import ContactPanel from "./_components/ContactPanel";
+import HomeFacilitiesGrid from "./_components/HomeFacilitiesGrid";
+import HomeHolisticSection from "./_components/HomeHolisticSection";
+import HomeHero from "./_components/HomeHero";
+import HomeTestimonialsSection from "./_components/HomeTestimonialsSection";
+import HomeTreatmentsStage from "./_components/HomeTreatmentsStage";
+import OpdHighlight from "./_components/OpdHighlight";
+import TreatmentJourney from "./_components/TreatmentJourney";
 
 export const metadata = {
   title: "Ayurvedic Treatment for Kidney, Liver & Cancer | Balprada",
@@ -49,5 +58,18 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <PageClient />;
+  return (
+    <main className="site-shell">
+      <HomeHero />
+      <OpdHighlight />
+      <AboutShowcase />
+      <HomeTreatmentsStage />
+      <HomeHolisticSection />
+      <CareProcess />
+      <TreatmentJourney />
+      <HomeFacilitiesGrid />
+      <HomeTestimonialsSection />
+      <ContactPanel />
+    </main>
+  );
 }

@@ -1,0 +1,334 @@
+{
+  "/balprada-logo-source.png": {
+    "publicId": "balprada-site/public/balprada-logo-source--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385752/balprada-site/public/balprada-logo-source--png.png"
+  },
+  "/balprada-logo-transparent.png": {
+    "publicId": "balprada-site/public/balprada-logo-transparent--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385752/balprada-site/public/balprada-logo-transparent--png.png"
+  },
+  "/catalog/organic/fresh-aamla.jpg": {
+    "publicId": "balprada-site/public/catalog/organic/fresh-aamla--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385760/balprada-site/public/catalog/organic/fresh-aamla--jpg.jpg"
+  },
+  "/appointment-consultation.png": {
+    "publicId": "balprada-site/public/appointment-consultation--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385751/balprada-site/public/appointment-consultation--png.png"
+  },
+  "/catalog/organic/barley-daliya.png": {
+    "publicId": "balprada-site/public/catalog/organic/barley-daliya--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385759/balprada-site/public/catalog/organic/barley-daliya--png.png"
+  },
+  "/balprada-logo.svg": {
+    "publicId": "balprada-site/public/balprada-logo--svg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385753/balprada-site/public/balprada-logo--svg.svg"
+  },
+  "/catalog/organic/haldi-herbs.jpg": {
+    "publicId": "balprada-site/public/catalog/organic/haldi-herbs--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385762/balprada-site/public/catalog/organic/haldi-herbs--jpg.jpg"
+  },
+  "/balprada-seal.svg": {
+    "publicId": "balprada-site/public/balprada-seal--svg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385755/balprada-site/public/balprada-seal--svg.svg"
+  },
+  "/catalog/organic/fresh-aamla.png": {
+    "publicId": "balprada-site/public/catalog/organic/fresh-aamla--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385761/balprada-site/public/catalog/organic/fresh-aamla--png.png"
+  },
+  "/catalog/organic/haldi-herbs.png": {
+    "publicId": "balprada-site/public/catalog/organic/haldi-herbs--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385763/balprada-site/public/catalog/organic/haldi-herbs--png.png"
+  },
+  "/catalog/organic/jaivik-aalu.jpg": {
+    "publicId": "balprada-site/public/catalog/organic/jaivik-aalu--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385764/balprada-site/public/catalog/organic/jaivik-aalu--jpg.jpg"
+  },
+  "/catalog/organic/jaivik-aalu.png": {
+    "publicId": "balprada-site/public/catalog/organic/jaivik-aalu--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385765/balprada-site/public/catalog/organic/jaivik-aalu--png.png"
+  },
+  "/catalog/organic/jaivik-tamatar.png": {
+    "publicId": "balprada-site/public/catalog/organic/jaivik-tamatar--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385767/balprada-site/public/catalog/organic/jaivik-tamatar--png.png"
+  },
+  "/catalog/organic/multigrain-atta.png": {
+    "publicId": "balprada-site/public/catalog/organic/multigrain-atta--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385768/balprada-site/public/catalog/organic/multigrain-atta--png.png"
+  },
+  "/catalog/organic/organic-combo.jpg": {
+    "publicId": "balprada-site/public/catalog/organic/organic-combo--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385769/balprada-site/public/catalog/organic/organic-combo--jpg.jpg"
+  },
+  "/catalog/organic/jaivik-tamatar.jpg": {
+    "publicId": "balprada-site/public/catalog/organic/jaivik-tamatar--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385766/balprada-site/public/catalog/organic/jaivik-tamatar--jpg.jpg"
+  },
+  "/catalog/organic/organic-combo.png": {
+    "publicId": "balprada-site/public/catalog/organic/organic-combo--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385770/balprada-site/public/catalog/organic/organic-combo--png.png"
+  },
+  "/catalog/organic/raw-honey.jpg": {
+    "publicId": "balprada-site/public/catalog/organic/raw-honey--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385770/balprada-site/public/catalog/organic/raw-honey--jpg.jpg"
+  },
+  "/catalog/organic/raw-honey.png": {
+    "publicId": "balprada-site/public/catalog/organic/raw-honey--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385771/balprada-site/public/catalog/organic/raw-honey--png.png"
+  },
+  "/catalog/organic/seasonal-mangoes.jpg": {
+    "publicId": "balprada-site/public/catalog/organic/seasonal-mangoes--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385772/balprada-site/public/catalog/organic/seasonal-mangoes--jpg.jpg"
+  },
+  "/catalog/organic/whole-grains-pulses.jpg": {
+    "publicId": "balprada-site/public/catalog/organic/whole-grains-pulses--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385774/balprada-site/public/catalog/organic/whole-grains-pulses--jpg.jpg"
+  },
+  "/catalog/pathology/cbc.jpg": {
+    "publicId": "balprada-site/public/catalog/pathology/cbc--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385775/balprada-site/public/catalog/pathology/cbc--jpg.jpg"
+  },
+  "/catalog/organic/whole-grains-pulses.png": {
+    "publicId": "balprada-site/public/catalog/organic/whole-grains-pulses--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385775/balprada-site/public/catalog/organic/whole-grains-pulses--png.png"
+  },
+  "/catalog/pathology/cbc.png": {
+    "publicId": "balprada-site/public/catalog/pathology/cbc--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385776/balprada-site/public/catalog/pathology/cbc--png.png"
+  },
+  "/catalog/organic/seasonal-mangoes.png": {
+    "publicId": "balprada-site/public/catalog/organic/seasonal-mangoes--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385773/balprada-site/public/catalog/organic/seasonal-mangoes--png.png"
+  },
+  "/catalog/pathology/diabetes.jpg": {
+    "publicId": "balprada-site/public/catalog/pathology/diabetes--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385777/balprada-site/public/catalog/pathology/diabetes--jpg.jpg"
+  },
+  "/catalog/pathology/kidney.jpg": {
+    "publicId": "balprada-site/public/catalog/pathology/kidney--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385778/balprada-site/public/catalog/pathology/kidney--jpg.jpg"
+  },
+  "/catalog/pathology/diabetes.png": {
+    "publicId": "balprada-site/public/catalog/pathology/diabetes--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385778/balprada-site/public/catalog/pathology/diabetes--png.png"
+  },
+  "/catalog/pathology/lipid.jpg": {
+    "publicId": "balprada-site/public/catalog/pathology/lipid--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385781/balprada-site/public/catalog/pathology/lipid--jpg.jpg"
+  },
+  "/catalog/pathology/lipid.png": {
+    "publicId": "balprada-site/public/catalog/pathology/lipid--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385781/balprada-site/public/catalog/pathology/lipid--png.png"
+  },
+  "/catalog/pathology/kidney.png": {
+    "publicId": "balprada-site/public/catalog/pathology/kidney--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385779/balprada-site/public/catalog/pathology/kidney--png.png"
+  },
+  "/catalog/pathology/liver.jpg": {
+    "publicId": "balprada-site/public/catalog/pathology/liver--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385782/balprada-site/public/catalog/pathology/liver--jpg.jpg"
+  },
+  "/catalog/pathology/liver.png": {
+    "publicId": "balprada-site/public/catalog/pathology/liver--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385783/balprada-site/public/catalog/pathology/liver--png.png"
+  },
+  "/catalog/pathology/thyroid.jpg": {
+    "publicId": "balprada-site/public/catalog/pathology/thyroid--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385784/balprada-site/public/catalog/pathology/thyroid--jpg.jpg"
+  },
+  "/catalog/pathology/urine.jpg": {
+    "publicId": "balprada-site/public/catalog/pathology/urine--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385785/balprada-site/public/catalog/pathology/urine--jpg.jpg"
+  },
+  "/catalog/pathology/thyroid.png": {
+    "publicId": "balprada-site/public/catalog/pathology/thyroid--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385784/balprada-site/public/catalog/pathology/thyroid--png.png"
+  },
+  "/catalog/pathology/vitamins.jpg": {
+    "publicId": "balprada-site/public/catalog/pathology/vitamins--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385787/balprada-site/public/catalog/pathology/vitamins--jpg.jpg"
+  },
+  "/catalog/pathology/urine.png": {
+    "publicId": "balprada-site/public/catalog/pathology/urine--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385786/balprada-site/public/catalog/pathology/urine--png.png"
+  },
+  "/catalog/pathology/vitamins.png": {
+    "publicId": "balprada-site/public/catalog/pathology/vitamins--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385788/balprada-site/public/catalog/pathology/vitamins--png.png"
+  },
+  "/decor-gradient-copper.svg": {
+    "publicId": "balprada-site/public/decor-gradient-copper--svg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385789/balprada-site/public/decor-gradient-copper--svg.svg"
+  },
+  "/decor-gradient-sage.svg": {
+    "publicId": "balprada-site/public/decor-gradient-sage--svg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385790/balprada-site/public/decor-gradient-sage--svg.svg"
+  },
+  "/file.svg": {
+    "publicId": "balprada-site/public/file--svg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385792/balprada-site/public/file--svg.svg"
+  },
+  "/holistic-curve-mobile.svg": {
+    "publicId": "balprada-site/public/holistic-curve-mobile--svg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385795/balprada-site/public/holistic-curve-mobile--svg.svg"
+  },
+  "/globe.svg": {
+    "publicId": "balprada-site/public/globe--svg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385794/balprada-site/public/globe--svg.svg"
+  },
+  "/home-banners/01-ayurvedic-treatment.png": {
+    "publicId": "balprada-site/public/home-banners/01-ayurvedic-treatment--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385799/balprada-site/public/home-banners/01-ayurvedic-treatment--png.png"
+  },
+  "/holistic-curve.svg": {
+    "publicId": "balprada-site/public/holistic-curve--svg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385797/balprada-site/public/holistic-curve--svg.svg"
+  },
+  "/home-banners/02-facial-oil-therapy.png": {
+    "publicId": "balprada-site/public/home-banners/02-facial-oil-therapy--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385801/balprada-site/public/home-banners/02-facial-oil-therapy--png.png"
+  },
+  "/home-banners/03-ayurvedic-herbs.png": {
+    "publicId": "balprada-site/public/home-banners/03-ayurvedic-herbs--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385801/balprada-site/public/home-banners/03-ayurvedic-herbs--png.png"
+  },
+  "/home-banners/04-panchakarma-therapy-room.png": {
+    "publicId": "balprada-site/public/home-banners/04-panchakarma-therapy-room--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385802/balprada-site/public/home-banners/04-panchakarma-therapy-room--png.png"
+  },
+  "/home-banners/mobile/01-ayurvedic-treatment.webp": {
+    "publicId": "balprada-site/public/home-banners/mobile/01-ayurvedic-treatment--webp",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385804/balprada-site/public/home-banners/mobile/01-ayurvedic-treatment--webp.webp"
+  },
+  "/home-banners/05-herbal-medicines.png": {
+    "publicId": "balprada-site/public/home-banners/05-herbal-medicines--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385803/balprada-site/public/home-banners/05-herbal-medicines--png.png"
+  },
+  "/home-banners/mobile/03-ayurvedic-herbs.webp": {
+    "publicId": "balprada-site/public/home-banners/mobile/03-ayurvedic-herbs--webp",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385805/balprada-site/public/home-banners/mobile/03-ayurvedic-herbs--webp.webp"
+  },
+  "/home-banners/mobile/02-facial-oil-therapy.webp": {
+    "publicId": "balprada-site/public/home-banners/mobile/02-facial-oil-therapy--webp",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385805/balprada-site/public/home-banners/mobile/02-facial-oil-therapy--webp.webp"
+  },
+  "/home-banners/mobile/04-panchakarma-therapy-room.webp": {
+    "publicId": "balprada-site/public/home-banners/mobile/04-panchakarma-therapy-room--webp",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385806/balprada-site/public/home-banners/mobile/04-panchakarma-therapy-room--webp.webp"
+  },
+  "/home-banners/mobile/05-herbal-medicines.webp": {
+    "publicId": "balprada-site/public/home-banners/mobile/05-herbal-medicines--webp",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385807/balprada-site/public/home-banners/mobile/05-herbal-medicines--webp.webp"
+  },
+  "/home-banners/mobile-v2/01-ayurvedic-treatment.webp": {
+    "publicId": "balprada-site/public/home-banners/mobile-v2/01-ayurvedic-treatment--webp",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385807/balprada-site/public/home-banners/mobile-v2/01-ayurvedic-treatment--webp.webp"
+  },
+  "/home-banners/mobile-v2/04-panchakarma-therapy-room.webp": {
+    "publicId": "balprada-site/public/home-banners/mobile-v2/04-panchakarma-therapy-room--webp",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385810/balprada-site/public/home-banners/mobile-v2/04-panchakarma-therapy-room--webp.webp"
+  },
+  "/home-banners/mobile-v2/03-ayurvedic-herbs.webp": {
+    "publicId": "balprada-site/public/home-banners/mobile-v2/03-ayurvedic-herbs--webp",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385809/balprada-site/public/home-banners/mobile-v2/03-ayurvedic-herbs--webp.webp"
+  },
+  "/home-banners/mobile-v2/02-facial-oil-therapy.webp": {
+    "publicId": "balprada-site/public/home-banners/mobile-v2/02-facial-oil-therapy--webp",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385808/balprada-site/public/home-banners/mobile-v2/02-facial-oil-therapy--webp.webp"
+  },
+  "/home-banners/mobile-v2/05-herbal-medicines.webp": {
+    "publicId": "balprada-site/public/home-banners/mobile-v2/05-herbal-medicines--webp",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385810/balprada-site/public/home-banners/mobile-v2/05-herbal-medicines--webp.webp"
+  },
+  "/testimonials/follow-up-experience.jpg": {
+    "publicId": "balprada-site/public/testimonials/follow-up-experience--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385816/balprada-site/public/testimonials/follow-up-experience--jpg.jpg"
+  },
+  "/pathology-lab-hero.png": {
+    "publicId": "balprada-site/public/pathology-lab-hero--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385814/balprada-site/public/pathology-lab-hero--png.png"
+  },
+  "/organic-food-hero.png": {
+    "publicId": "balprada-site/public/organic-food-hero--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385813/balprada-site/public/organic-food-hero--png.png"
+  },
+  "/next.svg": {
+    "publicId": "balprada-site/public/next--svg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385811/balprada-site/public/next--svg.svg"
+  },
+  "/pointer-feather.svg": {
+    "publicId": "balprada-site/public/pointer-feather--svg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385815/balprada-site/public/pointer-feather--svg.svg"
+  },
+  "/testimonials/patient-family.jpg": {
+    "publicId": "balprada-site/public/testimonials/patient-family--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385817/balprada-site/public/testimonials/patient-family--jpg.jpg"
+  },
+  "/testimonials/videos/patient-testimonial.jpg": {
+    "publicId": "balprada-site/public/testimonials/videos/patient-testimonial--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385819/balprada-site/public/testimonials/videos/patient-testimonial--jpg.jpg"
+  },
+  "/testimonials/videos/balprada-feature.jpg": {
+    "publicId": "balprada-site/public/testimonials/videos/balprada-feature--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385818/balprada-site/public/testimonials/videos/balprada-feature--jpg.jpg"
+  },
+  "/testimonials/service-experience.jpg": {
+    "publicId": "balprada-site/public/testimonials/service-experience--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385818/balprada-site/public/testimonials/service-experience--jpg.jpg"
+  },
+  "/treatments/diabetes-thyroid-care.png": {
+    "publicId": "balprada-site/public/treatments/diabetes-thyroid-care--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385820/balprada-site/public/treatments/diabetes-thyroid-care--png.png"
+  },
+  "/wellness/meditation.jpg": {
+    "publicId": "balprada-site/public/wellness/meditation--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385822/balprada-site/public/wellness/meditation--jpg.jpg"
+  },
+  "/wellness/naturopathy.jpg": {
+    "publicId": "balprada-site/public/wellness/naturopathy--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385824/balprada-site/public/wellness/naturopathy--jpg.jpg"
+  },
+  "/wellness/meditation.png": {
+    "publicId": "balprada-site/public/wellness/meditation--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385823/balprada-site/public/wellness/meditation--png.png"
+  },
+  "/vercel.svg": {
+    "publicId": "balprada-site/public/vercel--svg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385821/balprada-site/public/vercel--svg.svg"
+  },
+  "/wellness/panchakarma.jpg": {
+    "publicId": "balprada-site/public/wellness/panchakarma--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385826/balprada-site/public/wellness/panchakarma--jpg.jpg"
+  },
+  "/wellness/naturopathy.png": {
+    "publicId": "balprada-site/public/wellness/naturopathy--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385825/balprada-site/public/wellness/naturopathy--png.png"
+  },
+  "/wellness/physiotherapy.jpg": {
+    "publicId": "balprada-site/public/wellness/physiotherapy--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385828/balprada-site/public/wellness/physiotherapy--jpg.jpg"
+  },
+  "/wellness/panchakarma.png": {
+    "publicId": "balprada-site/public/wellness/panchakarma--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385827/balprada-site/public/wellness/panchakarma--png.png"
+  },
+  "/wellness/physiotherapy.png": {
+    "publicId": "balprada-site/public/wellness/physiotherapy--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385829/balprada-site/public/wellness/physiotherapy--png.png"
+  },
+  "/wellness/yoga.jpg": {
+    "publicId": "balprada-site/public/wellness/yoga--jpg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385830/balprada-site/public/wellness/yoga--jpg.jpg"
+  },
+  "/src/app/icon.png": {
+    "publicId": "balprada-site/src/app/icon--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385834/balprada-site/src/app/icon--png.png"
+  },
+  "/wellness/yoga.png": {
+    "publicId": "balprada-site/public/wellness/yoga--png",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385831/balprada-site/public/wellness/yoga--png.png"
+  },
+  "/window.svg": {
+    "publicId": "balprada-site/public/window--svg",
+    "secureUrl": "https://res.cloudinary.com/dv9tivfvq/image/upload/v1787385831/balprada-site/public/window--svg.svg"
+  }
+}
