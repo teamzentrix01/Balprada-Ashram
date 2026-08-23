@@ -9482,10 +9482,24 @@ body {
 .contact.contact-tight .section-heading-block h2 {
   font-size: clamp(1.25rem, 2.3vw, 2.35rem) !important;
   line-height: 1.15 !important;
-  white-space: nowrap !important;
-  text-wrap: nowrap !important;
   text-align: center !important;
   margin-inline: auto !important;
+}
+
+@media (min-width: 769px) {
+  .contact.contact-tight .section-heading-block h2 {
+    white-space: nowrap !important;
+    text-wrap: nowrap !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact.contact-tight .section-heading-block h2 {
+    white-space: normal !important;
+    text-wrap: balance !important;
+    font-size: clamp(1.25rem, 5vw, 1.7rem) !important;
+    line-height: 1.25 !important;
+  }
 }
 
 .contact.contact-tight .section-heading-block > p:not(.eyebrow) {
