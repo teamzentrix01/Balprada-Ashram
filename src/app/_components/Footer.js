@@ -13,6 +13,8 @@ export function Footer() {
     ["Gallery", "/gallery"],
     ["Insights", "/insights"],
     ["Organic Food", "/organic-food"],
+    ["Privacy Policy", "/privacy-policy"],
+    ["Terms of Service", "/terms-conditions"],
   ];
 
   const patientLinks = [

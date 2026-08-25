@@ -1,6 +1,6 @@
 export default function TermsAndConditionsContent() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12 text-gray-800">
+    <main className="max-w-4xl mx-auto px-4 py-24 text-gray-800">
       <h1 className="text-3xl font-extrabold mb-2">Terms &amp; Conditions</h1>
       <p className="text-sm text-gray-500 mb-8">Last Updated: August 20, 2026</p>
 
