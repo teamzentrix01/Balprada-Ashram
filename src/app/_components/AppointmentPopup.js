@@ -18,12 +18,25 @@ export default function AppointmentPopup() {
   const [message, setMessage] = useState("");
   const nameInput = useRef(null);
 
+  const handleClose = () => {
+    setOpen(false);
+    try {
+      sessionStorage.setItem("balprada_popup_dismissed", "true");
+    } catch {}
+  };
+
   useEffect(() => {
     setMinimumDate(getLocalDate());
 
+    try {
+      if (sessionStorage.getItem("balprada_popup_dismissed") === "true") {
+        return undefined;
+      }
+    } catch {}
+
     const timer = window.setTimeout(() => {
       setOpen(true);
-    }, 700);
+    }, 8000);
 
     return () => window.clearTimeout(timer);
   }, []);
@@ -76,7 +89,7 @@ export default function AppointmentPopup() {
   if (!open) return null;
 
   return createPortal(
-    <div className={`${styles.backdrop} appointment-popup-backdrop`} role="presentation" onMouseDown={() => setOpen(false)}>
+    <div className={`${styles.backdrop} appointment-popup-backdrop`} role="presentation" onMouseDown={handleClose}>
       <section
         className={`${styles.popup} appointment-popup`}
         role="dialog"
@@ -84,7 +97,7 @@ export default function AppointmentPopup() {
         aria-labelledby="appointment-popup-title"
         onMouseDown={(event) => event.stopPropagation()}
       >
-        <button className={`${styles.close} appointment-popup-close`} type="button" aria-label="Close appointment form" onClick={() => setOpen(false)}>
+        <button className={`${styles.close} appointment-popup-close`} type="button" aria-label="Close appointment form" onClick={handleClose}>
           <X aria-hidden="true" />
         </button>
 

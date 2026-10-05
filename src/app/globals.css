@@ -12,6 +12,33 @@
   --styled-font: "Tiro Devanagari Hindi", "Noto Serif Devanagari", Georgia, serif;
 }
 
+/* Global Rendering & Smooth Scrolling Optimizations */
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+img {
+  content-visibility: auto;
+}
+
+/* Off-screen Content Performance Optimization */
+.stories,
+.facilities-grid,
+.ashram-section,
+.footer {
+  content-visibility: auto;
+  contain-intrinsic-size: 700px;
+}
+
 /* Appointment popup */
 .appointment-popup-backdrop {
   position: fixed;
@@ -11175,10 +11202,11 @@ svg {
 
 .testimonial-tabs {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  width: min(650px, calc(100% - 40px));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  width: min(880px, calc(100% - 32px));
   margin: 0 auto clamp(2.25rem, 4vw, 3.25rem);
-  padding: 7px;
+  padding: 8px;
   border: 1px solid rgba(32, 51, 41, 0.14);
   border-radius: 999px;
   background: #fff;
@@ -11187,7 +11215,7 @@ svg {
 
 .testimonial-tabs button {
   display: flex;
-  min-height: 56px;
+  min-height: 52px;
   padding: 0 1rem;
   align-items: center;
   justify-content: center;
@@ -11195,11 +11223,18 @@ svg {
   border-radius: 999px;
   background: transparent;
   color: #27332d;
-  font-size: 1.02rem;
+  font-size: 0.95rem;
+  font-weight: 600;
   line-height: 1;
   text-align: center;
+  white-space: nowrap;
   cursor: pointer;
-  transition: color 220ms ease, background 350ms ease, box-shadow 350ms ease;
+  transition: color 220ms ease, background 250ms ease, box-shadow 250ms ease, transform 150ms ease;
+}
+
+.testimonial-tabs button:hover:not(.active) {
+  background: rgba(18, 167, 125, 0.07);
+  color: #0f5132;
 }
 
 .testimonial-tabs button.active {
@@ -11323,6 +11358,7 @@ svg {
   gap: 4px;
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
 }
@@ -11791,15 +11827,17 @@ svg {
   }
 
   .testimonial-tabs {
-    width: calc(100% - 32px);
+    width: calc(100% - 20px);
     margin-bottom: 1.5rem;
     padding: 5px;
+    gap: 6px;
   }
 
   .testimonial-tabs button {
-    min-height: 48px;
-    padding-inline: 8px;
-    font-size: 0.82rem;
+    min-height: 44px;
+    padding-inline: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
   }
 
   .testimonial-card {

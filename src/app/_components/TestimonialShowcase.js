@@ -10,6 +10,7 @@ import {
   Star,
   CheckCircle2,
 } from "lucide-react";
+import InstagramFeed from "./InstagramFeed";
 
 const InstagramIcon = ({ size = 20, className = "" }) => (
   <svg
@@ -32,17 +33,6 @@ const InstagramIcon = ({ size = 20, className = "" }) => (
 
 export const testimonialVideos = [
   {
-    id: "instagram-review",
-    platform: "instagram",
-    type: "Instagram Video Review",
-    title: "Patient & Family Experience at Balprada Ashram",
-    description:
-      "A real patient account and family review shared on Instagram, detailing their consultation experience, Ayurvedic medicines, and steady recovery at Balprada Ashram.",
-    embedUrl: "https://www.instagram.com/reel/embed",
-    sourceUrl: "https://www.instagram.com/",
-    sourceLabel: "Watch review on Instagram",
-  },
-  {
     id: "XVSIS1k3ONg",
     platform: "youtube",
     type: "Patient testimonial",
@@ -52,7 +42,7 @@ export const testimonialVideos = [
     thumbnail: "/testimonials/videos/patient-testimonial.jpg",
     sourceUrl:
       "https://balprada.blogspot.com/2022/03/kidney-failure-patients-testimonial.html",
-    sourceLabel: "View the original Balprada post",
+    sourceLabel: "View the Balprada post",
   },
   {
     id: "4QXCurPZ9tw",
@@ -156,7 +146,23 @@ export function TestimonialShowcase({ items }) {
             setActiveView("stories");
           }}
         >
-          Google Patient Reviews ({itemCount})
+          Google Reviews ({itemCount})
+        </button>
+        <button
+          type="button"
+          role="tab"
+          id="instagram-stories-tab"
+          className={activeView === "instagram" ? "active" : ""}
+          aria-selected={activeView === "instagram"}
+          aria-controls="instagram-stories-panel"
+          onClick={() => {
+            setSlideDirection(null);
+            setActiveView("instagram");
+          }}
+          style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}
+        >
+          <InstagramIcon size={15} />
+          Instagram Feed &amp; Reels
         </button>
         <button
           type="button"
@@ -170,7 +176,7 @@ export function TestimonialShowcase({ items }) {
             setActiveView("video");
           }}
         >
-          Video &amp; Instagram Testimonials
+          Video Stories
         </button>
       </div>
 
@@ -254,10 +260,6 @@ export function TestimonialShowcase({ items }) {
                   <div className="testimonial-copy">
                     <div className="testimonial-quote-row">
                       <Quote aria-hidden="true" />
-                      <span className="verified-status">
-                        <CheckCircle2 size={13} aria-hidden="true" />
-                        Verified Patient
-                      </span>
                     </div>
                     <p>{item.text}</p>
                   </div>
@@ -288,6 +290,15 @@ export function TestimonialShowcase({ items }) {
             </button>
           </div>
         </div>
+      ) : activeView === "instagram" ? (
+        <div
+          id="instagram-stories-panel"
+          role="tabpanel"
+          aria-labelledby="instagram-stories-tab"
+          style={{ width: "100%", animation: "fadeIn 0.3s ease-in-out" }}
+        >
+          <InstagramFeed />
+        </div>
       ) : (
         <div
           id="video-stories-panel"
@@ -296,50 +307,25 @@ export function TestimonialShowcase({ items }) {
           className="testimonial-video-panel"
         >
           <div className="testimonial-video-frame">
-            {activeVideo.platform === "instagram" ? (
-              <div className="testimonial-instagram-embed">
-                <iframe
-                  key={activeVideo.id}
-                  src={activeVideo.embedUrl}
-                  title={activeVideo.title}
-                  loading="lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                />
-              </div>
-            ) : (
-              <iframe
-                key={activeVideo.id}
-                src={`https://www.youtube-nocookie.com/embed/${activeVideo.id}?rel=0`}
-                title={activeVideo.title}
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              />
-            )}
+            <iframe
+              key={activeVideo.id}
+              src={`https://www.youtube-nocookie.com/embed/${activeVideo.id}?rel=0`}
+              title={activeVideo.title}
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
           </div>
           <div className="testimonial-video-copy">
-            <span
-              className={
-                activeVideo.platform === "instagram" ? "badge-instagram" : ""
-              }
-            >
-              {activeVideo.type}
-            </span>
+            <span>{activeVideo.type}</span>
             <h3>{activeVideo.title}</h3>
             <p>{activeVideo.description}</p>
             <a
               href={activeVideo.sourceUrl}
               target="_blank"
               rel="noreferrer"
-              className={
-                activeVideo.platform === "instagram" ? "instagram-action-btn" : ""
-              }
             >
-              {activeVideo.platform === "instagram" ? (
-                <InstagramIcon size={16} aria-hidden="true" />
-              ) : null}
               {activeVideo.sourceLabel}
               <ExternalLink aria-hidden="true" />
             </a>
@@ -353,16 +339,8 @@ export function TestimonialShowcase({ items }) {
                   onClick={() => setActiveVideoIndex(index)}
                 >
                   <span className="testimonial-video-thumb">
-                    {video.platform === "instagram" ? (
-                      <span className="instagram-thumb-badge" aria-hidden="true">
-                        <InstagramIcon size={22} />
-                      </span>
-                    ) : (
-                      <>
-                        <img src={video.thumbnail} alt="" loading="lazy" />
-                        <PlayCircle aria-hidden="true" />
-                      </>
-                    )}
+                    <img src={video.thumbnail} alt="" loading="lazy" />
+                    <PlayCircle aria-hidden="true" />
                   </span>
                   <span className="testimonial-video-label">
                     <small>{video.type}</small>
