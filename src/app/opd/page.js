@@ -32,7 +32,6 @@ export const metadata = {
     images: ["/icon.png"],
   },
 };
-
 export default function OpdPage() {
   return (
     <Shell>
