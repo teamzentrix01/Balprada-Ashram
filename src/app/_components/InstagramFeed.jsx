@@ -1,17 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
-
 import {
   ExternalLink,
   Heart,
   Play,
-  Image as ImageIcon,
   CheckCircle2,
-  Sparkles,
+  X,
 } from "lucide-react";
+import { CLOUDINARY_REELS } from "./cloudinaryVideos";
 import styles from "./InstagramFeed.module.css";
 
 const InstagramLogo = ({ size = 20 }) => (
@@ -33,9 +32,7 @@ const InstagramLogo = ({ size = 20 }) => (
 );
 
 export default function InstagramFeed() {
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [filter, setFilter] = useState("all");
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
@@ -53,41 +50,26 @@ export default function InstagramFeed() {
     ]
   );
 
+  // Close modal on Escape key & lock scroll when open
   useEffect(() => {
-    let isMounted = true;
-    async function fetchInstagramPosts() {
-      try {
-        const res = await fetch("/api/instagram");
-        const json = await res.json();
-        if (isMounted && json.data) {
-          setPosts(json.data);
-        }
-      } catch (err) {
-        console.error("Failed to load Instagram feed:", err);
-      } finally {
-        if (isMounted) setLoading(false);
-      }
-    }
-    fetchInstagramPosts();
-    return () => {
-      isMounted = false;
+    if (!selectedVideo) return;
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") setSelectedVideo(null);
     };
-  }, []);
+    document.addEventListener("keydown", handleKeyDown);
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [selectedVideo]);
 
-  const reelsCount = posts.filter((p) => p.isReel || p.media_type === "VIDEO").length;
-  const photosCount = posts.filter((p) => !p.isReel && p.media_type !== "VIDEO").length;
-
-  const filteredPosts = posts.filter((post) => {
-    if (filter === "reels") return post.isReel || post.media_type === "VIDEO";
-    if (filter === "posts") return !post.isReel && post.media_type !== "VIDEO";
-    return true;
-  });
-
-  // Ensure plenty of slides for seamless loop in Embla
+  // Ensure enough items for seamless loop in Embla carousel
   const emblaItems =
-    filteredPosts.length > 0 && filteredPosts.length < 12
-      ? [...filteredPosts, ...filteredPosts, ...filteredPosts]
-      : filteredPosts;
+    CLOUDINARY_REELS.length < 12
+      ? [...CLOUDINARY_REELS, ...CLOUDINARY_REELS, ...CLOUDINARY_REELS]
+      : CLOUDINARY_REELS;
 
   const handleMouseEnter = () => {
     const autoScroll = emblaApi?.plugins()?.autoScroll;
@@ -122,7 +104,7 @@ export default function InstagramFeed() {
               </span>
             </div>
             <p className={styles.bioSnippet}>
-              Authentic Ayurveda, Patient Healing Stories & Herbal Formulations 🌿
+              Authentic Ayurveda, Patient Healing Stories &amp; Herbal Formulations 🌿
             </p>
           </div>
         </div>
@@ -140,37 +122,6 @@ export default function InstagramFeed() {
         </div>
       </div>
 
-      {/* Filter and Live Indicator */}
-      <div className={styles.filterBar}>
-        <div className={styles.filterTabs}>
-          <button
-            type="button"
-            className={`${styles.tabBtn} ${filter === "all" ? styles.activeTab : ""}`}
-            onClick={() => setFilter("all")}
-          >
-            <Sparkles size={14} />
-            All Feed ({posts.length})
-          </button>
-          <button
-            type="button"
-            className={`${styles.tabBtn} ${filter === "reels" ? styles.activeTab : ""}`}
-            onClick={() => setFilter("reels")}
-          >
-            <Play size={14} />
-            Reels ({reelsCount})
-          </button>
-          <button
-            type="button"
-            className={`${styles.tabBtn} ${filter === "posts" ? styles.activeTab : ""}`}
-            onClick={() => setFilter("posts")}
-          >
-            <ImageIcon size={14} />
-            Posts ({photosCount})
-          </button>
-        </div>
-
-      </div>
-
       {/* Embla Continuous Auto-Scroll Carousel */}
       <div
         className={styles.embla}
@@ -178,79 +129,149 @@ export default function InstagramFeed() {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {loading ? (
-          <div className={styles.skeletonContainer}>
-            {Array.from({ length: 4 }).map((_, i) => (
-              <div key={i} className={styles.skeletonCard} />
-            ))}
-          </div>
-        ) : emblaItems.length > 0 ? (
-          <div className={styles.emblaContainer}>
-            {emblaItems.map((post, idx) => (
-              <div
-                key={`${post.id}-${idx}`}
-                className={styles.emblaSlide}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
+        <div className={styles.emblaContainer}>
+          {emblaItems.map((reel, idx) => (
+            <div
+              key={`${reel.id}-${idx}`}
+              className={styles.emblaSlide}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <article
+                className={styles.postCard}
+                onClick={() => setSelectedVideo(reel)}
+                onMouseEnter={(e) => {
+                  const vid = e.currentTarget.querySelector("video");
+                  if (vid) vid.play().catch(() => {});
+                }}
+                onMouseLeave={(e) => {
+                  const vid = e.currentTarget.querySelector("video");
+                  if (vid) {
+                    vid.pause();
+                    vid.currentTime = 0;
+                  }
+                }}
               >
-                <article
-                  className={styles.postCard}
-                  onClick={() => window.open(post.permalink, "_blank", "noopener,noreferrer")}
-                >
-                  <img
-                    src={post.thumbnail_url || post.media_url}
-                    alt={post.caption || "Balprada Instagram Post"}
-                    className={styles.postImg}
-                    loading="lazy"
-                  />
+                {/* Background Video Preview */}
+                <video
+                  src={reel.videoUrl}
+                  poster={reel.poster}
+                  preload="metadata"
+                  muted
+                  playsInline
+                  loop
+                  className={styles.postImg}
+                />
 
-                  <div
-                    className={`${styles.mediaBadge} ${
-                      post.isReel ? styles.reelBadge : ""
-                    }`}
-                  >
-                    {post.isReel ? (
-                      <>
-                        <Play size={12} fill="#fff" />
-                        <span>Reel</span>
-                      </>
-                    ) : (
-                      <>
-                        <ImageIcon size={12} />
-                        <span>Post</span>
-                      </>
-                    )}
-                  </div>
+                {/* Reel Badge */}
+                <div className={`${styles.mediaBadge} ${styles.reelBadge}`}>
+                  <Play size={12} fill="#fff" />
+                  <span>Reel</span>
+                </div>
 
-                  <div className={styles.cardOverlay}>
-                    <p className={styles.cardCaption}>{post.caption}</p>
-                    <div className={styles.cardStats}>
-                      <span className={styles.likesCount}>
-                        <Heart size={14} fill="#ff4d6d" stroke="none" />
-                        {post.likes ? `${post.likes} likes` : "Healing Story"}
-                      </span>
-                      <span className={styles.openLink}>
-                        Watch on IG <ExternalLink size={13} />
-                      </span>
-                    </div>
+                {/* Center Play Icon Hover Effect */}
+                <div className={styles.centerPlayButton} aria-hidden="true">
+                  <Play size={22} fill="#fff" />
+                </div>
+
+                {/* Hover / Overlay Details */}
+                <div className={styles.cardOverlay}>
+                  <p className={styles.cardCaption}>{reel.title}</p>
+                  <div className={styles.cardStats}>
+                    <span className={styles.openLink}>
+                      Watch Reel <ExternalLink size={13} />
+                    </span>
                   </div>
-                </article>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <p style={{ padding: "2rem", textAlign: "center", color: "#666" }}>
-            No posts found for this filter.
-          </p>
-        )}
+                </div>
+              </article>
+            </div>
+          ))}
+        </div>
       </div>
 
+      {/* Bottom Footer Caption */}
       <div className={styles.footerNote}>
         <InstagramLogo size={15} />
         <span>
-          Auto-syncing real-time posts &amp; reels from <strong>@balpradaayurvedics</strong>
+          Real patient stories &amp; Ayurvedic reels from <strong>@balpradaayurvedics</strong>
         </span>
       </div>
+
+      {/* Video Modal Player - Landscape Cinema Format */}
+      {selectedVideo && (
+        <div
+          className={styles.modalBackdrop}
+          onClick={() => setSelectedVideo(null)}
+          role="dialog"
+          aria-modal="true"
+        >
+          <div
+            className={styles.modalContainer}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              className={styles.modalCloseBtn}
+              onClick={() => setSelectedVideo(null)}
+              aria-label="Close video player"
+            >
+              <X size={20} />
+            </button>
+
+            <div className={styles.modalVideoWrapper}>
+              <video
+                src={selectedVideo.videoUrl}
+                controls
+                autoPlay
+                playsInline
+                className={styles.modalVideoPlayer}
+              />
+            </div>
+
+            <div className={styles.modalDetails}>
+              <div className={styles.modalInfoLeft}>
+                <div
+                  className={styles.avatarRing}
+                  style={{ width: 42, height: 42, padding: 2, flexShrink: 0 }}
+                >
+                  <div
+                    className={styles.avatarInner}
+                    style={{ fontSize: "0.82rem" }}
+                  >
+                    BP
+                  </div>
+                </div>
+                <div className={styles.modalTitleGroup}>
+                  <div className={styles.handleRow}>
+                    <span
+                      className={styles.handle}
+                      style={{ fontSize: "0.95rem", color: "#e8f5e9" }}
+                    >
+                      @balpradaayurvedics
+                    </span>
+                    <CheckCircle2 size={15} fill="#0095f6" stroke="#fff" />
+                  </div>
+                  <h3 className={styles.modalTitle}>{selectedVideo.title}</h3>
+                  <p className={styles.modalCaption}>{selectedVideo.caption}</p>
+                </div>
+              </div>
+
+              <div className={styles.modalActions}>
+                <a
+                  href={selectedVideo.permalink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.followBtn}
+                  style={{ padding: "0.5rem 1.15rem", fontSize: "0.82rem" }}
+                >
+                  <InstagramLogo size={16} />
+                  <span>Open on Instagram</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import ContactPanel from "../_components/ContactPanel";
 import PageHero from "../_components/PageHero";
 import Shell from "../_components/Shell";
-import TestimonialShowcase from "../_components/ClientTestimonialShowcase";
+import TestimonialShowcase from "../_components/TestimonialShowcase";
 import InstagramFeed from "../_components/InstagramFeed";
 import SectionHeading from "../_components/SectionHeading";
 import { testimonials } from "../data";

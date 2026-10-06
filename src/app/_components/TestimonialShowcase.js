@@ -163,8 +163,8 @@ export function TestimonialShowcase({ items }) {
           }}
         >
           <InstagramIcon size={15} />
-          <span className="tab-label-full">Instagram Feed &amp; Reels</span>
-          <span className="tab-label-short">Instagram</span>
+          <span className="tab-label-full">Instagram Reels (7)</span>
+          <span className="tab-label-short">Reels (7)</span>
         </button>
         <button
           type="button"
@@ -261,13 +261,7 @@ export function TestimonialShowcase({ items }) {
                   </div>
 
                   <div className="testimonial-copy">
-                    <div className="testimonial-quote-row">
-                      <Quote aria-hidden="true" />
-                      <span className="verified-status">
-                        <CheckCircle2 size={13} aria-hidden="true" />
-                        Verified Patient
-                      </span>
-                    </div>
+  
                     <p>{item.text}</p>
                   </div>
                 </article>
