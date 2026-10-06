@@ -1,7 +1,7 @@
 "use client";
 
 import SectionHeading from "./SectionHeading";
-import TestimonialShowcase from "./TestimonialShowcase";
+import TestimonialShowcase from "./ClientTestimonialShowcase";
 import { testimonials } from "../data";
 
 export function HomeTestimonialsSection() {

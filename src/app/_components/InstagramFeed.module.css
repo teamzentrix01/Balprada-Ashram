@@ -375,6 +375,8 @@
   .profileHeader {
     flex-direction: column;
     align-items: flex-start;
+    padding: 1rem 1.15rem;
+    gap: 1rem;
   }
   .headerActions {
     width: 100%;
@@ -384,10 +386,25 @@
     justify-content: center;
   }
   .filterBar {
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
   }
   .filterTabs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     overflow-x: auto;
+    padding: 0.25rem;
+  }
+  .tabBtn {
+    flex: 1 1 0;
+    justify-content: center;
+    padding: 0.45rem 0.5rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+  .liveIndicator {
+    display: none;
   }
 }

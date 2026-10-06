@@ -169,10 +169,6 @@ export default function InstagramFeed() {
           </button>
         </div>
 
-        <div className={styles.liveIndicator}>
-          <span className={styles.pulseDot} />
-          <span>Live Auto-Scroll • Hover Card to Pause</span>
-        </div>
       </div>
 
       {/* Embla Continuous Auto-Scroll Carousel */}

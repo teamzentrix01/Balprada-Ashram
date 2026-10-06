@@ -134,14 +134,22 @@ export async function GET() {
   const token = process.env.INSTAGRAM_ACCESS_TOKEN;
   const userId = process.env.INSTAGRAM_USER_ID;
 
-  // If no env credentials configured yet, return all fallback curated posts smoothly
-  if (!token || !userId) {
+  const isPlaceholder =
+    !token ||
+    !userId ||
+    token.includes("your_") ||
+    userId.includes("your_") ||
+    token.startsWith("your_meta") ||
+    userId.startsWith("your_instagram");
+
+  // If no env credentials configured yet or placeholder tokens used, return curated posts smoothly
+  if (isPlaceholder) {
     return NextResponse.json({
       success: true,
       source: "fallback",
       username: "balpradaayurvedics",
       data: FALLBACK_INSTAGRAM_POSTS,
-      message: "Showing all curated posts. Add INSTAGRAM_ACCESS_TOKEN & INSTAGRAM_USER_ID in .env.local for live Meta sync.",
+      message: "Showing all curated posts. Add real INSTAGRAM_ACCESS_TOKEN & INSTAGRAM_USER_ID in .env.local for live Meta sync.",
     });
   }
 

@@ -11201,35 +11201,54 @@ svg {
 }
 
 .testimonial-tabs {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-  width: min(880px, calc(100% - 32px));
-  margin: 0 auto clamp(2.25rem, 4vw, 3.25rem);
-  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: max-content;
+  max-width: calc(100% - 32px);
+  margin: 0 auto clamp(2rem, 3.5vw, 3rem);
+  padding: 6px;
   border: 1px solid rgba(32, 51, 41, 0.14);
   border-radius: 999px;
   background: #fff;
   box-shadow: 0 12px 36px rgba(22, 54, 42, 0.06);
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonial-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .testimonial-tabs button {
-  display: flex;
-  min-height: 52px;
-  padding: 0 1rem;
+  display: inline-flex;
+  flex: 0 0 auto;
+  min-height: 48px;
+  padding: 0 1.25rem;
   align-items: center;
   justify-content: center;
+  gap: 7px;
   border: 0;
   border-radius: 999px;
   background: transparent;
   color: #27332d;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 600;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   cursor: pointer;
   transition: color 220ms ease, background 250ms ease, box-shadow 250ms ease, transform 150ms ease;
+}
+
+.tab-label-short {
+  display: none;
+}
+
+.tab-label-full {
+  display: inline;
 }
 
 .testimonial-tabs button:hover:not(.active) {
@@ -11802,6 +11821,33 @@ svg {
     overflow-y: visible;
   }
 
+  .testimonial-tabs {
+    width: calc(100% - 24px);
+    max-width: 520px;
+    margin: 0 auto 1.75rem;
+    padding: 5px;
+    gap: 8px;
+    box-sizing: border-box;
+  }
+
+  .testimonial-tabs button {
+    flex: 1 1 0;
+    min-height: 44px;
+    padding: 0 10px;
+    font-size: 0.86rem;
+    gap: 6px;
+    white-space: nowrap;
+    justify-content: center;
+  }
+
+  .tab-label-short {
+    display: inline;
+  }
+
+  .tab-label-full {
+    display: none;
+  }
+
 }
 
 @media (max-width: 640px) {
@@ -11827,17 +11873,32 @@ svg {
   }
 
   .testimonial-tabs {
-    width: calc(100% - 20px);
+    width: calc(100% - 24px);
+    max-width: 440px;
     margin-bottom: 1.5rem;
-    padding: 5px;
+    padding: 4px;
     gap: 6px;
+    box-sizing: border-box;
   }
 
   .testimonial-tabs button {
-    min-height: 44px;
-    padding-inline: 6px;
-    font-size: 0.78rem;
+    flex: 1 1 0;
+    min-height: 40px;
+    padding: 0 6px;
+    font-size: 0.8rem;
     font-weight: 600;
+    gap: 4px;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    justify-content: center;
+  }
+
+  .tab-label-short {
+    display: inline;
+  }
+
+  .tab-label-full {
+    display: none;
   }
 
   .testimonial-card {

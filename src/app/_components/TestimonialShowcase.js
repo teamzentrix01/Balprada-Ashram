@@ -121,6 +121,7 @@ export function TestimonialShowcase({ items }) {
   return (
     <div
       className="testimonial-showcase"
+      suppressHydrationWarning
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onFocusCapture={() => setIsPaused(true)}
@@ -146,7 +147,8 @@ export function TestimonialShowcase({ items }) {
             setActiveView("stories");
           }}
         >
-          Google Reviews ({itemCount})
+          <span className="tab-label-full">Google Reviews ({itemCount})</span>
+          <span className="tab-label-short">Google ({itemCount})</span>
         </button>
         <button
           type="button"
@@ -159,10 +161,10 @@ export function TestimonialShowcase({ items }) {
             setSlideDirection(null);
             setActiveView("instagram");
           }}
-          style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}
         >
           <InstagramIcon size={15} />
-          Instagram Feed &amp; Reels
+          <span className="tab-label-full">Instagram Feed &amp; Reels</span>
+          <span className="tab-label-short">Instagram</span>
         </button>
         <button
           type="button"
@@ -176,7 +178,8 @@ export function TestimonialShowcase({ items }) {
             setActiveView("video");
           }}
         >
-          Video Stories
+          <span className="tab-label-full">Video Stories</span>
+          <span className="tab-label-short">Videos</span>
         </button>
       </div>
 
@@ -260,6 +263,10 @@ export function TestimonialShowcase({ items }) {
                   <div className="testimonial-copy">
                     <div className="testimonial-quote-row">
                       <Quote aria-hidden="true" />
+                      <span className="verified-status">
+                        <CheckCircle2 size={13} aria-hidden="true" />
+                        Verified Patient
+                      </span>
                     </div>
                     <p>{item.text}</p>
                   </div>
