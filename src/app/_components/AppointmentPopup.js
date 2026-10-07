@@ -4,13 +4,11 @@ import { CalendarDays, CheckCircle2, LoaderCircle, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import styles from "./AppointmentPopup.module.css";
-
 function getLocalDate() {
   const now = new Date();
   const offset = now.getTimezoneOffset() * 60_000;
   return new Date(now.getTime() - offset).toISOString().slice(0, 10);
 }
-
 export default function AppointmentPopup() {
   const [open, setOpen] = useState(false);
   const [minimumDate, setMinimumDate] = useState("");
@@ -18,7 +16,7 @@ export default function AppointmentPopup() {
   const [message, setMessage] = useState("");
   const nameInput = useRef(null);
 
-  const handleClose = () => {
+  const handleClse = () => {
     setOpen(false);
     try {
       sessionStorage.setItem("balprada_popup_dismissed", "true");
