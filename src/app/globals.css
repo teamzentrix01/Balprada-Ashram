@@ -11969,3 +11969,12 @@ svg {
     transition: none;
   }
 }
+
+/* Freeze background scroll when Instagram video modal is open */
+html.modal-open-blur,
+body.modal-open-blur {
+  overflow: hidden !important;
+  touch-action: none !important;
+  overscroll-behavior: contain !important;
+}
+

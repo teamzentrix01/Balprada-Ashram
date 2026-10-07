@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import { createPortal } from "react-dom";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 import {
@@ -33,6 +34,11 @@ const InstagramLogo = ({ size = 20 }) => (
 
 export default function InstagramFeed() {
   const [selectedVideo, setSelectedVideo] = useState(null);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
@@ -50,18 +56,42 @@ export default function InstagramFeed() {
     ]
   );
 
-  // Close modal on Escape key & lock scroll when open
+  // Close modal on Escape key, freeze background scroll & blur background
   useEffect(() => {
     if (!selectedVideo) return;
+
     const handleKeyDown = (e) => {
       if (e.key === "Escape") setSelectedVideo(null);
     };
     document.addEventListener("keydown", handleKeyDown);
-    const originalOverflow = document.body.style.overflow;
+
+    // Completely lock background scroll on desktop and mobile
+    const originalBodyOverflow = document.body.style.overflow;
+    const originalHtmlOverflow = document.documentElement.style.overflow;
+    const originalBodyTouchAction = document.body.style.touchAction;
+
+    document.documentElement.style.overflow = "hidden";
     document.body.style.overflow = "hidden";
+    document.body.style.touchAction = "none";
+    document.body.classList.add("modal-open-blur");
+
+    // Prevent background touch-scrolling on mobile devices
+    const preventBackgroundTouch = (e) => {
+      const modal = document.querySelector(`.${styles.modalContainer}`);
+      if (modal && modal.contains(e.target)) {
+        return; // Allow scrolling inside modal details if content overflows
+      }
+      e.preventDefault();
+    };
+    document.addEventListener("touchmove", preventBackgroundTouch, { passive: false });
+
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
-      document.body.style.overflow = originalOverflow;
+      document.removeEventListener("touchmove", preventBackgroundTouch);
+      document.documentElement.style.overflow = originalHtmlOverflow;
+      document.body.style.overflow = originalBodyOverflow;
+      document.body.style.touchAction = originalBodyTouchAction;
+      document.body.classList.remove("modal-open-blur");
     };
   }, [selectedVideo]);
 
@@ -197,8 +227,8 @@ export default function InstagramFeed() {
         </span>
       </div>
 
-      {/* Video Modal Player - Instagram Reels Modern Theater */}
-      {selectedVideo && (
+      {/* Video Modal Player - Rendered via Portal to document.body for true screen centering */}
+      {isMounted && selectedVideo && typeof document !== "undefined" && createPortal(
         <div
           className={styles.modalBackdrop}
           onClick={() => setSelectedVideo(null)}
@@ -299,7 +329,8 @@ export default function InstagramFeed() {
               </div>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );

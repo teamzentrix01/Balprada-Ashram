@@ -313,14 +313,24 @@
 .modalBackdrop {
   position: fixed;
   inset: 0;
-  z-index: 99999;
-  background: rgba(4, 16, 12, 0.88);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 999999;
+  background: rgba(2, 12, 9, 0.84);
+  backdrop-filter: blur(22px) saturate(160%);
+  -webkit-backdrop-filter: blur(22px) saturate(160%);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1.25rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  touch-action: none;
   animation: modalFadeIn 0.22s ease-out;
 }
 
@@ -337,15 +347,16 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  margin: auto;
   max-width: 860px;
-  width: min(860px, calc(100vw - 32px));
-  max-height: min(88vh, 670px);
-  height: 670px;
+  width: min(860px, calc(100vw - 36px));
+  height: min(650px, calc(100dvh - 56px));
+  max-height: calc(100dvh - 56px);
   background: #081711;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.08);
   animation: modalScaleUp 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -413,9 +424,9 @@
 
 /* Video Frame (Native 9:16 Reel Player) */
 .modalVideoWrapper {
-  width: 377px;
-  flex: 0 0 377px;
   height: 100%;
+  aspect-ratio: 9 / 16;
+  flex: 0 0 auto;
   background: #000000;
   display: flex;
   align-items: center;
@@ -623,37 +634,39 @@
 
   .modalContainer {
     flex-direction: column;
-    width: min(440px, calc(100vw - 20px));
+    margin: auto;
+    width: min(390px, calc(100vw - 24px));
     height: auto;
-    max-height: 90vh;
+    max-height: min(90dvh, 640px);
     border-radius: 20px;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
 
   .modalCloseBtn {
-    top: 12px !important;
-    right: 12px !important;
-    width: 38px !important;
-    height: 38px !important;
-    min-width: 38px !important;
-    min-height: 38px !important;
-    max-width: 38px !important;
-    max-height: 38px !important;
+    top: 10px !important;
+    right: 10px !important;
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+    max-width: 36px !important;
+    max-height: 36px !important;
   }
 
   .modalVideoWrapper {
     width: 100%;
+    height: auto;
     flex: 0 0 auto;
     aspect-ratio: 9 / 16;
-    max-height: 52vh;
+    max-height: 42dvh;
     box-shadow: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   .modalDetails {
-    padding: 1.25rem 1.35rem 1.5rem;
-    gap: 1.15rem;
+    padding: 0.85rem 1rem 1rem;
+    gap: 0.65rem;
     overflow-y: visible;
   }
 
@@ -661,13 +674,61 @@
     padding-right: 0;
   }
 
+  .avatarRingSm {
+    width: 38px;
+    height: 38px;
+  }
+
+  .modalHandle {
+    font-size: 0.9rem;
+  }
+
+  .modalSubHandle {
+    font-size: 0.72rem;
+  }
+
+  .reelTagBadge {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.72rem;
+  }
+
+  .modalBody {
+    gap: 0.45rem;
+  }
+
   .modalTitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.3;
   }
 
   .modalCaption {
-    font-size: 0.85rem;
-    line-height: 1.5;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .modalMetaRow {
+    gap: 0.5rem;
+    padding-top: 0.15rem;
+  }
+
+  .healingBadge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.55rem;
+  }
+
+  .modalActions {
+    padding-top: 0.35rem;
+  }
+
+  .instagramCtaBtn {
+    padding: 0.65rem 1rem;
+    font-size: 0.86rem;
+    border-radius: 10px;
   }
 }
 
@@ -693,17 +754,30 @@
   }
 
   .modalContainer {
-    width: 100%;
-    max-height: 94vh;
-    border-radius: 16px;
+    width: min(350px, calc(100vw - 16px));
+    max-height: calc(100dvh - 16px);
+    border-radius: 18px;
   }
 
   .modalVideoWrapper {
-    max-height: 48vh;
+    max-height: 40dvh;
   }
 
   .modalDetails {
-    padding: 1rem 1rem 1.25rem;
-    gap: 1rem;
+    padding: 0.75rem 0.85rem 0.95rem;
+    gap: 0.55rem;
+  }
+
+  .modalTitle {
+    font-size: 0.95rem;
+  }
+
+  .modalCaption {
+    font-size: 0.78rem;
+  }
+
+  .instagramCtaBtn {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.82rem;
   }
 }
