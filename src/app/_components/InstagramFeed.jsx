@@ -197,30 +197,36 @@ export default function InstagramFeed() {
         </span>
       </div>
 
-      {/* Video Modal Player - Landscape Cinema Format */}
+      {/* Video Modal Player - Instagram Reels Modern Theater */}
       {selectedVideo && (
         <div
           className={styles.modalBackdrop}
           onClick={() => setSelectedVideo(null)}
           role="dialog"
           aria-modal="true"
+          aria-label="Instagram Reel Video Player"
         >
           <div
             className={styles.modalContainer}
             onClick={(e) => e.stopPropagation()}
           >
+            {/* Prominent High-Contrast Close Button */}
             <button
               type="button"
               className={styles.modalCloseBtn}
               onClick={() => setSelectedVideo(null)}
               aria-label="Close video player"
+              title="Close (Esc)"
             >
-              <X size={20} />
+              <X size={22} strokeWidth={2.5} />
             </button>
 
+            {/* Video Frame (Native 9:16 Reel Aspect Ratio) */}
             <div className={styles.modalVideoWrapper}>
               <video
+                key={selectedVideo.id || selectedVideo.videoUrl}
                 src={selectedVideo.videoUrl}
+                poster={selectedVideo.poster}
                 controls
                 autoPlay
                 playsInline
@@ -228,44 +234,67 @@ export default function InstagramFeed() {
               />
             </div>
 
+            {/* Reel Details Panel */}
             <div className={styles.modalDetails}>
-              <div className={styles.modalInfoLeft}>
-                <div
-                  className={styles.avatarRing}
-                  style={{ width: 42, height: 42, padding: 2, flexShrink: 0 }}
-                >
-                  <div
-                    className={styles.avatarInner}
-                    style={{ fontSize: "0.82rem" }}
-                  >
-                    BP
+              <div className={styles.modalHeader}>
+                <div className={styles.modalProfile}>
+                  <div className={styles.avatarRingSm}>
+                    <div className={styles.avatarInnerSm}>BP</div>
+                  </div>
+                  <div className={styles.profileText}>
+                    <div className={styles.handleRow}>
+                      <a
+                        href={selectedVideo.permalink || "https://www.instagram.com/balpradaayurvedics/"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.modalHandle}
+                      >
+                        @balpradaayurvedics
+                      </a>
+                      <span className={styles.verifiedBadge} title="Verified Ayurvedic Center">
+                        <CheckCircle2 size={15} fill="#0095f6" stroke="#fff" />
+                      </span>
+                    </div>
+                    <span className={styles.modalSubHandle}>
+                      Balprada Ayurvedic Ashram
+                    </span>
                   </div>
                 </div>
-                <div className={styles.modalTitleGroup}>
-                  <div className={styles.handleRow}>
-                    <span
-                      className={styles.handle}
-                      style={{ fontSize: "0.95rem", color: "#e8f5e9" }}
-                    >
-                      @balpradaayurvedics
+
+                {selectedVideo.tag && (
+                  <span className={styles.reelTagBadge}>
+                    {selectedVideo.tag}
+                  </span>
+                )}
+              </div>
+
+              <div className={styles.modalBody}>
+                <h3 className={styles.modalTitle}>{selectedVideo.title}</h3>
+                <p className={styles.modalCaption}>{selectedVideo.caption}</p>
+
+                <div className={styles.modalMetaRow}>
+                  {selectedVideo.likes && (
+                    <span className={styles.likesBadge}>
+                      <Heart size={14} fill="#ff4d6d" stroke="none" />
+                      {selectedVideo.likes} likes
                     </span>
-                    <CheckCircle2 size={15} fill="#0095f6" stroke="#fff" />
-                  </div>
-                  <h3 className={styles.modalTitle}>{selectedVideo.title}</h3>
-                  <p className={styles.modalCaption}>{selectedVideo.caption}</p>
+                  )}
+                  <span className={styles.healingBadge}>
+                    🌿 Authentic Ayurvedic Care
+                  </span>
                 </div>
               </div>
 
               <div className={styles.modalActions}>
                 <a
-                  href={selectedVideo.permalink}
+                  href={selectedVideo.permalink || "https://www.instagram.com/balpradaayurvedics/"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.followBtn}
-                  style={{ padding: "0.5rem 1.15rem", fontSize: "0.82rem" }}
+                  className={styles.instagramCtaBtn}
                 >
-                  <InstagramLogo size={16} />
+                  <InstagramLogo size={18} />
                   <span>Open on Instagram</span>
+                  <ExternalLink size={14} />
                 </a>
               </div>
             </div>

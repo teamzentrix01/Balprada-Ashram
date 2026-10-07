@@ -9,7 +9,6 @@ export const CLOUDINARY_REELS = [
     caption:
       "Real patient experience and transformative healing journey through authentic Ayurvedic care at Balprada Ashram.",
     category: "testimonials",
-    likes: "1.4k",
     tag: "Patient Story",
     permalink: "https://www.instagram.com/balpradaayurvedics/",
   },
@@ -23,7 +22,6 @@ export const CLOUDINARY_REELS = [
     caption:
       "Holistic approach combining herbal science, lifestyle regulation, and gentle care for chronic conditions.",
     category: "treatments",
-    likes: "980",
     tag: "Ayurvedic Care",
     permalink: "https://www.instagram.com/balpradaayurvedics/",
   },
@@ -37,7 +35,6 @@ export const CLOUDINARY_REELS = [
     caption:
       "Time-tested herbal preparations and daily guidance explained by experienced vaidyas at Balprada.",
     category: "treatments",
-    likes: "1.8k",
     tag: "Herbal Wisdom",
     permalink: "https://www.instagram.com/balpradaayurvedics/",
   },
@@ -51,7 +48,6 @@ export const CLOUDINARY_REELS = [
     caption:
       "Experience the peaceful and healing environment of Balprada Ashram in Bilari, Moradabad.",
     category: "ashram",
-    likes: "2.1k",
     tag: "Ashram Life",
     permalink: "https://www.instagram.com/balpradaayurvedics/",
   },
@@ -65,7 +61,6 @@ export const CLOUDINARY_REELS = [
     caption:
       "Personalized pulse diagnosis (Nadi Pariksha) and customized dietary routine for sustained vitality.",
     category: "testimonials",
-    likes: "1.1k",
     tag: "Doctor Care",
     permalink: "https://www.instagram.com/balpradaayurvedics/",
   },
@@ -79,7 +74,6 @@ export const CLOUDINARY_REELS = [
     caption:
       "Crucial Ayurvedic lifestyle insights that empower your body to heal and preserve long-term balance.",
     category: "treatments",
-    likes: "1.5k",
     tag: "Ayurvedic Insights",
     permalink: "https://www.instagram.com/balpradaayurvedics/",
   },
@@ -93,7 +87,6 @@ export const CLOUDINARY_REELS = [
     caption:
       "Heartwarming patient testimonial reflecting renewed hope, health restoration, and deep gratitude.",
     category: "testimonials",
-    likes: "3.2k",
     tag: "Patient Transformation",
     permalink: "https://www.instagram.com/balpradaayurvedics/",
   },
