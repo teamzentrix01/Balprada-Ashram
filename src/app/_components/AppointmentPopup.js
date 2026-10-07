@@ -16,7 +16,7 @@ export default function AppointmentPopup() {
   const [message, setMessage] = useState("");
   const nameInput = useRef(null);
 
-  const handleClse = () => {
+  const handleClose = () => {
     setOpen(false);
     try {
       sessionStorage.setItem("balprada_popup_dismissed", "true");
@@ -119,7 +119,7 @@ export default function AppointmentPopup() {
               <p className="eyebrow">Request received</p>
               <h2>We’ll be in touch soon</h2>
               <p>{message}</p>
-              <button className={`${styles.submit} appointment-popup-submit`} type="button" onClick={() => setOpen(false)}>Close</button>
+              <button className={`${styles.submit} appointment-popup-submit`} type="button" onClick={handleClose}>Close</button>
             </div>
           ) : (
             <>
