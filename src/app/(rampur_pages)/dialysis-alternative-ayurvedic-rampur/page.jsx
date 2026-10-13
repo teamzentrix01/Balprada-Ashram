@@ -1,13 +1,13 @@
 import React from "react";
-import Banner from "./Banner";
 import Content from "./Content";
-import Services from "@/app/components/Services";
 
-
+// SEO METADATA – DIALYSIS ALTERNATIVE AYURVEDIC CARE IN RAMPUR
 export const metadata = {
   title: "Dialysis Alternative Ayurvedic Care in Rampur | Balprada",
+
   description:
     "Seeking Ayurvedic support around dialysis in Rampur? Balprada offers supportive kidney care since 1991 with diet guidance, follow-up and honest advice.",
+
   keywords: [
     "dialysis alternative Ayurvedic Rampur",
     "Ayurvedic treatment for dialysis patients",
@@ -35,46 +35,49 @@ export const metadata = {
     "Ayurvedic hospital Rampur",
     "Ayurvedic hospital since 1991",
   ],
+
   alternates: {
     canonical:
       "https://www.balpradaindia.com/dialysis-alternative-ayurvedic-rampur",
   },
+
   openGraph: {
     title: "Dialysis Alternative Ayurvedic Care in Rampur | Balprada",
     description:
       "Seeking Ayurvedic support around dialysis in Rampur? Balprada offers supportive kidney care since 1991 with diet guidance, follow-up and honest advice.",
     url: "https://www.balpradaindia.com/dialysis-alternative-ayurvedic-rampur",
-    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    siteName: "Balprada India",
+    locale: "en_IN",
+    type: "website",
     images: [
       {
-        url: "https://www.balpradaindia.com/images/balprada-logo.png",
+        url: "https://www.balpradaindia.com/icon.png",
         width: 1200,
         height: 630,
         alt: "Dialysis Alternative Ayurvedic Care in Rampur | Balprada",
       },
     ],
-    locale: "en_IN",
-    type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Dialysis Alternative Ayurvedic Care in Rampur | Balprada",
     description:
       "Seeking Ayurvedic support around dialysis in Rampur? Balprada offers supportive kidney care since 1991 with diet guidance, follow-up and honest advice.",
-    images: ["https://www.balpradaindia.com/images/balprada-logo.png"],
+    images: ["https://www.balpradaindia.com/icon.png"],
   },
+
   icons: {
-    icon: "/images/balprada-logo.png",
+    icon: "/icon.png",
   },
 };
 
-
-export default function Page() {
+const Page = () => {
   return (
-    <>
-      <Banner />
+    <div>
       <Content />
-      <Services />
-    </>
+    </div>
   );
-}
+};
+
+export default Page;

@@ -1,13 +1,13 @@
 import React from "react";
-import Banner from "./Banner";
 import Content from "./Content";
-import Services from "@/app/components/Services";
 
-
+// SEO METADATA – JAUNDICE AYURVEDIC TREATMENT IN RAMPUR
 export const metadata = {
   title: "Jaundice Ayurvedic Treatment in Rampur | Balprada Hospital",
+
   description:
     "Looking for jaundice ayurvedic treatment in Rampur? Balprada, trusted since 1991, offers supportive consultation, diet guidance and lab support. Call 8126364606.",
+
   keywords: [
     "jaundice ayurvedic treatment Rampur",
     "ayurvedic treatment for jaundice",
@@ -32,46 +32,49 @@ export const metadata = {
     "Ayurvedic Hospital & Research Center",
     "free OPD ayurvedic Moradabad",
   ],
+
   alternates: {
     canonical:
       "https://www.balpradaindia.com/jaundice-ayurvedic-treatment-rampur",
   },
+
   openGraph: {
     title: "Jaundice Ayurvedic Treatment in Rampur | Balprada Hospital",
     description:
       "Looking for jaundice ayurvedic treatment in Rampur? Balprada, trusted since 1991, offers supportive consultation, diet guidance and lab support. Call 8126364606.",
     url: "https://www.balpradaindia.com/jaundice-ayurvedic-treatment-rampur",
-    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    siteName: "Balprada India",
+    locale: "en_IN",
+    type: "website",
     images: [
       {
-        url: "https://www.balpradaindia.com/images/balprada-logo.png",
+        url: "https://www.balpradaindia.com/icon.png",
         width: 1200,
         height: 630,
         alt: "Jaundice Ayurvedic Treatment in Rampur | Balprada Hospital",
       },
     ],
-    locale: "en_IN",
-    type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Jaundice Ayurvedic Treatment in Rampur | Balprada Hospital",
     description:
       "Looking for jaundice ayurvedic treatment in Rampur? Balprada, trusted since 1991, offers supportive consultation, diet guidance and lab support. Call 8126364606.",
-    images: ["https://www.balpradaindia.com/images/balprada-logo.png"],
+    images: ["https://www.balpradaindia.com/icon.png"],
   },
+
   icons: {
-    icon: "/images/balprada-logo.png",
+    icon: "/icon.png",
   },
 };
 
-
-export default function Page() {
+const Page = () => {
   return (
-    <>
-      <Banner />
+    <div>
       <Content />
-      <Services />
-    </>
+    </div>
   );
-}
+};
+
+export default Page;

@@ -1,13 +1,13 @@
 import React from "react";
-import Banner from "./Banner";
 import Content from "./Content";
-import Services from "@/app/components/Services";
 
-
+// SEO METADATA – AYURVEDIC LIVER FAILURE TREATMENT IN RAMPUR
 export const metadata = {
   title: "Ayurvedic Liver Failure Treatment in Rampur | Balprada",
+
   description:
     "Seeking Ayurvedic liver failure treatment in Rampur? Balprada offers supportive liver care since 1991 with diet guidance and follow-up. Book OPD.",
+
   keywords: [
     "Ayurvedic liver failure treatment Rampur",
     "liver failure Ayurvedic treatment",
@@ -35,46 +35,49 @@ export const metadata = {
     "chronic liver disease Ayurveda",
     "Ayurvedic hospital since 1991",
   ],
+
   alternates: {
     canonical:
       "https://www.balpradaindia.com/ayurvedic-liver-failure-treatment-rampur",
   },
+
   openGraph: {
     title: "Ayurvedic Liver Failure Treatment in Rampur | Balprada",
     description:
       "Seeking Ayurvedic liver failure treatment in Rampur? Balprada offers supportive liver care since 1991 with diet guidance and follow-up. Book OPD.",
     url: "https://www.balpradaindia.com/ayurvedic-liver-failure-treatment-rampur",
-    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    siteName: "Balprada India",
+    locale: "en_IN",
+    type: "website",
     images: [
       {
-        url: "https://www.balpradaindia.com/images/balprada-logo.png",
+        url: "https://www.balpradaindia.com/icon.png",
         width: 1200,
         height: 630,
         alt: "Ayurvedic Liver Failure Treatment in Rampur | Balprada",
       },
     ],
-    locale: "en_IN",
-    type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Ayurvedic Liver Failure Treatment in Rampur | Balprada",
     description:
       "Seeking Ayurvedic liver failure treatment in Rampur? Balprada offers supportive liver care since 1991 with diet guidance and follow-up. Book OPD.",
-    images: ["https://www.balpradaindia.com/images/balprada-logo.png"],
+    images: ["https://www.balpradaindia.com/icon.png"],
   },
+
   icons: {
-    icon: "/images/balprada-logo.png",
+    icon: "/icon.png",
   },
 };
 
-
-export default function Page() {
+const Page = () => {
   return (
-    <>
-      <Banner />
+    <div>
       <Content />
-      <Services />
-    </>
+    </div>
   );
-}
+};
+
+export default Page;

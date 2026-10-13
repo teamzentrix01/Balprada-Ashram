@@ -1,13 +1,13 @@
 import React from "react";
-import Banner from "./Banner";
 import Content from "./Content";
-import Services from "@/app/components/Services";
 
-
+// SEO METADATA – AYURVEDIC FATTY LIVER TREATMENT IN RAMPUR
 export const metadata = {
   title: "Ayurvedic Fatty Liver Treatment in Rampur | Balprada",
+
   description:
     "Seeking ayurvedic fatty liver treatment in Rampur? Balprada, trusted since 1991, offers consultation, diet and lifestyle guidance and lab support. Call 8126364606.",
+
   keywords: [
     "ayurvedic fatty liver treatment Rampur",
     "fatty liver ayurvedic treatment",
@@ -32,46 +32,49 @@ export const metadata = {
     "Ayurvedic Hospital & Research Center",
     "free OPD ayurvedic Moradabad",
   ],
+
   alternates: {
     canonical:
       "https://www.balpradaindia.com/ayurvedic-fatty-liver-treatment-rampur",
   },
+
   openGraph: {
     title: "Ayurvedic Fatty Liver Treatment in Rampur | Balprada",
     description:
       "Seeking ayurvedic fatty liver treatment in Rampur? Balprada, trusted since 1991, offers consultation, diet and lifestyle guidance and lab support. Call 8126364606.",
     url: "https://www.balpradaindia.com/ayurvedic-fatty-liver-treatment-rampur",
-    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    siteName: "Balprada India",
+    locale: "en_IN",
+    type: "website",
     images: [
       {
-        url: "https://www.balpradaindia.com/images/balprada-logo.png",
+        url: "https://www.balpradaindia.com/icon.png",
         width: 1200,
         height: 630,
         alt: "Ayurvedic Fatty Liver Treatment in Rampur | Balprada",
       },
     ],
-    locale: "en_IN",
-    type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Ayurvedic Fatty Liver Treatment in Rampur | Balprada",
     description:
       "Seeking ayurvedic fatty liver treatment in Rampur? Balprada, trusted since 1991, offers consultation, diet and lifestyle guidance and lab support. Call 8126364606.",
-    images: ["https://www.balpradaindia.com/images/balprada-logo.png"],
+    images: ["https://www.balpradaindia.com/icon.png"],
   },
+
   icons: {
-    icon: "/images/balprada-logo.png",
+    icon: "/icon.png",
   },
 };
 
-
-export default function Page() {
+const Page = () => {
   return (
-    <>
-      <Banner />
+    <div>
       <Content />
-      <Services />
-    </>
+    </div>
   );
-}
+};
+
+export default Page;

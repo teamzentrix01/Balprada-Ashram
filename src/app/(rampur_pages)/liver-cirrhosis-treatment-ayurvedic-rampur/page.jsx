@@ -1,13 +1,13 @@
 import React from "react";
-import Banner from "./Banner";
 import Content from "./Content";
-import Services from "@/app/components/Services";
 
-
+// SEO METADATA – LIVER CIRRHOSIS AYURVEDIC TREATMENT IN RAMPUR
 export const metadata = {
   title: "Liver Cirrhosis Ayurvedic Treatment in Rampur | Balprada",
+
   description:
     "Looking for ayurvedic care for liver cirrhosis in Rampur? Balprada, trusted since 1991, offers supportive consultation, diet guidance and lab support. Call 8126364606.",
+
   keywords: [
     "liver cirrhosis treatment ayurvedic Rampur",
     "ayurvedic treatment for liver cirrhosis",
@@ -32,46 +32,49 @@ export const metadata = {
     "liver function test Moradabad",
     "free OPD ayurvedic Moradabad",
   ],
+
   alternates: {
     canonical:
       "https://www.balpradaindia.com/liver-cirrhosis-treatment-ayurvedic-rampur",
   },
+
   openGraph: {
     title: "Liver Cirrhosis Ayurvedic Treatment in Rampur | Balprada",
     description:
       "Looking for ayurvedic care for liver cirrhosis in Rampur? Balprada, trusted since 1991, offers supportive consultation, diet guidance and lab support. Call 8126364606.",
-    url: "https://www.balpradaindia.com/liver-cirrhosis-ayurvedic-treatment-in-rampur",
-    siteName: "Balprada Ayurvedic Hospital & Research Center",
+    url: "https://www.balpradaindia.com/liver-cirrhosis-treatment-ayurvedic-rampur",
+    siteName: "Balprada India",
+    locale: "en_IN",
+    type: "website",
     images: [
       {
-        url: "https://www.balpradaindia.com/images/balprada-logo.png",
+        url: "https://www.balpradaindia.com/icon.png",
         width: 1200,
         height: 630,
         alt: "Liver Cirrhosis Ayurvedic Treatment in Rampur | Balprada",
       },
     ],
-    locale: "en_IN",
-    type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Liver Cirrhosis Ayurvedic Treatment in Rampur | Balprada",
     description:
       "Looking for ayurvedic care for liver cirrhosis in Rampur? Balprada, trusted since 1991, offers supportive consultation, diet guidance and lab support. Call 8126364606.",
-    images: ["https://www.balpradaindia.com/images/balprada-logo.png"],
+    images: ["https://www.balpradaindia.com/icon.png"],
   },
+
   icons: {
-    icon: "/images/balprada-logo.png",
+    icon: "/icon.png",
   },
 };
 
-
-export default function Page() {
+const Page = () => {
   return (
-    <>
-      <Banner />
+    <div>
       <Content />
-      <Services />
-    </>
+    </div>
   );
-}
+};
+
+export default Page;
