@@ -48,7 +48,7 @@ export default function BalpradaAyurvedicHospitalForRampurPatients() {
               </h1>
 
               <h2 className="mb-4 font-serif text-2xl text-gray-900">
-                Introduction: Care Close to Rampur
+                Care Close to Rampur
               </h2>
 
               <ul className="list-disc space-y-3 pl-5 text-gray-700">
