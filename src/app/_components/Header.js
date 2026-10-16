@@ -24,7 +24,10 @@ export function Header() {
           <Link href="/pathology-lab">Pathology</Link>
           <Link href="/ashram">Ashram</Link>
           <Link href="/organic-food">Organic Food</Link>
+          <Link href="/blog">Blog</Link>
           <Link href="/contact">Contact</Link>
+          
+
         </nav>
       ) : null}
       <a
@@ -62,6 +65,7 @@ export function Header() {
             <li><Link href="/ashram" onClick={() => setMenuOpen(false)}>Ashram</Link></li>
             <li><Link href="/organic-food" onClick={() => setMenuOpen(false)}>Organic Food</Link></li>
             <li><Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+            <li><Link href="/blog" onClick={() => setMenuOpen(false)}>Blog</Link></li>
             <li className="mobile-menu-contact">
               <a
                 className="mobile-menu-call"
