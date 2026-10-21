@@ -149,8 +149,22 @@
   </url>
 
   <url>
-    <loc>https://www.balpradaindia.com/what-is-ayurveda-history-principles-how-it-works</loc>
+    <loc>https://www.balpradaindia.com/blog/what-is-ayurveda-history-principles-how-it-works</loc>
     <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.balpradaindia.com/blog/ayurvedic-daily-routine-dinacharya-for-better-health</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.balpradaindia.com/blog/ritucharya-what-to-eat-and-avoid-in-each-season</loc>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>

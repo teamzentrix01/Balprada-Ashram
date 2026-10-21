@@ -482,4 +482,580 @@ export const blogs = [
     icons: { icon: "/icon.png" }
   }
 },
+
+{
+    id: 3,
+    slug: "ayurvedic-daily-routine-dinacharya-for-better-health",
+    title: "Ayurvedic Daily Routine (Dinacharya) for Better Health",
+    subtitle: "Learn the Ayurvedic daily routine (Dinacharya): morning, midday, evening and night habits for better digestion, sleep and energy. By Balprada Ayurvedic Hospital.",
+    category: "Ayurveda | Lifestyle",
+    author: "Balprada Ayurvedic Hospital Team",
+    date: "2026-10-21",
+    readTime: "9 min read",
+    image: "https://res.cloudinary.com/hiu9gggc/image/upload/v1792562897/ayurvedic-daily-routine-dinacharya-for-better-health.jpg",
+    content: "Dinacharya is the Ayurvedic daily routine for better digestion, sleep and energy. Learn morning, midday, evening and night habits, dosha-based routines and seasonal care.",
+    tags: [
+      "Dinacharya",
+      "Ayurvedic Daily Routine",
+      "Dinacharya in Ayurveda",
+      "Ayurvedic Morning Routine",
+      "Ayurvedic Night Routine",
+      "Ayurvedic Lifestyle",
+      "Daily Routine for Good Health",
+      "Brahma Muhurta",
+      "Abhyanga",
+      "Tongue Scraping",
+      "Oil Pulling",
+      "Pranayama",
+      "Ayurvedic Diet",
+      "Ayurvedic Sleep Routine",
+      "Ritucharya",
+      "Seasonal Routine in Ayurveda",
+      "Vata Pitta Kapha Routine",
+      "Ayurveda Tips for Better Digestion",
+      "Healthy Habits in Ayurveda",
+      "Ayurvedic Treatment in Bilari",
+      "Ayurvedic Hospital in Moradabad",
+      "Ayurvedic Hospital Rampur",
+      "Balprada Ayurvedic Hospital",
+      "Natural Healing",
+      "Ayurveda for Wellness"
+    ],
+
+    fullContent: {
+      introduction: "Dinacharya is the Ayurvedic daily routine that keeps body, mind and digestion in balance. By following simple habits from morning to night, you can support better digestion, deeper sleep, steady energy and long-term health.",
+
+      sections: [
+        {
+          heading: "What Is Dinacharya?",
+          content: [
+            { type: "bullets", items: [
+              "Dinacharya comes from two Sanskrit words: <strong>Dina</strong> (day) and <strong>Charya</strong> (routine or conduct).",
+              "It means a daily routine planned to keep body, mind and digestion in balance.",
+              "Ayurveda teaches that health is built through small habits repeated every day, not only through medicines taken when we fall sick.",
+              "Classical texts such as the Ashtanga Hridayam describe the routine in detail.",
+              "A good routine follows the natural rhythm of the day, so that your body is not always working against the clock."
+            ]}
+          ]
+        },
+
+        {
+          heading: "Why Daily Routine Matters in Ayurveda",
+          content: [
+            { type: "bullets", items: [
+              "Regular habits keep Agni (digestive fire) steady, which helps food turn into energy instead of Ama (undigested waste).",
+              "A fixed routine keeps the three doshas, Vata, Pitta and Kapha, from going out of balance.",
+              "Many modern problems such as poor sleep, acidity, stress and low energy are linked to irregular meals, late nights and constant screen time.",
+              "Dinacharya gently corrects these habits.",
+              "It is a preventive approach: the aim is to stay well, not only to treat illness once it appears."
+            ]}
+          ]
+        },
+
+        {
+          heading: "The Ayurvedic Clock: How the Day Is Divided",
+          content: [
+            { type: "bullets", items: [
+              "<strong>Kapha time (about 6 AM to 10 AM):</strong> the body feels heavy and slow, so light exercise and a simple breakfast help.",
+              "<strong>Pitta time (about 10 AM to 2 PM):</strong> digestion and focus are at their peak, which makes this the best time for your main meal and important work.",
+              "<strong>Vata time (about 2 PM to 6 PM):</strong> the mind is active and creative, so steady meals and calm breaks help prevent tiredness and worry.",
+              "The same cycle repeats at night: Kapha (6 PM to 10 PM), Pitta (10 PM to 2 AM) and Vata (2 AM to 6 AM).",
+              "This is why sleeping before 10 PM is advised."
+            ]}
+          ]
+        },
+
+        {
+          heading: "Morning Routine (Pratah Kala)",
+          content: [
+            { type: "subheading", text: "Waking Up Early" },
+            { type: "bullets", items: [
+              "Ayurveda recommends waking in Brahma Muhurta, roughly 90 minutes before sunrise, when the mind feels calm and fresh.",
+              "Even waking a little earlier than usual is a good start."
+            ]},
+            { type: "subheading", text: "Cleansing the Body" },
+            { type: "bullets", items: [
+              "Drink a glass of warm water to support bowel movement and help the body begin its day gently.",
+              "Pass stool and urine as the body asks. Ayurveda says natural urges should never be held back.",
+              "Clean the teeth and gums with a soft brush and herbal powders or paste; many people prefer ones with a bitter or astringent taste.",
+              "Scrape the tongue gently with a copper or steel scraper to remove the white coating that builds up overnight.",
+              "Gargle with warm water or a little sesame oil (Gandusha) to refresh the mouth."
+            ]},
+            { type: "subheading", text: "Oil Massage and Bath" },
+            { type: "bullets", items: [
+              "Abhyanga means massaging the body with warm oil, such as sesame oil for Vata types or coconut oil for Pitta types.",
+              "It is said to calm the nerves, soften the skin and support sleep.",
+              "Bathe with lukewarm water. Very hot water on the head is not advised."
+            ]},
+            { type: "subheading", text: "Exercise, Yoga and Pranayama" },
+            { type: "bullets", items: [
+              "Exercise to about half your strength (Ardha Shakti), until light sweat appears on the forehead.",
+              "Simple yoga, a brisk walk or Surya Namaskar suits most healthy adults.",
+              "Practise Anulom Vilom or slow breathing for a few minutes, followed by quiet meditation."
+            ]}
+          ]
+        },
+
+        {
+          heading: "Midday Routine (Madhyahna Kala)",
+          content: [
+            { type: "bullets", items: [
+              "Eat your largest meal between 12 noon and 2 PM, when Agni is strongest.",
+              "Sit down to eat in a calm place, without phone or television, and chew the food well.",
+              "Favour fresh, warm, home-cooked meals that include all six tastes: sweet, sour, salty, pungent, bitter and astringent.",
+              "Avoid mixing opposite foods, such as milk with fish or fruit with heavy meals, and avoid eating again before the last meal is digested.",
+              "Sip warm water during the meal instead of cold drinks, and take a short walk of about 100 steps afterwards.",
+              "A long daytime sleep is usually discouraged, as it can increase heaviness and Kapha."
+            ]}
+          ]
+        },
+
+        {
+          heading: "Evening Routine (Sayam Kala)",
+          content: [
+            { type: "bullets", items: [
+              "Spend some time outdoors, with light stretching or a gentle walk, to release the tension of the day.",
+              "Keep dinner light, warm and early, ideally two to three hours before sleep.",
+              "Soups, khichdi and cooked vegetables are common choices.",
+              "Avoid heavy, oily or very cold food at night, since digestion slows down as the day ends.",
+              "Reduce screen time, dim the lights and do something calming such as reading, prayer or soft music."
+            ]}
+          ]
+        },
+
+        {
+          heading: "Night Routine (Ratri Kala)",
+          content: [
+            { type: "bullets", items: [
+              "Go to bed by 10 PM, before the Pitta period begins, so the body can use the night for repair.",
+              "Massage the soles of your feet with a little warm oil before sleep. This is a traditional habit for deeper rest.",
+              "Keep the bedroom quiet, dark and well aired.",
+              "Adults generally need about 7 to 8 hours of sleep.",
+              "Ayurveda calls good sleep (Nidra) one of the three pillars of life, along with food (Ahara) and a disciplined way of living (Brahmacharya)."
+            ]}
+          ]
+        },
+
+        {
+          heading: "Adjusting Dinacharya to Your Body Type",
+          content: [
+            { type: "bullets", items: [
+              "<strong>Vata types:</strong> keep fixed timings, eat warm moist food, do daily oil massage and sleep early. They benefit most from regularity.",
+              "<strong>Pitta types:</strong> choose cooling foods, avoid midday heat and skipped meals, and make time for relaxing activities.",
+              "<strong>Kapha types:</strong> wake early, exercise daily, eat light and warm food and avoid daytime sleep.",
+              "To learn your type, read our guide on Vata, Pitta, Kapha and Prakriti, or ask an Ayurvedic doctor for a proper assessment."
+            ]}
+          ]
+        },
+
+        {
+          heading: "Simple Seasonal Changes to Your Routine",
+          content: [
+            { type: "bullets", items: [
+              "<strong>Summer:</strong> wake early, choose cooling foods like buttermilk and seasonal fruits, and avoid long exposure to midday sun.",
+              "<strong>Monsoon:</strong> eat freshly cooked, light and warm meals, and avoid raw salads and street food when digestion is weaker.",
+              "<strong>Winter:</strong> use warm oil massage, eat nourishing cooked food and keep up regular exercise."
+            ]}
+          ]
+        },
+
+        {
+          heading: "Benefits of Following Dinacharya",
+          content: [
+            { type: "bullets", items: [
+              "Better digestion, with less gas, acidity and heaviness.",
+              "More steady energy through the day and improved focus.",
+              "Sounder sleep and a calmer response to stress.",
+              "Stronger daily discipline, which supports long-term health and immunity.",
+              "A healthier weight in the long run, because regular meals and movement become habits."
+            ]}
+          ]
+        },
+
+        {
+          heading: "Tips to Start Without Feeling Overwhelmed",
+          content: [
+            { type: "bullets", items: [
+              "Pick just two or three habits first, such as warm water on waking, tongue scraping and an early dinner.",
+              "Add one new habit every week instead of changing everything at once.",
+              "Keep timings realistic for your work and family. A routine you can follow is better than a perfect one you cannot.",
+              "Remember that Dinacharya supports health but does not replace treatment.",
+              "If you have a long-term condition, follow your doctor&apos;s advice and do not stop any prescribed medicine on your own."
+            ]}
+          ]
+        },
+
+        {
+          heading: "Ayurvedic Guidance at Balprada Ayurvedic Hospital, Bilari",
+          content: [
+            { type: "bullets", items: [
+              "Balprada Ayurvedic Hospital &amp; Research Center in Bilari, Moradabad has offered Ayurvedic care for 35 years.",
+              "Our doctors study your body type, digestion and lifestyle before suggesting a diet and daily routine suited to you.",
+              "Care combines consultation, in-house herbal medicines, yoga, panchakarma and regular follow-up.",
+              "Patients from Bilari, Moradabad, Rampur and nearby areas can visit our ashram and clinic, open 7 days a week from 10:00 AM to 2:00 PM, with free OPD on the 15th of every month.",
+              "🔗 <strong>Book a consultation:</strong> call or WhatsApp <a href='tel:8126364606' style='color:#2563eb;'>8126364606</a>, or visit <a href='https://www.balpradaindia.com/contact' style='color:#2563eb;'>balpradaindia.com/contact</a>."
+            ]}
+          ]
+        }
+      ]
+    },
+
+    faqs: [
+      {
+        question: "What is Dinacharya in simple words?",
+        answer: "It is the Ayurvedic daily routine, a set of healthy habits for the morning, afternoon, evening and night."
+      },
+      {
+        question: "What time should I wake up as per Ayurveda?",
+        answer: "Ideally before sunrise, around Brahma Muhurta. If that is hard, start by waking 15 to 30 minutes earlier than usual."
+      },
+      {
+        question: "Can everyone follow the same Dinacharya?",
+        answer: "The basic habits suit most people, but details such as oils, foods and exercise are adjusted for your dosha and health."
+      },
+      {
+        question: "How long before I notice results?",
+        answer: "Many people feel better digestion and sleep within a few weeks, though results vary from person to person."
+      }
+    ],
+
+    metaTags: {
+      title: "Ayurvedic Daily Routine (Dinacharya) for Better Health",
+      description: "Learn the Ayurvedic daily routine (Dinacharya): morning, midday, evening and night habits for better digestion, sleep and energy. By Balprada Ayurvedic Hospital.",
+      keywords: "dinacharya, ayurvedic daily routine, dinacharya in ayurveda, ayurvedic morning routine, ayurvedic night routine, ayurvedic lifestyle, daily routine for good health, brahma muhurta, abhyanga, tongue scraping, oil pulling, pranayama, ayurvedic diet, ayurvedic sleep routine, ritucharya, seasonal routine in ayurveda, vata pitta kapha routine, ayurveda tips for better digestion, healthy habits in ayurveda, ayurvedic treatment in Bilari, ayurvedic hospital in Moradabad, ayurvedic hospital Rampur, Balprada Ayurvedic Hospital, natural healing, ayurveda for wellness",
+      alternates: {
+        canonical: "https://www.balpradaindia.com/blog/ayurvedic-daily-routine-dinacharya-for-better-health"
+      },
+      openGraph: {
+        type: "article",
+        url: "https://www.balpradaindia.com/blog/ayurvedic-daily-routine-dinacharya-for-better-health",
+        title: "Ayurvedic Daily Routine (Dinacharya) for Better Health",
+        description: "Learn the Ayurvedic daily routine (Dinacharya): morning, midday, evening and night habits for better digestion, sleep and energy. By Balprada Ayurvedic Hospital.",
+        images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Ayurvedic Daily Routine (Dinacharya) for Better Health — Balprada Ayurvedic Hospital" }]
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "Ayurvedic Daily Routine (Dinacharya) for Better Health",
+        description: "Learn the Ayurvedic daily routine (Dinacharya): morning, midday, evening and night habits for better digestion, sleep and energy. By Balprada Ayurvedic Hospital.",
+        images: ["/icon.png"]
+      },
+      icons: { icon: "/icon.png" }
+    }
+  },
+
+{
+  id: 4,
+  slug: "ritucharya-what-to-eat-and-avoid-in-each-season",
+  title: "Ritucharya: What to Eat and Avoid in Each Season",
+  subtitle: "Learn Ritucharya, the Ayurvedic seasonal routine. See what to eat and avoid in all six seasons for better digestion and immunity. By Balprada Ayurvedic Hospital.",
+  category: "Ayurveda | Seasonal Care",
+  author: "Balprada Ayurvedic Hospital Team",
+  date: "2026-10-21",
+  readTime: "10 min read",
+  image: "https://res.cloudinary.com/hiu9gggc/image/upload/v1792563650/Ritucharya_What_to_Eat_and_Avoid_in_Each_Season-100kb.jpg",
+  content: "Ritucharya is the Ayurvedic seasonal routine. Learn what to eat and avoid in all six seasons for better digestion, immunity and overall health.",
+  tags: [
+    "Ritucharya",
+    "Ritucharya in Ayurveda",
+    "Seasonal Diet in Ayurveda",
+    "Ayurvedic Seasonal Routine",
+    "What to Eat in Each Season",
+    "Foods to Avoid in Each Season",
+    "Six Seasons in Ayurveda",
+    "Hemanta Ritu",
+    "Shishira Ritu",
+    "Vasanta Ritu",
+    "Grishma Ritu",
+    "Varsha Ritu",
+    "Sharad Ritu",
+    "Ayurvedic Winter Diet",
+    "Ayurvedic Summer Diet",
+    "Ayurvedic Monsoon Diet",
+    "Ayurvedic Diet for Spring",
+    "Ayurvedic Diet for Autumn",
+    "Ritu Sandhi",
+    "Ayurveda and Seasons",
+    "Ayurvedic Lifestyle",
+    "Ayurvedic Treatment in Bilari",
+    "Ayurvedic Hospital in Moradabad",
+    "Ayurvedic Hospital Rampur",
+    "Balprada Ayurvedic Hospital"
+  ],
+
+  fullContent: {
+    introduction: "Ritucharya is the Ayurvedic seasonal routine that guides what to eat, avoid and do in each season. Following it helps digestion, immunity and energy adjust smoothly as the weather changes.",
+
+    sections: [
+      {
+        heading: "What Is Ritucharya?",
+        content: [
+          { type: "bullets", items: [
+            "Ritucharya comes from two Sanskrit words: <strong>Ritu</strong> (season) and <strong>Charya</strong> (routine or conduct).",
+            "It means the food and lifestyle rules that Ayurveda suggests for each season of the year.",
+            "Ayurveda teaches that the body is always influenced by the outside world.",
+            "When the weather changes, our digestion, energy and doshas change with it.",
+            "Following Ritucharya helps the body adjust smoothly to each season, instead of falling sick every time the weather turns."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Why Seasonal Eating Matters in Ayurveda",
+        content: [
+          { type: "bullets", items: [
+            "Each season can raise or calm a particular dosha.",
+            "For example, Kapha tends to build up in late winter, Pitta in autumn and Vata in the rainy season.",
+            "Digestion (Agni) is stronger in cold months and weaker in hot and rainy months, so meals should change accordingly.",
+            "Eating according to the season may help reduce common problems such as acidity, cough, joint pain, gas and weak digestion.",
+            "It is a preventive habit: small seasonal changes in diet can protect your health through the whole year."
+          ]}
+        ]
+      },
+
+      {
+        heading: "The Six Seasons in Ayurveda",
+        content: [
+          { type: "bullets", items: [
+            "Ayurveda divides the year into six ritus, each lasting about two months: Shishira (late winter), Vasanta (spring), Grishma (summer), Varsha (monsoon), Sharad (autumn) and Hemanta (early winter).",
+            "These six seasons sit within two larger periods.",
+            "In Adana Kala (late winter to summer), the sun draws moisture and strength from the body.",
+            "In Visarga Kala (monsoon to early winter), the body gains strength again.",
+            "Exact dates vary by region, so always follow the real weather around you rather than the calendar alone."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Hemanta Ritu: Early Winter (Approx. November to December)",
+        content: [
+          { type: "subheading", text: "Eat" },
+          { type: "bullets", items: [
+            "Warm, freshly cooked and nourishing food, as Agni is strong and the body can digest heavier meals.",
+            "Ghee, milk, sesame, jaggery, whole wheat, nuts and root vegetables.",
+            "Seasonal fruits and vegetables such as carrot, radish, spinach and amla."
+          ]},
+          { type: "subheading", text: "Avoid" },
+          { type: "bullets", items: [
+            "Very cold drinks, ice cream and stale or refrigerated food.",
+            "Long fasting or skipping meals, since a strong appetite needs regular feeding."
+          ]},
+          { type: "subheading", text: "Lifestyle tip" },
+          { type: "bullets", items: [
+            "Daily oil massage, morning exercise and exposure to gentle sunlight are suited to this season."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Shishira Ritu: Late Winter (Approx. January to February)",
+        content: [
+          { type: "subheading", text: "Eat" },
+          { type: "bullets", items: [
+            "Warm, moist and slightly oily food, as in Hemanta, along with soups, porridges and cooked grains.",
+            "Warming spices such as ginger, black pepper and cinnamon to prevent Kapha from building up."
+          ]},
+          { type: "subheading", text: "Avoid" },
+          { type: "bullets", items: [
+            "Cold wind, cold water and very dry, light or bitter foods in excess.",
+            "Heavy sweets and fried food in large amounts, which can increase Kapha."
+          ]},
+          { type: "subheading", text: "Lifestyle tip" },
+          { type: "bullets", items: [
+            "Keep the chest, head and feet warm, and continue regular exercise."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Vasanta Ritu: Spring (Approx. March to April)",
+        content: [
+          { type: "subheading", text: "Eat" },
+          { type: "bullets", items: [
+            "Light, warm and easily digested food, since the Kapha stored in winter begins to melt and can cause cough and cold.",
+            "Barley, old rice, moong dal, honey in small amounts and bitter or pungent vegetables.",
+            "Warm water or ginger and tulsi tea to clear congestion."
+          ]},
+          { type: "subheading", text: "Avoid" },
+          { type: "bullets", items: [
+            "Heavy, oily, sweet and sour foods, curd at night and cold drinks.",
+            "Daytime sleep and a very sedentary routine."
+          ]},
+          { type: "subheading", text: "Lifestyle tip" },
+          { type: "bullets", items: [
+            "Exercise well, try dry powder massage (Udvartana) and consider seasonal cleansing, only under the guidance of an Ayurvedic doctor."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Grishma Ritu: Summer (Approx. May to June)",
+        content: [
+          { type: "subheading", text: "Eat" },
+          { type: "bullets", items: [
+            "Cooling, sweet, light and liquid foods such as buttermilk, coconut water, lassi, barley water and seasonal fruits like mango and watermelon.",
+            "Rice, milk, ghee and plenty of water to replace what is lost through sweat."
+          ]},
+          { type: "subheading", text: "Avoid" },
+          { type: "bullets", items: [
+            "Very spicy, salty, sour and fried food, tea, coffee and alcohol in excess.",
+            "Heavy physical work in the midday sun."
+          ]},
+          { type: "subheading", text: "Lifestyle tip" },
+          { type: "bullets", items: [
+            "Stay in cool, shaded places, wear light cotton clothes and rest in the afternoon if needed."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Varsha Ritu: Monsoon (Approx. July to August)",
+        content: [
+          { type: "subheading", text: "Eat" },
+          { type: "bullets", items: [
+            "Freshly cooked, warm and light meals such as soups, moong khichdi and cooked vegetables.",
+            "Ginger, cumin, black pepper, garlic and a little rock salt to support weak digestion.",
+            "Boiled and cooled water to lower the risk of stomach infections."
+          ]},
+          { type: "subheading", text: "Avoid" },
+          { type: "bullets", items: [
+            "Raw salads, street food, leafy vegetables that may carry dirt, and stale leftovers.",
+            "Heavy fried food, curd and drinking too much water in one go."
+          ]},
+          { type: "subheading", text: "Lifestyle tip" },
+          { type: "bullets", items: [
+            "Keep surroundings dry and clean, avoid getting wet in the rain for long and do not sleep in the daytime."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Sharad Ritu: Autumn (Approx. September to October)",
+        content: [
+          { type: "subheading", text: "Eat" },
+          { type: "bullets", items: [
+            "Sweet, bitter and astringent tastes, which help calm the Pitta that builds up after the rains.",
+            "Rice, wheat, green gram, ghee, milk, bottle gourd, pomegranate and amla.",
+            "Cool water that has been boiled and cooled."
+          ]},
+          { type: "subheading", text: "Avoid" },
+          { type: "bullets", items: [
+            "Very hot, spicy, sour, salty and oily food.",
+            "Curd, alcohol and eating before the last meal is digested."
+          ]},
+          { type: "subheading", text: "Lifestyle tip" },
+          { type: "bullets", items: [
+            "Moonlight walks in the evening are traditionally recommended, while strong midday sun should be avoided."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Common Seasonal Problems and Simple Prevention",
+        content: [
+          { type: "bullets", items: [
+            "<strong>Cough, cold and congestion in spring:</strong> favour light, warm food and ginger tea, and avoid curd and cold drinks.",
+            "<strong>Acidity and skin rashes in summer and autumn:</strong> choose cooling foods, drink enough water and cut down on spicy and fried items.",
+            "<strong>Gas, loose motions and weak digestion in the monsoon:</strong> eat freshly cooked food, add cumin and ginger and avoid street food.",
+            "<strong>Dry skin and joint stiffness in winter:</strong> use warm oil massage and eat nourishing food with a little ghee or sesame."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Quick Seasonal Food Guide",
+        content: [
+          { type: "bullets", items: [
+            "<strong>Winter (Hemanta and Shishira):</strong> warm, nourishing and slightly oily food. Limit cold and stale items.",
+            "<strong>Spring (Vasanta):</strong> light, warm and dry food. Limit heavy, sweet and oily items.",
+            "<strong>Summer (Grishma):</strong> cooling and liquid food. Limit spicy, salty and fried items.",
+            "<strong>Monsoon (Varsha):</strong> freshly cooked and easy-to-digest food. Limit raw, stale and street food.",
+            "<strong>Autumn (Sharad):</strong> sweet, bitter and cooling food. Limit hot, sour and spicy items."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Seasonal Sandhi: The Transition Between Seasons",
+        content: [
+          { type: "bullets", items: [
+            "Ayurveda advises changing your diet slowly.",
+            "The last seven days of one season and the first seven days of the next are called Ritu Sandhi.",
+            "During this time, drop the old season&apos;s habits step by step and adopt the new ones gradually, so that the body is not shocked.",
+            "Sudden changes in food and routine are one reason many people fall sick at the change of season."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Tips to Follow Ritucharya Easily",
+        content: [
+          { type: "bullets", items: [
+            "Choose fresh, local and seasonal fruits and vegetables whenever possible.",
+            "Eat meals at regular times, and make lunch your biggest meal of the day.",
+            "Combine seasonal eating with your body type: a Pitta person may need extra cooling foods in summer, while a Kapha person may need extra warmth in winter.",
+            "Use this guide as general advice.",
+            "If you have diabetes, kidney, liver or heart problems, ask your doctor before making any big change in diet."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Ayurvedic Guidance at Balprada Ayurvedic Hospital, Bilari",
+        content: [
+          { type: "bullets", items: [
+            "Balprada Ayurvedic Hospital &amp; Research Center in Bilari, Moradabad has offered Ayurvedic care for 35 years.",
+            "Our doctors study your body type, digestion and lifestyle before suggesting a diet that suits you and the season.",
+            "Care combines consultation, in-house herbal medicines, yoga, panchakarma and regular follow-up.",
+            "Patients from Bilari, Moradabad, Rampur and nearby areas can visit our ashram and clinic, open 7 days a week from 10:00 AM to 2:00 PM, with free OPD on the 15th of every month.",
+            "🔗 <strong>Book a consultation:</strong> call or WhatsApp <a href='tel:8126364606' style='color:#2563eb;'>8126364606</a>, or visit <a href='https://www.balpradaindia.com/contact' style='color:#2563eb;'>balpradaindia.com/contact</a>."
+          ]}
+        ]
+      }
+    ]
+  },
+
+  faqs: [
+    {
+      question: "What is Ritucharya in simple words?",
+      answer: "It is the Ayurvedic seasonal routine, a guide to what to eat, avoid and do in each season of the year."
+    },
+    {
+      question: "How many seasons are there in Ayurveda?",
+      answer: "Six: Shishira, Vasanta, Grishma, Varsha, Sharad and Hemanta."
+    },
+    {
+      question: "Why do we fall sick when the season changes?",
+      answer: "The body and doshas need time to adjust, and sudden changes in food and routine can weaken digestion and immunity."
+    },
+    {
+      question: "Can everyone follow the same seasonal diet?",
+      answer: "The basic rules suit most people, but your body type and health conditions decide the details, so personal advice from an Ayurvedic doctor is best."
+    }
+  ],
+
+  metaTags: {
+    title: "Ritucharya: What to Eat and Avoid in Each Season",
+    description: "Learn Ritucharya, the Ayurvedic seasonal routine. See what to eat and avoid in all six seasons for better digestion and immunity. By Balprada Ayurvedic Hospital.",
+    keywords: "ritucharya, ritucharya in ayurveda, seasonal diet in ayurveda, ayurvedic seasonal routine, what to eat in each season, foods to avoid in each season, six seasons in ayurveda, hemanta ritu, shishira ritu, vasanta ritu, grishma ritu, varsha ritu, sharad ritu, ayurvedic winter diet, ayurvedic summer diet, ayurvedic monsoon diet, ayurvedic diet for spring, ayurvedic diet for autumn, ritu sandhi, ayurveda and seasons, ayurvedic lifestyle, ayurvedic treatment in Bilari, ayurvedic hospital in Moradabad, ayurvedic hospital Rampur, Balprada Ayurvedic Hospital",
+    alternates: {
+      canonical: "https://www.balpradaindia.com/blog/ritucharya-what-to-eat-and-avoid-in-each-season"
+    },
+    openGraph: {
+      type: "article",
+      url: "https://www.balpradaindia.com/blog/ritucharya-what-to-eat-and-avoid-in-each-season",
+      title: "Ritucharya: What to Eat and Avoid in Each Season",
+      description: "Learn Ritucharya, the Ayurvedic seasonal routine. See what to eat and avoid in all six seasons for better digestion and immunity. By Balprada Ayurvedic Hospital.",
+      images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Ritucharya: What to Eat and Avoid in Each Season — Balprada Ayurvedic Hospital" }]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Ritucharya: What to Eat and Avoid in Each Season",
+      description: "Learn Ritucharya, the Ayurvedic seasonal routine. See what to eat and avoid in all six seasons for better digestion and immunity. By Balprada Ayurvedic Hospital.",
+      images: ["/icon.png"]
+    },
+    icons: { icon: "/icon.png" }
+  }
+},
+
+
 ];
