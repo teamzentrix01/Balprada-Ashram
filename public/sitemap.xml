@@ -134,6 +134,8 @@
     <priority>1.0</priority>
   </url>
 
+// ------- Blogs --------
+
   <url>
     <loc>https://www.balpradaindia.com/blog</loc>
     <lastmod>2026-10-16</lastmod>
@@ -168,6 +170,23 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <url>
+    <loc>https://www.balpradaindia.com/blog/agni-in-ayurveda-why-digestion-fire-matters</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.balpradaindia.com/blog/ama-toxins-in-ayurveda-signs-and-causes</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+
+// ------- Moradabad Pages --------
 
   <url>
     <loc>https://www.balpradaindia.com/ayurvedic-hospital-in-moradabad</loc>

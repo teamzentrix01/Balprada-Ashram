@@ -1057,5 +1057,569 @@ export const blogs = [
   }
 },
 
+{
+  id: 5,
+  slug: "agni-in-ayurveda-why-digestion-fire-matters",
+  title: "Agni in Ayurveda: Why Digestion Fire Matters",
+  subtitle: "Learn what Agni is in Ayurveda, its 4 types, signs of weak digestion, and natural ways to strengthen it. A simple guide by Balprada Ayurvedic Hospital, Bilari.",
+  category: "Ayurveda | Digestion",
+  author: "Balprada Ayurvedic Hospital Team",
+  date: "2026-10-23",
+  readTime: "10 min read",
+  image: "https://res.cloudinary.com/hiu9gggc/image/upload/v1792732937/agni-in-ayurveda-why-digestion-fire-matters.jpg",
+  content: "Agni is the digestive fire in Ayurveda. Learn its four types, signs of weak Agni, the role of Ama, and natural ways to improve digestion and gut health.",
+  tags: [
+    "Agni in Ayurveda",
+    "What Is Agni",
+    "Digestive Fire in Ayurveda",
+    "Jatharagni",
+    "Types of Agni",
+    "Sama Agni",
+    "Vishama Agni",
+    "Tikshna Agni",
+    "Manda Agni",
+    "Ama in Ayurveda",
+    "Weak Agni Symptoms",
+    "How to Increase Agni",
+    "Ayurvedic Digestion Tips",
+    "Ayurvedic Diet for Digestion",
+    "Agni and Doshas",
+    "Bhutagni",
+    "Dhatvagni",
+    "Ayurvedic Remedies for Indigestion",
+    "Gut Health in Ayurveda",
+    "Ayurvedic Treatment in Bilari",
+    "Ayurvedic Hospital in Moradabad",
+    "Ayurvedic Hospital Rampur",
+    "Balprada Ayurvedic Hospital",
+    "Ayurvedic Doctor for Digestion",
+    "Natural Healing"
+  ],
+
+  fullContent: {
+    introduction: "Agni is the digestive and metabolic fire in Ayurveda. When it is strong, food becomes energy, nourishment and mental clarity. When it is weak, undigested waste called Ama builds up and health problems slowly begin.",
+
+    sections: [
+      {
+        heading: "What Is Agni in Ayurveda?",
+        content: [
+          { type: "bullets", items: [
+            "Agni is a Sanskrit word that means &quot;fire&quot;.",
+            "In Ayurveda, it stands for the digestive and metabolic fire that turns food into energy, tissues and clarity of mind.",
+            "Agni is not only the stomach acid we talk about today.",
+            "It works at every level of the body, from the gut to each individual cell, and decides how well we digest food, thoughts and experiences.",
+            "Classical texts such as the Charaka Samhita say that a healthy life depends on the strength of Agni.",
+            "When Agni is balanced, the body stays energetic and light. When it is weak, illness slowly follows."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Why Digestion Fire Matters",
+        content: [
+          { type: "bullets", items: [
+            "Strong Agni breaks down food fully, so nutrients reach the tissues (dhatus) and the body stays strong.",
+            "Weak Agni leaves food half-digested.",
+            "This leftover waste is called Ama, which Ayurveda sees as a major root of many long-term health problems.",
+            "Good Agni supports immunity, steady energy, a clear mind, healthy skin and regular bowel movements.",
+            "Because Agni is so central, many Ayurvedic doctors first examine your digestion before planning any treatment, even for problems that seem unrelated to the stomach."
+          ]}
+        ]
+      },
+
+      {
+        heading: "The Four Types of Agni",
+        content: [
+          { type: "bullets", items: [
+            "<strong>Sama Agni (balanced):</strong> food is digested on time without discomfort. Appetite, energy and bowel habits are regular. This is the ideal state.",
+            "<strong>Vishama Agni (irregular, linked with Vata):</strong> hunger and digestion change from day to day. There may be gas, bloating, constipation or cramps.",
+            "<strong>Tikshna Agni (sharp, linked with Pitta):</strong> very strong hunger and fast digestion, but often with acidity, heartburn, burning sensation or loose stools.",
+            "<strong>Manda Agni (slow, linked with Kapha):</strong> weak hunger, heaviness after meals, sluggishness and a tendency to gain weight.",
+            "Knowing your tendency helps you choose the right food and routine.",
+            "If you are unsure of your body type, read our guide on Vata, Pitta, Kapha and Prakriti."
+          ]}
+        ]
+      },
+
+      {
+        heading: "The Types of Agni in the Body",
+        content: [
+          { type: "subheading", text: "Jatharagni: The Main Digestive Fire" },
+          { type: "bullets", items: [
+            "Jatharagni sits in the stomach and small intestine.",
+            "It digests the food you eat each day and is the leader of all other Agnis, so most Ayurvedic advice focuses on keeping it strong."
+          ]},
+          { type: "subheading", text: "Bhutagni: The Fire of the Five Elements" },
+          { type: "bullets", items: [
+            "Five Bhutagnis in the liver help convert food into the forms of the five elements (space, air, fire, water and earth) that the body can use."
+          ]},
+          { type: "subheading", text: "Dhatvagni: The Fire in the Tissues" },
+          { type: "bullets", items: [
+            "Seven Dhatvagnis work in the seven body tissues, such as plasma, blood, muscle, fat and bone.",
+            "They make sure every tissue receives nourishment and is built properly."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Ama: What Happens When Agni Is Weak",
+        content: [
+          { type: "bullets", items: [
+            "Ama means undigested, sticky and toxic material formed when food is not fully digested.",
+            "It can block the body&apos;s channels (srotas) and disturb the doshas, which Ayurveda links with feelings of heaviness, tiredness and illness.",
+            "Common signs of Ama include a thick white coating on the tongue, bad breath, heaviness after meals, low appetite, sluggishness, body ache and foul-smelling stool.",
+            "The aim of many Ayurvedic treatments is first to improve Agni, then to clear Ama, and only afterwards to build strength."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Signs of Strong and Weak Agni",
+        content: [
+          { type: "subheading", text: "Signs of healthy Agni" },
+          { type: "bullets", items: [
+            "Real hunger at regular times and a light feeling after meals.",
+            "Good energy, clear thinking and a clean tongue.",
+            "Regular, well-formed bowel movements and restful sleep."
+          ]},
+          { type: "subheading", text: "Signs of weak or disturbed Agni" },
+          { type: "bullets", items: [
+            "Bloating, gas, acidity, indigestion or constipation.",
+            "Heaviness, sleepiness or low energy after eating.",
+            "Frequent coughs and colds, dull skin or unexplained weight gain.",
+            "Irregular appetite, either too little or constant hunger."
+          ]}
+        ]
+      },
+
+      {
+        heading: "What Weakens Agni?",
+        content: [
+          { type: "bullets", items: [
+            "Eating at irregular times, skipping meals or eating again before the last meal is digested.",
+            "Overeating, or eating very heavy, oily, fried and processed food.",
+            "Cold drinks and ice-cold food, especially with meals.",
+            "Eating while stressed, angry, watching a screen or in a hurry.",
+            "Sleeping late, sleeping during the day and not exercising.",
+            "Incompatible food combinations, such as milk with fish or fruit with a heavy meal.",
+            "Ignoring natural urges and long-term emotional stress."
+          ]}
+        ]
+      },
+
+      {
+        heading: "How to Strengthen Agni Naturally",
+        content: [
+          { type: "subheading", text: "Eat the Right Way" },
+          { type: "bullets", items: [
+            "Eat only when you feel hungry, and leave some space in the stomach rather than eating until full.",
+            "Make lunch your largest meal, since digestion is strongest around midday, and keep dinner light and early.",
+            "Choose fresh, warm, home-cooked food and include all six tastes: sweet, sour, salty, pungent, bitter and astringent.",
+            "Sit calmly, chew well and avoid distractions while eating."
+          ]},
+          { type: "subheading", text: "Use Simple Kitchen Spices" },
+          { type: "bullets", items: [
+            "A small piece of fresh ginger with a pinch of rock salt before meals is a traditional way to awaken appetite.",
+            "Cumin, coriander and fennel seeds are commonly used in cooking or tea to ease gas and bloating.",
+            "Black pepper, turmeric and hing (asafoetida) are used in small amounts to support digestion.",
+            "Triphala is a traditional herbal formula for digestive health, but take it only after consulting an Ayurvedic doctor."
+          ]},
+          { type: "subheading", text: "Sip Warm Water" },
+          { type: "bullets", items: [
+            "Warm or room-temperature water through the day supports digestion, while ice-cold water is believed to dampen Agni.",
+            "Do not drink a large amount of water immediately before or after a meal."
+          ]},
+          { type: "subheading", text: "Follow a Healthy Daily Routine" },
+          { type: "bullets", items: [
+            "Wake early, move your body daily with a walk or yoga, and sleep on time.",
+            "Our guide on the Ayurvedic daily routine (Dinacharya) explains the full day plan.",
+            "Adjust your meals to the weather.",
+            "Our guide on Ritucharya shows what to eat and avoid in each season."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Agni and Your Dosha",
+        content: [
+          { type: "bullets", items: [
+            "<strong>Vata types:</strong> keep meals warm, moist and regular. Avoid skipping meals and eating dry, cold or raw food.",
+            "<strong>Pitta types:</strong> choose cooling, mild foods and avoid very spicy, sour, salty and fried items. Do not stay hungry for long.",
+            "<strong>Kapha types:</strong> favour light, warm and lightly spiced food. Avoid heavy sweets, dairy in excess and daytime sleep."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Common Myths About Agni",
+        content: [
+          { type: "bullets", items: [
+            "<strong>Myth:</strong> strong hunger always means strong Agni. <strong>Fact:</strong> Tikshna Agni gives sharp hunger but can still cause acidity and weakness.",
+            "<strong>Myth:</strong> eating more makes you stronger. <strong>Fact:</strong> food that is not digested becomes Ama and adds to heaviness.",
+            "<strong>Myth:</strong> spices alone fix digestion. <strong>Fact:</strong> meal timing, calm eating, sleep and lifestyle matter as much as any herb."
+          ]}
+        ]
+      },
+
+      {
+        heading: "When to See an Ayurvedic Doctor",
+        content: [
+          { type: "bullets", items: [
+            "See a doctor if indigestion, acidity, gas or constipation lasts for weeks or keeps returning.",
+            "Seek medical advice quickly if you have severe stomach pain, black stool, vomiting blood, unexplained weight loss or difficulty swallowing.",
+            "These need proper tests and should not be handled with home remedies.",
+            "If you already take regular medicines, never stop them on your own, and tell your doctor about any herbs you use."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Ayurvedic Guidance at Balprada Ayurvedic Hospital, Bilari",
+        content: [
+          { type: "bullets", items: [
+            "Balprada Ayurvedic Hospital &amp; Research Center in Bilari, Moradabad has offered Ayurvedic care for 35 years.",
+            "Our doctors check your pulse, tongue, digestion and lifestyle before suggesting a diet and treatment plan that fits you.",
+            "Care combines consultation, in-house herbal medicines, diet guidance, yoga, panchakarma and regular follow-up, with pathology lab support for tests when needed.",
+            "Patients from Bilari, Moradabad, Rampur and nearby areas can visit our ashram and clinic, open 7 days a week from 10:00 AM to 2:00 PM, with free OPD on the 15th of every month.",
+            "🔗 <strong>Book a consultation:</strong> call or WhatsApp <a href='tel:8126364606' style='color:#2563eb;'>8126364606</a>, or visit <a href='https://www.balpradaindia.com/contact' style='color:#2563eb;'>balpradaindia.com/contact</a>."
+          ]}
+        ]
+      }
+    ]
+  },
+
+  faqs: [
+    {
+      question: "What is Agni in simple words?",
+      answer: "It is the digestive fire of the body that digests food and turns it into energy and nourishment."
+    },
+    {
+      question: "What are the signs of weak Agni?",
+      answer: "Gas, bloating, heaviness after meals, a coated tongue, low appetite and constipation are common signs."
+    },
+    {
+      question: "Which food increases Agni?",
+      answer: "Fresh, warm, lightly spiced meals with ginger, cumin and coriander are traditionally used, but the right choice depends on your dosha."
+    },
+    {
+      question: "Can I improve Agni at home?",
+      answer: "Yes, regular meal times, warm water, mindful eating and a steady routine help. For long-term problems, see an Ayurvedic doctor."
+    }
+  ],
+
+  metaTags: {
+    title: "Agni in Ayurveda: Why Digestion Fire Matters",
+    description: "Learn what Agni is in Ayurveda, its 4 types, signs of weak digestion, and natural ways to strengthen it. A simple guide by Balprada Ayurvedic Hospital, Bilari.",
+    keywords: "agni in ayurveda, what is agni, digestive fire in ayurveda, jatharagni, types of agni, sama agni, vishama agni, tikshna agni, manda agni, ama in ayurveda, weak agni symptoms, how to increase agni, ayurvedic digestion tips, ayurvedic diet for digestion, agni and doshas, bhutagni, dhatvagni, ayurvedic remedies for indigestion, gut health in ayurveda, ayurvedic treatment in Bilari, ayurvedic hospital in Moradabad, ayurvedic hospital Rampur, Balprada Ayurvedic Hospital, ayurvedic doctor for digestion, natural healing",
+    alternates: {
+      canonical: "https://www.balpradaindia.com/blog/agni-in-ayurveda-why-digestion-fire-matters"
+    },
+    openGraph: {
+      type: "article",
+      url: "https://www.balpradaindia.com/blog/agni-in-ayurveda-why-digestion-fire-matters",
+      title: "Agni in Ayurveda: Why Digestion Fire Matters",
+      description: "Learn what Agni is in Ayurveda, its 4 types, signs of weak digestion, and natural ways to strengthen it. A simple guide by Balprada Ayurvedic Hospital, Bilari.",
+      images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Agni in Ayurveda: Why Digestion Fire Matters — Balprada Ayurvedic Hospital" }]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Agni in Ayurveda: Why Digestion Fire Matters",
+      description: "Learn what Agni is in Ayurveda, its 4 types, signs of weak digestion, and natural ways to strengthen it. A simple guide by Balprada Ayurvedic Hospital, Bilari.",
+      images: ["/icon.png"]
+    },
+    icons: { icon: "/icon.png" }
+  }
+},
+
+{
+  id: 6,
+  slug: "ama-toxins-in-ayurveda-signs-and-causes",
+  title: "Ama (Toxins) in Ayurveda: Signs and Causes",
+  subtitle: "Learn what Ama (toxins) means in Ayurveda, its common causes and signs, and simple ways to reduce it. A clear guide by Balprada Ayurvedic Hospital, Bilari.",
+  category: "Ayurveda | Digestion",
+  author: "Balprada Ayurvedic Hospital Team",
+  date: "2026-10-23",
+  readTime: "10 min read",
+  image: "https://res.cloudinary.com/hiu9gggc/image/upload/v1792733259/ama-toxins-in-ayurveda-signs-and-causes.jpg",
+  content: "Ama means undigested waste in Ayurveda. Learn how Ama forms, its common signs and causes, and simple Ayurvedic ways to reduce it through diet, routine and digestion care.",
+  tags: [
+    "Ama in Ayurveda",
+    "What Is Ama",
+    "Ama Meaning",
+    "Ayurvedic Toxins",
+    "Ama Symptoms",
+    "Signs of Ama",
+    "Causes of Ama",
+    "Ama and Agni",
+    "How Ama Is Formed",
+    "Ama in the Body",
+    "Sama and Nirama",
+    "Ama Dosha",
+    "Coated Tongue Ayurveda",
+    "Ayurvedic Detox",
+    "How to Reduce Ama",
+    "Ayurvedic Digestion Tips",
+    "Weak Digestion Ayurveda",
+    "Ayurvedic Diet for Ama",
+    "Ayurveda Toxins Removal",
+    "Ayurvedic Treatment in Bilari",
+    "Ayurvedic Hospital in Moradabad",
+    "Ayurvedic Hospital Rampur",
+    "Balprada Ayurvedic Hospital",
+    "Ayurvedic Doctor",
+    "Natural Healing"
+  ],
+
+  fullContent: {
+    introduction: "Ama is the sticky, undigested waste that Ayurveda links with weak digestion and many long-term health problems. This guide explains how Ama forms, its signs and causes, and simple ways to reduce it naturally.",
+
+    sections: [
+      {
+        heading: "What Is Ama in Ayurveda?",
+        content: [
+          { type: "bullets", items: [
+            "Ama is a Sanskrit word that means &quot;raw&quot;, &quot;uncooked&quot; or &quot;undigested&quot;.",
+            "In Ayurveda, it describes the sticky, heavy waste that forms in the body when food, thoughts or experiences are not fully digested.",
+            "Ayurveda sees Ama as a root cause of many long-term health problems.",
+            "It is often translated as &quot;toxins&quot;, but it is better understood as incompletely processed material that the body cannot use.",
+            "Ama is the opposite of Ojas, the subtle essence of good digestion that gives strength, immunity and a calm mind.",
+            "As Ama rises, vitality tends to fall."
+          ]}
+        ]
+      },
+
+      {
+        heading: "How Is Ama Formed?",
+        content: [
+          { type: "bullets", items: [
+            "Ama begins when Agni, the digestive fire, becomes weak or irregular and cannot break food down fully.",
+            "Half-digested food stays in the gut, turns sticky and spreads through the body&apos;s channels (srotas), where it can block the normal flow of nutrients, fluids and waste.",
+            "Ayurveda says Ama can also mix with the doshas, Vata, Pitta and Kapha, and with the body tissues (dhatus).",
+            "This is why Ama is linked with many different complaints, not only digestive ones.",
+            "Ama is not a laboratory term.",
+            "It is a traditional Ayurvedic idea, and a qualified doctor recognises it through your symptoms, tongue, pulse and habits."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Main Causes of Ama",
+        content: [
+          { type: "subheading", text: "Food-Related Causes" },
+          { type: "bullets", items: [
+            "Eating at irregular times, or eating again before the last meal is digested.",
+            "Overeating, even healthy food, and eating very heavy, oily, fried or processed items.",
+            "Cold, stale, leftover or refrigerated food, and very cold drinks with meals.",
+            "Wrong food combinations, such as milk with fish or fruit with a heavy meal.",
+            "Eating when you are not truly hungry, or skipping meals and then eating too much."
+          ]},
+          { type: "subheading", text: "Lifestyle-Related Causes" },
+          { type: "bullets", items: [
+            "Sleeping late, sleeping during the day after meals and not exercising enough.",
+            "A sedentary routine with long hours of sitting.",
+            "Ignoring natural urges such as passing stool or urine.",
+            "Irregular daily habits that disturb the body&apos;s natural rhythm.",
+            "Our guide on the Ayurvedic daily routine (Dinacharya) explains a healthier day plan."
+          ]},
+          { type: "subheading", text: "Mind-Related Causes" },
+          { type: "bullets", items: [
+            "Long-term stress, anger, worry, grief and fear can weaken digestion just as much as poor food.",
+            "Eating while upset, rushed or distracted by a phone or television."
+          ]},
+          { type: "subheading", text: "Seasonal and Other Causes" },
+          { type: "bullets", items: [
+            "Eating the wrong foods for the season, especially in the monsoon when digestion is naturally weaker.",
+            "Our guide on Ritucharya shows what to eat and avoid in each season.",
+            "Some long-term illnesses and medicines may also affect digestion, so always discuss this with your doctor."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Common Signs and Symptoms of Ama",
+        content: [
+          { type: "subheading", text: "Digestive Signs" },
+          { type: "bullets", items: [
+            "Heaviness in the stomach, bloating, gas and a feeling of fullness even after a small meal.",
+            "Loss of appetite, nausea or a bad taste in the mouth.",
+            "Foul-smelling stool that sticks to the toilet, or irregular bowel movements."
+          ]},
+          { type: "subheading", text: "Body Signs" },
+          { type: "bullets", items: [
+            "A thick white or yellowish coating on the tongue, which is one of the best-known Ayurvedic signs.",
+            "Bad breath and foul-smelling sweat or urine.",
+            "Tiredness, dullness and a heavy, achy feeling in the body.",
+            "Stiff or painful joints, especially in the morning."
+          ]},
+          { type: "subheading", text: "Mind Signs" },
+          { type: "bullets", items: [
+            "Brain fog, poor focus, sleepiness and low motivation.",
+            "A feeling of mental heaviness or a low mood."
+          ]},
+          { type: "subheading", text: "Important Note" },
+          { type: "bullets", items: [
+            "These symptoms can also be caused by many medical conditions.",
+            "Do not decide on your own that Ama is the reason.",
+            "Get a proper check-up, especially if symptoms are severe or last for long."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Sama and Nirama: Two Ayurvedic Terms",
+        content: [
+          { type: "bullets", items: [
+            "<strong>Sama</strong> means &quot;with Ama&quot;.",
+            "A person or a dosha is called Sama when Ama is present.",
+            "Signs include heaviness, a coated tongue, low appetite, sluggishness and sticky stool.",
+            "<strong>Nirama</strong> means &quot;without Ama&quot;.",
+            "A person or a dosha is Nirama when digestion is clear and strong.",
+            "Signs include a clean tongue, good hunger, light feeling and regular bowel movements.",
+            "This difference matters because Ayurveda treats the two states differently.",
+            "When Ama is present, doctors usually focus first on improving digestion and reducing Ama, and only later on building strength."
+          ]}
+        ]
+      },
+
+      {
+        heading: "How Ayurveda Reduces Ama",
+        content: [
+          { type: "subheading", text: "Improve Agni First" },
+          { type: "bullets", items: [
+            "The first step is to rekindle digestive fire with the right food, meal timing and routine.",
+            "Our upcoming guide on Agni explains this in detail.",
+            "Light, warm, freshly cooked meals such as moong dal soup or khichdi are traditionally used when digestion is weak."
+          ]},
+          { type: "subheading", text: "Use Simple Digestive Spices" },
+          { type: "bullets", items: [
+            "Ginger, cumin, coriander, fennel, black pepper and turmeric are common kitchen spices used to support digestion.",
+            "A small piece of fresh ginger with a pinch of rock salt before meals is a traditional way to awaken appetite.",
+            "Use herbs and formulas only under the guidance of an Ayurvedic doctor.",
+            "Natural does not always mean safe for everyone."
+          ]},
+          { type: "subheading", text: "Drink Warm Water" },
+          { type: "bullets", items: [
+            "Sipping warm water through the day is believed to help digestion and clear sticky waste, while ice-cold drinks are avoided."
+          ]},
+          { type: "subheading", text: "Fasting and Light Eating" },
+          { type: "bullets", items: [
+            "Ayurveda sometimes suggests light eating or short, gentle fasting (Langhana) to give digestion a rest.",
+            "This is not suitable for everyone, especially children, older people, pregnant women and people with diabetes or other illness, so take advice first."
+          ]},
+          { type: "subheading", text: "Cleansing Therapies (Shodhana)" },
+          { type: "bullets", items: [
+            "When Ama has built up deeply, an Ayurvedic doctor may plan Panchakarma or other cleansing therapies after proper assessment.",
+            "These are never to be done at home on your own."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Daily Habits That Prevent Ama",
+        content: [
+          { type: "bullets", items: [
+            "Eat at regular times and only when you feel real hunger.",
+            "Make lunch your largest meal and keep dinner light and early.",
+            "Choose fresh, warm, home-cooked food and avoid stale leftovers.",
+            "Sit calmly, chew well and avoid screens while eating.",
+            "Walk or do yoga daily, and sleep on time.",
+            "Do not eat when you are very upset, and give yourself time to rest and relax."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Ama and Your Body Type",
+        content: [
+          { type: "bullets", items: [
+            "<strong>Vata types</strong> are prone to irregular digestion and gas, so warm, moist and regular meals help most.",
+            "<strong>Pitta types</strong> may develop acidity and burning when Ama mixes with Pitta, so cooling, mild food and regular meal times matter.",
+            "<strong>Kapha types</strong> tend to feel heavy and sluggish, so light, warm and lightly spiced food with daily exercise is useful.",
+            "To find your type, read our guide on Vata, Pitta, Kapha and Prakriti."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Common Myths About Ama",
+        content: [
+          { type: "bullets", items: [
+            "<strong>Myth:</strong> Ama means poison that must be flushed out with strong detox drinks. <strong>Fact:</strong> Ayurveda reduces Ama gently by improving digestion, and harsh detoxes can weaken the body.",
+            "<strong>Myth:</strong> a coated tongue always means Ama. <strong>Fact:</strong> it is one useful sign, but doctors look at the full picture.",
+            "<strong>Myth:</strong> Ama is only a stomach problem. <strong>Fact:</strong> Ayurveda links it with the whole body and mind."
+          ]}
+        ]
+      },
+
+      {
+        heading: "When to See a Doctor",
+        content: [
+          { type: "bullets", items: [
+            "See an Ayurvedic doctor if heaviness, bloating, coated tongue, tiredness or joint stiffness continue for weeks.",
+            "Get medical help quickly for severe stomach pain, black stool, vomiting blood, fever, unexplained weight loss or difficulty swallowing.",
+            "These need proper tests.",
+            "Never stop prescribed medicines on your own, and tell your doctor about any herbs you take."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Ayurvedic Guidance at Balprada Ayurvedic Hospital, Bilari",
+        content: [
+          { type: "bullets", items: [
+            "Balprada Ayurvedic Hospital &amp; Research Center in Bilari, Moradabad has offered Ayurvedic care for 35 years.",
+            "Our doctors study your pulse, tongue, digestion, reports and lifestyle before suggesting any treatment.",
+            "Care combines consultation, in-house herbal medicines, diet guidance, yoga, panchakarma and regular follow-up, with pathology lab support for tests when needed.",
+            "Patients from Bilari, Moradabad, Rampur and nearby areas can visit our ashram and clinic, open 7 days a week from 10:00 AM to 2:00 PM, with free OPD on the 15th of every month.",
+            "🔗 <strong>Book a consultation:</strong> call or WhatsApp <a href='tel:8126364606' style='color:#2563eb;'>8126364606</a>, or visit <a href='https://www.balpradaindia.com/contact' style='color:#2563eb;'>balpradaindia.com/contact</a>."
+          ]}
+        ]
+      }
+    ]
+  },
+
+  faqs: [
+    {
+      question: "What is Ama in simple words?",
+      answer: "It is undigested, sticky waste that forms in the body when digestion is weak, according to Ayurveda."
+    },
+    {
+      question: "What are the main signs of Ama?",
+      answer: "A coated tongue, heaviness, bloating, low appetite, tiredness and foul-smelling stool are common signs."
+    },
+    {
+      question: "What causes Ama?",
+      answer: "Weak digestion, irregular or heavy food, cold and stale food, poor sleep, lack of exercise and long-term stress."
+    },
+    {
+      question: "Can I reduce Ama at home?",
+      answer: "Light warm meals, regular timings, warm water and daily movement help. For long-lasting symptoms, see an Ayurvedic doctor."
+    }
+  ],
+
+  metaTags: {
+    title: "Ama (Toxins) in Ayurveda: Signs and Causes",
+    description: "Learn what Ama (toxins) means in Ayurveda, its common causes and signs, and simple ways to reduce it. A clear guide by Balprada Ayurvedic Hospital, Bilari.",
+    keywords: "ama in ayurveda, what is ama, ama meaning, ayurvedic toxins, ama symptoms, signs of ama, causes of ama, ama and agni, how ama is formed, ama in the body, sama and nirama, ama dosha, coated tongue ayurveda, ayurvedic detox, how to reduce ama, ayurvedic digestion tips, weak digestion ayurveda, ayurvedic diet for ama, ayurveda toxins removal, ayurvedic treatment in Bilari, ayurvedic hospital in Moradabad, ayurvedic hospital Rampur, Balprada Ayurvedic Hospital, ayurvedic doctor, natural healing",
+    alternates: {
+      canonical: "https://www.balpradaindia.com/blog/ama-toxins-in-ayurveda-signs-and-causes"
+    },
+    openGraph: {
+      type: "article",
+      url: "https://www.balpradaindia.com/blog/ama-toxins-in-ayurveda-signs-and-causes",
+      title: "Ama (Toxins) in Ayurveda: Signs and Causes",
+      description: "Learn what Ama (toxins) means in Ayurveda, its common causes and signs, and simple ways to reduce it. A clear guide by Balprada Ayurvedic Hospital, Bilari.",
+      images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Ama (Toxins) in Ayurveda: Signs and Causes — Balprada Ayurvedic Hospital" }]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Ama (Toxins) in Ayurveda: Signs and Causes",
+      description: "Learn what Ama (toxins) means in Ayurveda, its common causes and signs, and simple ways to reduce it. A clear guide by Balprada Ayurvedic Hospital, Bilari.",
+      images: ["/icon.png"]
+    },
+    icons: { icon: "/icon.png" }
+  }
+}
+
 
 ];

@@ -11978,3 +11978,13 @@ body.modal-open-blur {
   overscroll-behavior: contain !important;
 }
 
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  article {
+    max-width: 100%;
+  }
+}
+

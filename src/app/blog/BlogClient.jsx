@@ -663,17 +663,6 @@ export default function BlogClient({ blog }) {
         )}
       </article>
 
-      {/* Print Styles */}
-      <style jsx global>{`
-        @media print {
-          .no-print {
-            display: none !important;
-          }
-          article {
-            max-width: 100%;
-          }
-        }
-      `}</style>
     </>
   );
 }
