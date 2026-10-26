@@ -4,6 +4,9 @@ import { CalendarDays, CheckCircle2, LoaderCircle, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import styles from "./AppointmentPopup.module.css";
+
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/zentrixit@gmail.com";
+
 function getLocalDate() {
   const now = new Date();
   const offset = now.getTimezoneOffset() * 60_000;
@@ -63,17 +66,29 @@ export default function AppointmentPopup() {
     setMessage("");
 
     const form = event.currentTarget;
-    const payload = Object.fromEntries(new FormData(form).entries());
+    const formData = Object.fromEntries(new FormData(form).entries());
+
+    // FormSubmit extra settings
+    const payload = {
+      ...formData,
+      _subject: `New Appointment Request - ${formData.name || "Website Visitor"}`,
+      _template: "table",
+      _captcha: "false",
+    };
 
     try {
-      const response = await fetch("/api/appointment", {
+      const response = await fetch(FORM_ENDPOINT, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
         body: JSON.stringify(payload),
       });
-      const result = await response.json();
+      const result = await response.json().catch(() => ({}));
 
-      if (!response.ok) throw new Error(result.error || "Unable to send your request.");
+      const ok = response.ok && (result.success === true || result.success === "true");
+      if (!ok) throw new Error(result.message || "Unable to send your request.");
 
       form.reset();
       setStatus("success");
@@ -117,7 +132,7 @@ export default function AppointmentPopup() {
             <div className={`${styles.success} appointment-popup-success`} role="status">
               <span><CheckCircle2 aria-hidden="true" /></span>
               <p className="eyebrow">Request received</p>
-              <h2>We’ll be in touch soon</h2>
+              <h2>Thank You!</h2>
               <p>{message}</p>
               <button className={`${styles.submit} appointment-popup-submit`} type="button" onClick={handleClose}>Close</button>
             </div>
@@ -132,9 +147,10 @@ export default function AppointmentPopup() {
               </div>
 
               <form className={`${styles.form} appointment-popup-form`} onSubmit={submitAppointment}>
+                {/* FormSubmit honeypot (spam protection) */}
                 <div className={`${styles.honeypot} appointment-popup-honeypot`} aria-hidden="true">
                   <label htmlFor="appointment-company">Company</label>
-                  <input id="appointment-company" name="company" tabIndex="-1" autoComplete="off" />
+                  <input id="appointment-company" name="_honey" tabIndex="-1" autoComplete="off" />
                 </div>
                 <label className={`${styles.wide} appointment-popup-wide`}>
                   <span>Full name *</span>
@@ -190,7 +206,7 @@ export default function AppointmentPopup() {
                   <textarea name="message" placeholder="Tell us briefly how we can help" rows="3" maxLength="1000" />
                 </label>
 
-                {message ? <p className={`${styles.error} appointment-popup-error`} role="alert">{message}</p> : null}
+                {status === "error" && message ? <p className={`${styles.error} appointment-popup-error`} role="alert">{message}</p> : null}
 
                 <button className={`${styles.submit} ${styles.wide} appointment-popup-submit appointment-popup-wide`} type="submit" disabled={status === "sending"}>
                   {status === "sending" ? <LoaderCircle className={`${styles.spinner} appointment-popup-spinner`} aria-hidden="true" /> : <CalendarDays aria-hidden="true" />}
