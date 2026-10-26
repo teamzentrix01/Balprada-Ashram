@@ -1,5 +1,5 @@
 import React from "react";
-import Content from "./_components/Content";
+import Content from "./Content";
 
 // SEO METADATA – BALPRADA HOSPITAL REVIEWS
 export const metadata = {
