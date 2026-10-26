@@ -27,7 +27,7 @@ export default function AppointmentPopup() {
   };
 
   useEffect(() => {
-    setMinimumDate(getLocalDate());
+    setMinimumDate(getLocalDate( ));
 
     try {
       if (sessionStorage.getItem("balprada_popup_dismissed") === "true") {
