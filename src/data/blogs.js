@@ -2406,6 +2406,282 @@ export const blogs = [
     },
     icons: { icon: "/icon.png" }
   }
+},
+
+{
+  id: 10,
+  slug: "what-happens-in-the-first-ayurvedic-consultation",
+  title: "What Happens in the First Ayurvedic Consultation?",
+  subtitle: "Wondering what happens in the first Ayurvedic consultation? Learn how to prepare, what the doctor checks and what your plan includes. By Balprada Ayurvedic Hospital.",
+  category: "Ayurveda | Patient Guide",
+  author: "Balprada Ayurvedic Hospital Team",
+  date: "2026-10-28",
+  readTime: "9 min read",
+  image: "https://res.cloudinary.com/hiu9gggc/image/upload/v1793164411/what-happens-in-the-first-ayurvedic-consultation.jpg",
+  content: "What happens in the first Ayurvedic consultation? Learn how to prepare, what the doctor checks, how Nadi Pariksha works and what your personal treatment plan includes.",
+  tags: [
+    "First Ayurvedic Consultation",
+    "What Happens in Ayurvedic Consultation",
+    "Ayurvedic Doctor Visit",
+    "Ayurvedic Consultation Process",
+    "What to Expect at Ayurvedic Doctor",
+    "How to Prepare for Ayurvedic Consultation",
+    "What to Bring to Ayurvedic Doctor",
+    "Ayurvedic Consultation Questions",
+    "Nadi Pariksha",
+    "Pulse Examination in Ayurveda",
+    "Ayurvedic Diagnosis",
+    "Ayurvedic Treatment Plan",
+    "Prakriti Assessment",
+    "Ayurvedic Consultation Near Me",
+    "Ayurvedic First Visit",
+    "Ayurvedic Follow-Up",
+    "Ayurvedic OPD",
+    "Free Ayurvedic Consultation",
+    "Ayurvedic Treatment in Bilari",
+    "Ayurvedic Hospital in Moradabad",
+    "Ayurvedic Hospital Rampur",
+    "Balprada Ayurvedic Hospital",
+    "Ayurvedic Doctor in Bilari",
+    "Book Ayurvedic Appointment",
+    "Natural Healing"
+  ],
+
+  fullContent: {
+    introduction: "A first Ayurvedic consultation is usually longer and more personal than many people expect. The doctor does not only look at your main complaint. The aim is to understand you as a whole person, including your body type, digestion, sleep, stress, food habits and medical history.",
+
+    sections: [
+      {
+        heading: "Why the First Visit Feels Different",
+        content: [
+          { type: "bullets", items: [
+            "A first Ayurvedic consultation is usually longer and more personal than many people expect.",
+            "The doctor does not only look at your main complaint.",
+            "The aim is to understand you as a whole person, including your body type, digestion, sleep, stress, food habits and medical history.",
+            "Ayurveda believes that two people with the same disease may need different treatment.",
+            "Our guide on Vata, Pitta, Kapha and Prakriti explains why the doctor studies your natural constitution first.",
+            "Knowing what to expect helps you feel relaxed, prepare well and get the most from your visit.",
+            "If you want a basic introduction first, read our guide on what Ayurveda is and how it works."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Before You Visit: How to Prepare",
+        content: [
+          { type: "subheading", text: "What to Bring" },
+          { type: "bullets", items: [
+            "Previous prescriptions and details of any earlier treatment.",
+            "Recent reports, such as blood tests, urine tests, scans and discharge papers.",
+            "All current medicines, including allopathic tablets, supplements and home remedies.",
+            "A clear note of your symptoms, how long you have had them and what makes them better or worse.",
+            "A short note on your daily diet routine, sleep and energy."
+          ]},
+          { type: "subheading", text: "Small Things That Help" },
+          { type: "bullets", items: [
+            "Call before visiting to confirm timings and availability.",
+            "At Balprada, the Main Branch is open daily from 10:00 AM to 2:00 PM, while at the Moradabad Branch the vaidya is available on Sundays, so calling first is advised.",
+            "Bring a family member if you are unwell or elderly, as they can help with your history."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Step 1: Listening to Your Story",
+        content: [
+          { type: "bullets", items: [
+            "The doctor first listens to your main concern, how it began, how it has changed and what treatment you have already tried.",
+            "You will usually be asked about hunger, digestion, bowel habits, sleep, energy, mood, thirst, sweating and urine, as well as how your body reacts to hot or cold weather.",
+            "Questions about food habits, work routine, stress and family health history are also common, because Ayurveda sees these as part of the cause.",
+            "Answer honestly and fully. There are no right or wrong answers, and even small details can help the doctor understand your condition."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Step 2: Reviewing Your Medical History and Reports",
+        content: [
+          { type: "bullets", items: [
+            "The doctor reviews your reports and past prescriptions to understand what has already been checked and treated.",
+            "Your current medicines are noted carefully, so that the plan does not clash with them.",
+            "Our guide on safety in Ayurveda, Is Ayurvedic Treatment Safe?, explains why sharing every medicine matters.",
+            "Allergies, past surgeries and long-term conditions such as diabetes, blood pressure, thyroid, kidney or liver problems are recorded.",
+            "If more tests are needed, they may be advised.",
+            "Balprada has its own pathology lab that supports blood, urine and other diagnostic testing."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Step 3: Examination the Ayurvedic Way",
+        content: [
+          { type: "subheading", text: "Pulse Examination (Nadi Pariksha)" },
+          { type: "bullets", items: [
+            "The doctor feels your pulse at the wrist to understand the state of your doshas, Vata, Pitta and Kapha, and to see which one may be out of balance."
+          ]},
+          { type: "subheading", text: "Tongue, Eyes, Skin and Nails" },
+          { type: "bullets", items: [
+            "A coated tongue may suggest weak digestion, and the colour and texture of the eyes, skin and nails give extra clues.",
+            "Our guides on Agni and Ama explain why digestion and undigested waste matter so much in Ayurveda."
+          ]},
+          { type: "subheading", text: "General Physical Check" },
+          { type: "bullets", items: [
+            "The doctor may check your build, weight, body temperature, abdomen and the area of your complaint.",
+            "Some conditions also need standard checks such as blood pressure."
+          ]},
+          { type: "subheading", text: "Your Prakriti and Current Imbalance" },
+          { type: "bullets", items: [
+            "The doctor works out your natural body type (Prakriti) and your present state of imbalance (Vikriti), and compares the two to see what has gone wrong and how far."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Step 4: Explaining the Diagnosis",
+        content: [
+          { type: "bullets", items: [
+            "The doctor explains, in simple words, what seems to be happening in your body, which dosha or digestive issue is involved and why the problem may have started.",
+            "You should feel free to ask questions. A good consultation is a conversation, not a lecture.",
+            "The doctor should be honest about what Ayurveda can and cannot do for your condition, and about whether other medical care is needed alongside it."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Step 5: Your Personal Treatment Plan",
+        content: [
+          { type: "subheading", text: "Medicines" },
+          { type: "bullets", items: [
+            "The plan may include herbal medicines in the form of tablets, powders, decoctions or medicated oils, with clear directions on the dose, timing and duration."
+          ]},
+          { type: "subheading", text: "Diet Guidance" },
+          { type: "bullets", items: [
+            "Food is treated as part of the treatment.",
+            "You will be told what to eat, what to limit and how to eat, based on your body type and the season.",
+            "Our guide on Ritucharya shows how seasons change food needs."
+          ]},
+          { type: "subheading", text: "Daily Routine and Lifestyle" },
+          { type: "bullets", items: [
+            "Advice may cover sleep, exercise, yoga, breathing practices and stress care.",
+            "Our guide on the Ayurvedic daily routine (Dinacharya) describes a healthy day plan."
+          ]},
+          { type: "subheading", text: "Therapies" },
+          { type: "bullets", items: [
+            "If suitable, the doctor may suggest therapies such as massage, steam or cleansing treatments like Panchakarma.",
+            "These are planned only after assessment and are not needed for every patient."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Step 6: Follow-Up Plan",
+        content: [
+          { type: "bullets", items: [
+            "The doctor will tell you when to come back.",
+            "The timing depends on your condition, and review may cover your reports, symptoms, diet routine and response to medicines.",
+            "Follow-up visits allow the plan to be adjusted as your body responds.",
+            "Our guide on how long Ayurvedic treatment takes to show results explains why steady follow-up matters.",
+            "Ask the doctor which signs to watch for, and when to call or return earlier."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Questions Worth Asking Your Doctor",
+        content: [
+          { type: "bullets", items: [
+            "What is the main cause of my problem according to Ayurveda?",
+            "Which medicines am I being given, and what are they for?",
+            "Can I take these with my current medicines?",
+            "Which foods and habits should I follow or avoid?",
+            "How long might I need treatment, and when is my next review?",
+            "What signs mean I should contact you or seek urgent care?"
+          ]}
+        ]
+      },
+
+      {
+        heading: "What You May Feel After the Visit",
+        content: [
+          { type: "bullets", items: [
+            "Many patients feel heard and calm, because the doctor spends time understanding the whole picture.",
+            "You may leave with a plan that includes more than medicine, such as diet and routine changes, so it helps to write down the instructions or ask for them in simple notes.",
+            "Do not expect instant results. Some people notice small changes in digestion, sleep or energy first.",
+            "If you want to compare Ayurveda with modern care, read our guide on Ayurveda vs Allopathy."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Common Mistakes to Avoid",
+        content: [
+          { type: "bullets", items: [
+            "Hiding medicines or reports from the doctor.",
+            "Stopping prescribed medicines for diabetes, blood pressure, thyroid or heart conditions without advice.",
+            "Skipping the diet and routine advice and relying only on medicines.",
+            "Stopping treatment early because symptoms ease.",
+            "Using several treatments at once without telling each doctor.",
+            "Delaying urgent care. Emergencies such as chest pain, breathing trouble or severe bleeding need immediate hospital care first."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Your First Visit at Balprada Ayurvedic Hospital, Bilari",
+        content: [
+          { type: "bullets", items: [
+            "Balprada Ayurvedic Hospital &amp; Research Center in Bilari, Moradabad has offered Ayurvedic care for 35 years.",
+            "Our process starts with consultation, where the doctor reviews your concern, history, reports and current medicines before suggesting the next step.",
+            "Care combines Balprada Ayurvedic medicines, diet discipline, yoga, panchakarma where suitable, and regular follow-up, with pathology lab support.",
+            "Patients from Bilari, Moradabad, Rampur and nearby areas can visit our ashram and clinic, open 7 days a week from 10:00 AM to 2:00 PM, with free OPD on the 15th of every month.",
+            "🔗 <strong>Book a consultation:</strong> call or WhatsApp <a href='tel:8126364606' style='color:#2563eb;'>8126364606</a>, or visit <a href='https://www.balpradaindia.com/contact' style='color:#2563eb;'>balpradaindia.com/contact</a>."
+          ]}
+        ]
+      }
+    ]
+  },
+
+  faqs: [
+    {
+      question: "What should I bring to my first Ayurvedic consultation?",
+      answer: "Bring previous prescriptions, recent reports, all current medicines and a note of your symptoms, how long you have had them and your diet routine."
+    },
+    {
+      question: "Is the first consultation different from later visits?",
+      answer: "Usually yes. The first visit is more detailed, as the doctor learns your history, body type and digestion. Later visits focus on progress and changes to the plan."
+    },
+    {
+      question: "Will I need tests?",
+      answer: "Not always. The doctor may advise tests if more information is needed, and Balprada has a pathology lab for blood, urine and diagnostic testing."
+    },
+    {
+      question: "Should I call before visiting?",
+      answer: "Yes. Calling first helps you confirm timings and availability, especially if you plan to visit the Moradabad Branch."
+    }
+  ],
+
+  metaTags: {
+    title: "What Happens in the First Ayurvedic Consultation?",
+    description: "Wondering what happens in the first Ayurvedic consultation? Learn how to prepare, what the doctor checks and what your plan includes. By Balprada Ayurvedic Hospital.",
+    keywords: "first ayurvedic consultation, what happens in ayurvedic consultation, ayurvedic doctor visit, ayurvedic consultation process, what to expect at ayurvedic doctor, how to prepare for ayurvedic consultation, what to bring to ayurvedic doctor, ayurvedic consultation questions, nadi pariksha, pulse examination in ayurveda, ayurvedic diagnosis, ayurvedic treatment plan, prakriti assessment, ayurvedic consultation near me, ayurvedic first visit, ayurvedic follow-up, ayurvedic OPD, free ayurvedic consultation, ayurvedic treatment in Bilari, ayurvedic hospital in Moradabad, ayurvedic hospital Rampur, Balprada Ayurvedic Hospital, ayurvedic doctor in Bilari, book ayurvedic appointment, natural healing",
+    alternates: {
+      canonical: "https://www.balpradaindia.com/blog/what-happens-in-the-first-ayurvedic-consultation"
+    },
+    openGraph: {
+      type: "article",
+      url: "https://www.balpradaindia.com/blog/what-happens-in-the-first-ayurvedic-consultation",
+      title: "What Happens in the First Ayurvedic Consultation?",
+      description: "Wondering what happens in the first Ayurvedic consultation? Learn how to prepare, what the doctor checks and what your plan includes. By Balprada Ayurvedic Hospital.",
+      images: [{ url: "/icon.png", width: 1200, height: 630, alt: "What Happens in the First Ayurvedic Consultation? — Balprada Ayurvedic Hospital" }]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "What Happens in the First Ayurvedic Consultation?",
+      description: "Wondering what happens in the first Ayurvedic consultation? Learn how to prepare, what the doctor checks and what your plan includes. By Balprada Ayurvedic Hospital.",
+      images: ["/icon.png"]
+    },
+    icons: { icon: "/icon.png" }
+  }
 }
 
 
