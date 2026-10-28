@@ -1,5 +1,5 @@
 import React from "react";
-import Content from "./_components/Content";
+import Content from "./Content";
 
 // SEO METADATA – AYURVEDIC CKD TREATMENT IN BILARI
 export const metadata = {
