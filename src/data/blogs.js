@@ -3201,7 +3201,261 @@ export const blogs = [
     },
     icons: { icon: "/icon.png" }
   }
-}
+},
 
+{
+  id: 13,
+  slug: "kutki-picrorhiza-liver-support-in-ayurveda",
+  title: "Kutki (Picrorhiza): Liver Support in Ayurveda",
+  subtitle: "Learn what Kutki (Picrorhiza) is, its traditional use for liver support in Ayurveda, what research says and key safety points. By Balprada Ayurvedic Hospital.",
+  category: "Ayurveda | Herbs",
+  author: "Balprada Ayurvedic Hospital Team",
+  date: "2026-10-31",
+  readTime: "10 min read",
+  image: "https://res.cloudinary.com/hiu9gggc/image/upload/v1793432642/kutki-picrorhiza-liver-support-in-ayurveda.jpg",
+  content: "Kutki (Picrorhiza kurroa) is a traditional Ayurvedic herb linked with liver support and digestion. Learn its uses, research evidence and safety points.",
+  tags: [
+    "Kutki",
+    "Kutki in Ayurveda",
+    "Picrorhiza Kurroa",
+    "Picrorhiza",
+    "Kutki Benefits",
+    "Kutki for Liver",
+    "Liver Support in Ayurveda",
+    "Kutki Uses",
+    "Kutki Churna",
+    "Kutki Powder",
+    "Katuki",
+    "Kutki for Jaundice",
+    "Kutki for Fatty Liver",
+    "Kutki Side Effects",
+    "Kutki Safety",
+    "Ayurvedic Herbs for Liver",
+    "Bitter Herbs in Ayurveda",
+    "Ayurvedic Liver Care",
+    "Liver Health in Ayurveda",
+    "Kutki Research",
+    "Ayurvedic Treatment in Bilari",
+    "Ayurvedic Hospital in Moradabad",
+    "Ayurvedic Hospital Rampur",
+    "Balprada Ayurvedic Hospital",
+    "Ayurvedic Liver Treatment"
+  ],
+
+  fullContent: {
+    introduction: "Kutki is a traditional Ayurvedic herb known for its bitter taste and its long history of use in liver and digestive care. This guide explains what Kutki is, its traditional uses, what research says and the safety points to know before using it.",
+
+    sections: [
+      {
+        heading: "What Is Kutki?",
+        content: [
+          { type: "bullets", items: [
+            "Kutki is a traditional Ayurvedic herb.",
+            "Its botanical name is Picrorhiza kurroa, and in Sanskrit texts it is called Katuki or Katuka, which points to its strongly bitter taste.",
+            "It is a small perennial plant that grows in cool, high altitude areas of the Himalayas, mainly in India and Nepal.",
+            "The root and the underground stem (rhizome) are the parts used in medicine.",
+            "Because wild plants are slow growing and have been collected heavily, Kutki is now considered a threatened plant in the wild.",
+            "Buying products from responsible, licensed sources matters for both quality and conservation."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Kutki in Ayurvedic Thinking",
+        content: [
+          { type: "bullets", items: [
+            "Ayurveda describes herbs by taste (Rasa), effect on digestion (Virya and Vipaka) and action on the doshas.",
+            "Kutki is traditionally described as bitter in taste and cooling in nature, and as helpful in balancing Pitta and Kapha.",
+            "In some descriptions it may increase Vata if used too much or by a person with a dry, weak constitution.",
+            "These descriptions come from classical texts and traditional practice.",
+            "The liver is closely linked with Pitta in Ayurveda, which is one reason bitter, cooling herbs like Kutki are traditionally used for liver related complaints.",
+            "Ayurveda always looks at the whole person. A herb is chosen after the doctor studies your body type, digestion and condition.",
+            "Our guide on Vata, Pitta, Kapha and Prakriti explains why one herb does not suit everyone."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Traditional Uses of Kutki",
+        content: [
+          { type: "subheading", text: "Liver Support" },
+          { type: "bullets", items: [
+            "Kutki is traditionally used in formulations for liver complaints and for supporting the liver and digestion, particularly where excess Pitta is thought to be involved."
+          ]},
+          { type: "subheading", text: "Jaundice (Kamala)" },
+          { type: "bullets", items: [
+            "In classical texts, Kutki is mentioned among herbs used in jaundice care.",
+            "This is a traditional use.",
+            "Jaundice is a sign of an underlying problem and must always be checked by a doctor, with proper tests."
+          ]},
+          { type: "subheading", text: "Digestion and Appetite" },
+          { type: "bullets", items: [
+            "Bitter herbs are traditionally used to awaken appetite and support weak digestion.",
+            "Our guide on Agni explains why digestion is at the centre of Ayurvedic care."
+          ]},
+          { type: "subheading", text: "Fever and Pitta Related Complaints" },
+          { type: "bullets", items: [
+            "It is used in some traditional formulations for fever, burning sensation and other Pitta related complaints."
+          ]},
+          { type: "subheading", text: "Common Forms Used" },
+          { type: "bullets", items: [
+            "Root powder (churna).",
+            "Decoction (kwatha).",
+            "Tablets, capsules and extracts.",
+            "Classical formulations that include Kutki, which should be taken only under the guidance of a qualified doctor."
+          ]}
+        ]
+      },
+
+      {
+        heading: "What Does Modern Research Say?",
+        content: [
+          { type: "bullets", items: [
+            "Kutki and its natural compounds, often called picroside and kutkoside, have been studied in laboratories and in animals, with some studies suggesting protective effects on liver cells.",
+            "There are a few small human studies, for example in people with certain liver conditions, but they are limited in size and quality, and results cannot be taken as proof.",
+            "For this reason, it is not correct to say that Kutki cures fatty liver, hepatitis, cirrhosis or jaundice, or that it can replace medical treatment.",
+            "It is fair to say that Kutki is a traditional herb with a long history of use for liver support in Ayurveda, and that more good quality research is needed."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Important Safety Points Before Using Kutki",
+        content: [
+          { type: "subheading", text: "Do Not Self-Medicate With Liver Problems" },
+          { type: "bullets", items: [
+            "If you have jaundice, long-lasting tiredness, pain in the upper right abdomen, dark urine or a known liver condition, do not start Kutki on your own.",
+            "These signs need proper tests and medical care first.",
+            "Some herbs and supplements can themselves harm the liver when used wrongly, so a liver problem is the time for extra care, not for guesswork."
+          ]},
+          { type: "subheading", text: "Side Effects of Too Much" },
+          { type: "bullets", items: [
+            "Kutki is very bitter and strong.",
+            "Large doses may cause nausea, vomiting, stomach discomfort, loose stools or diarrhoea."
+          ]},
+          { type: "subheading", text: "Effect on Blood Sugar and Immunity" },
+          { type: "bullets", items: [
+            "Some reports suggest Kutki may lower blood sugar and may act on the immune system.",
+            "If you take diabetes medicines, immune suppressing medicines or have an autoimmune condition or organ transplant, speak to your doctor before using it."
+          ]},
+          { type: "subheading", text: "Special Groups" },
+          { type: "bullets", items: [
+            "Pregnant and breastfeeding women, children, older adults and very weak people should use herbs only on the advice of a qualified doctor.",
+            "People with a weak digestion or a dry, Vata type constitution may not tolerate strongly bitter herbs well.",
+            "Anyone planning surgery should tell the surgeon about all herbs they use."
+          ]},
+          { type: "subheading", text: "Product Quality and Dose" },
+          { type: "bullets", items: [
+            "Kutki is expensive and scarce, so products may be mixed with other roots or sold at the wrong strength.",
+            "Use products only from reliable, licensed sources with clear labels.",
+            "Our guide on Is Ayurvedic Treatment Safe? explains what to check before you start.",
+            "The right dose and form depend on the person, so do not copy a dose from the internet or from a friend.",
+            "More is not better."
+          ]},
+          { type: "subheading", text: "Warning Signs" },
+          { type: "bullets", items: [
+            "Stop the herb and contact a doctor if you notice rash, itching, swelling of the lips or face, breathlessness, dizziness, repeated vomiting, severe stomach pain, yellow eyes or skin, dark urine or unusual tiredness."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Healthy Habits That Support the Liver",
+        content: [
+          { type: "bullets", items: [
+            "Eat fresh, home-cooked, balanced meals at regular times, and limit very oily, fried, sugary and processed food.",
+            "Avoid alcohol, and do not take painkillers or supplements regularly without advice.",
+            "Maintain a healthy weight and stay active, because excess weight and little movement are linked with fatty liver.",
+            "Keep blood sugar, blood pressure and cholesterol under control and get regular check-ups.",
+            "Drink clean, safe water and eat fresh food, especially in the monsoon, to lower the risk of infections.",
+            "Our guide on Ritucharya shows how food can change with the season.",
+            "Sleep on time and manage stress.",
+            "Our guide on the Ayurvedic daily routine (Dinacharya) explains a healthy day plan, and our guide on Ama explains why Ayurveda looks at digestion and undigested waste."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Common Myths About Kutki",
+        content: [
+          { type: "bullets", items: [
+            "<strong>Myth:</strong> Kutki cures fatty liver or cirrhosis. <strong>Fact:</strong> there is no proof of this, and liver disease needs proper medical care and monitoring.",
+            "<strong>Myth:</strong> more Kutki means faster results. <strong>Fact:</strong> more can cause vomiting and loose stools, and does not speed recovery.",
+            "<strong>Myth:</strong> natural means safe for everyone. <strong>Fact:</strong> herbs can interact with medicines and may not suit every person."
+          ]}
+        ]
+      },
+
+      {
+        heading: "When to See a Doctor",
+        content: [
+          { type: "bullets", items: [
+            "See a doctor if you notice yellow eyes or skin, dark urine, pale stool, persistent tiredness, loss of appetite, nausea or swelling in the abdomen or legs.",
+            "Get checked if your reports show raised liver enzymes, fatty liver or other liver findings, so the cause can be understood.",
+            "Seek urgent care for vomiting blood, black stool, confusion, severe abdominal pain or high fever with jaundice.",
+            "If you already have a diagnosed liver condition, never stop prescribed medicines on your own."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Liver and Digestive Care at Balprada Ayurvedic Hospital, Bilari",
+        content: [
+          { type: "bullets", items: [
+            "Balprada Ayurvedic Hospital &amp; Research Center in Bilari, Moradabad has offered Ayurvedic care for 35 years, including medicine, diet and routine based care for liver health, fatty liver, jaundice and weak digestion.",
+            "Our doctors review your concern, history, reports and current medicines before suggesting any herb or plan, with food guidance and regular follow-up.",
+            "Balprada has its own pathology lab that supports blood, urine and other diagnostic testing.",
+            "Patients from Bilari, Moradabad, Rampur and nearby areas can visit our ashram and clinic, open 7 days a week from 10:00 AM to 2:00 PM, with free OPD on the 15th of every month.",
+            "🔗 <strong>Book a consultation:</strong> call or WhatsApp <a href='tel:8126364606' style='color:#2563eb;'>8126364606</a>, or visit <a href='https://www.balpradaindia.com/contact' style='color:#2563eb;'>balpradaindia.com/contact</a>.",
+            "Our guide on what happens in the first Ayurvedic consultation explains how to prepare.",
+            "You can also read our guides on other traditional herbs, Punarnava and Gokshura."
+          ]}
+        ]
+      }
+    ]
+  },
+
+  faqs: [
+    {
+      question: "What is Kutki used for in Ayurveda?",
+      answer: "It is traditionally used for liver support, digestion, jaundice care, fever and Pitta related complaints."
+    },
+    {
+      question: "Is Kutki good for the liver?",
+      answer: "It is traditionally linked with liver support, and early studies are interesting, but human research is limited, so it should be used only under medical guidance."
+    },
+    {
+      question: "Can Kutki cure fatty liver?",
+      answer: "There is no proof of this. Fatty liver needs proper assessment, lifestyle changes and medical advice."
+    },
+    {
+      question: "Does Kutki have side effects?",
+      answer: "Yes. It is very bitter and may cause nausea, vomiting or loose stools in large doses, and it may affect blood sugar and immunity."
+    }
+  ],
+
+  metaTags: {
+    title: "Kutki (Picrorhiza): Liver Support in Ayurveda",
+    description: "Learn what Kutki (Picrorhiza) is, its traditional use for liver support in Ayurveda, what research says and key safety points. By Balprada Ayurvedic Hospital.",
+    keywords: "kutki, kutki in ayurveda, picrorhiza kurroa, picrorhiza, kutki benefits, kutki for liver, liver support in ayurveda, kutki uses, kutki churna, kutki powder, katuki, kutki for jaundice, kutki for fatty liver, kutki side effects, kutki safety, ayurvedic herbs for liver, bitter herbs in ayurveda, ayurvedic liver care, liver health in ayurveda, kutki research, ayurvedic treatment in Bilari, ayurvedic hospital in Moradabad, ayurvedic hospital Rampur, Balprada Ayurvedic Hospital, ayurvedic liver treatment",
+    alternates: {
+      canonical: "https://www.balpradaindia.com/blog/kutki-picrorhiza-liver-support-in-ayurveda"
+    },
+    openGraph: {
+      type: "article",
+      url: "https://www.balpradaindia.com/blog/kutki-picrorhiza-liver-support-in-ayurveda",
+      title: "Kutki (Picrorhiza): Liver Support in Ayurveda",
+      description: "Learn what Kutki (Picrorhiza) is, its traditional use for liver support in Ayurveda, what research says and key safety points. By Balprada Ayurvedic Hospital.",
+      images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Kutki (Picrorhiza): Liver Support in Ayurveda — Balprada Ayurvedic Hospital" }]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Kutki (Picrorhiza): Liver Support in Ayurveda",
+      description: "Learn what Kutki (Picrorhiza) is, its traditional use for liver support in Ayurveda, what research says and key safety points. By Balprada Ayurvedic Hospital.",
+      images: ["/icon.png"]
+    },
+    icons: { icon: "/icon.png" }
+  }
+}
 
 ];
