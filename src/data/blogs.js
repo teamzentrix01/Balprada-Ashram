@@ -3456,6 +3456,257 @@ export const blogs = [
     },
     icons: { icon: "/icon.png" }
   }
+},
+
+{
+  id: 14,
+  slug: "bhumi-amla-traditional-use-for-liver-care",
+  title: "Bhumi Amla: Traditional Use for Liver Care",
+  subtitle: "Learn what Bhumi Amla is, its traditional use for liver care in Ayurveda, what research says and key safety points. A simple guide by Balprada Ayurvedic Hospital.",
+  category: "Ayurveda | Herbs",
+  author: "Balprada Ayurvedic Hospital Team",
+  date: "2026-11-02",
+  readTime: "10 min read",
+  image: "https://res.cloudinary.com/hiu9gggc/image/upload/v1793614513/bhumi-amla-traditional-use-for-liver-care.jpg",
+  content: "Bhumi Amla is a traditional Ayurvedic herb linked with liver care, jaundice support and digestion. Learn its uses, research evidence and safety points.",
+  tags: [
+    "Bhumi Amla",
+    "Bhumi Amla in Ayurveda",
+    "Bhumi Amla Benefits",
+    "Bhumi Amla for Liver",
+    "Bhumi Amla Uses",
+    "Phyllanthus Niruri",
+    "Phyllanthus Amarus",
+    "Bhumyamalaki",
+    "Bhumi Amla for Jaundice",
+    "Bhumi Amla Powder",
+    "Bhumi Amla Side Effects",
+    "Bhumi Amla Safety",
+    "Bhumi Amla vs Amla",
+    "Ayurvedic Herbs for Liver",
+    "Liver Care in Ayurveda",
+    "Ayurvedic Herbs for Jaundice",
+    "Traditional Liver Herbs",
+    "Bhumi Amla Research",
+    "Ayurvedic Liver Treatment",
+    "Ayurvedic Treatment in Bilari",
+    "Ayurvedic Hospital in Moradabad",
+    "Ayurvedic Hospital Rampur",
+    "Balprada Ayurvedic Hospital",
+    "Natural Liver Support",
+    "Ayurveda for Liver Health"
+  ],
+
+  fullContent: {
+    introduction: "Bhumi Amla is a small, delicate herb used in Ayurveda for many generations, mainly for liver care and digestion. This guide explains what it is, its traditional uses, what research says and the safety points to know before using it.",
+
+    sections: [
+      {
+        heading: "What Is Bhumi Amla?",
+        content: [
+          { type: "bullets", items: [
+            "Bhumi Amla is a small, delicate herb used in Ayurveda for many generations.",
+            "It is mainly identified as Phyllanthus niruri, and closely related plants such as Phyllanthus amarus and Phyllanthus fraternus are also sold under the same name.",
+            "It is known in Sanskrit as Bhumyamalaki.",
+            "The name has a simple meaning. Bhumi means ground and Amla refers to the Indian gooseberry.",
+            "Tiny fruits hang under the leaves close to the ground, and they are said to look like miniature amla.",
+            "It is a common plant in warm, humid parts of India, often seen after the rains. The whole plant is used.",
+            "Bhumi Amla is a different plant from Amla, the Indian gooseberry tree (Emblica officinalis).",
+            "They share a name but are not the same herb, so check the label carefully."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Bhumi Amla in Ayurvedic Thinking",
+        content: [
+          { type: "bullets", items: [
+            "Ayurveda describes herbs by taste (Rasa), effect on digestion (Virya and Vipaka) and action on the doshas.",
+            "Bhumi Amla is traditionally described as bitter, astringent and slightly sweet in taste, and cooling in nature.",
+            "It is considered helpful in balancing Pitta and Kapha.",
+            "These descriptions come from classical texts and traditional practice.",
+            "Because the liver is closely linked with Pitta in Ayurveda, cooling and bitter herbs like Bhumi Amla are traditionally used for liver related complaints.",
+            "Ayurveda always looks at the whole person. A herb is chosen after the doctor studies your body type, digestion and condition.",
+            "Our guide on Vata, Pitta, Kapha and Prakriti explains why one herb does not suit everyone."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Traditional Uses of Bhumi Amla",
+        content: [
+          { type: "subheading", text: "Liver Support" },
+          { type: "bullets", items: [
+            "Bhumi Amla is traditionally used in formulations for liver complaints and to support the liver and digestion, especially where excess Pitta is thought to be involved."
+          ]},
+          { type: "subheading", text: "Jaundice (Kamala)" },
+          { type: "bullets", items: [
+            "It is among the herbs traditionally mentioned in jaundice care, and village healers in many regions have long used the fresh plant for it.",
+            "This is traditional use only.",
+            "Jaundice is a sign of an underlying problem and needs a doctor and proper tests."
+          ]},
+          { type: "subheading", text: "Digestion and Appetite" },
+          { type: "bullets", items: [
+            "It is used in some traditional formulations for weak digestion and loss of appetite.",
+            "Our guide on Agni explains why digestion is at the centre of Ayurvedic care."
+          ]},
+          { type: "subheading", text: "Urinary Comfort" },
+          { type: "bullets", items: [
+            "It is traditionally used for burning urine and urinary discomfort.",
+            "It is sometimes called stonebreaker in other parts of the world, but this name does not mean it is proven to remove stones."
+          ]},
+          { type: "subheading", text: "Common Forms Used" },
+          { type: "bullets", items: [
+            "Dried whole plant powder (churna).",
+            "Decoction (kwatha).",
+            "Tablets, capsules and extracts, and classical formulations that include it, which should be taken only under the guidance of a qualified doctor."
+          ]}
+        ]
+      },
+
+      {
+        heading: "What Does Modern Research Say?",
+        content: [
+          { type: "bullets", items: [
+            "Phyllanthus species have been studied in laboratories and in animals, with some studies suggesting protective effects on liver cells and antiviral and antioxidant activity.",
+            "Some human studies, mostly small, have looked at Phyllanthus in people with hepatitis B.",
+            "Overall reviews have found the evidence to be limited and of low quality, with mixed results, so it cannot be taken as proof of benefit.",
+            "For this reason, it is not correct to say that Bhumi Amla cures hepatitis, jaundice, fatty liver or cirrhosis, or that it can replace medical treatment.",
+            "It is fair to say that Bhumi Amla is a traditional herb with a long history of use for liver care in Ayurveda, and that more good quality research is needed."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Important Safety Points Before Using Bhumi Amla",
+        content: [
+          { type: "subheading", text: "Do Not Self-Medicate With Liver Problems" },
+          { type: "bullets", items: [
+            "If you have yellow eyes or skin, dark urine, long-lasting tiredness, pain in the upper right abdomen or a known liver condition such as hepatitis, do not start Bhumi Amla on your own.",
+            "These signs need proper tests and medical care first."
+          ]},
+          { type: "subheading", text: "Blood Sugar, Blood Pressure and Urine Flow" },
+          { type: "bullets", items: [
+            "Some reports suggest it may lower blood sugar and blood pressure, and may increase urine flow.",
+            "If you take medicines for diabetes, blood pressure or water retention, tell your doctor before using it."
+          ]},
+          { type: "subheading", text: "Special Groups" },
+          { type: "bullets", items: [
+            "Pregnant and breastfeeding women, children, older adults and very weak people should use herbs only on the advice of a qualified doctor.",
+            "Traditional texts advise caution in pregnancy."
+          ]},
+          { type: "subheading", text: "Product Quality and Identity" },
+          { type: "bullets", items: [
+            "Several look-alike plants are sold as Bhumi Amla, and powders can be mixed with other plants.",
+            "Use products only from reliable, licensed sources with clear labels.",
+            "Our guide on Is Ayurvedic Treatment Safe? explains what to check before you start.",
+            "The right dose and form depend on the person, so do not copy a dose from the internet or from a friend.",
+            "More is not better."
+          ]},
+          { type: "subheading", text: "Warning Signs" },
+          { type: "bullets", items: [
+            "Stop the herb and contact a doctor if you notice rash, itching, swelling of the lips or face, breathlessness, dizziness, vomiting, severe stomach pain, yellow eyes or skin, dark urine or unusual tiredness."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Healthy Habits That Support the Liver",
+        content: [
+          { type: "bullets", items: [
+            "Eat fresh, home-cooked, balanced meals at regular times, and limit very oily, fried, sugary and processed food.",
+            "Avoid alcohol, and do not take painkillers or supplements regularly without advice.",
+            "Stay active and keep a healthy weight, as extra weight is linked with fatty liver.",
+            "Keep blood sugar, blood pressure and cholesterol under control and get regular check-ups.",
+            "Drink clean, safe water and eat fresh food, especially in the monsoon, to lower the risk of liver infections such as hepatitis A and E.",
+            "Our guide on Ritucharya shows how food can change with the season.",
+            "Sleep on time and manage stress.",
+            "Our guide on the Ayurvedic daily routine (Dinacharya) explains a healthy day plan, and our guide on Ama explains why Ayurveda looks at digestion and undigested waste."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Common Myths About Bhumi Amla",
+        content: [
+          { type: "bullets", items: [
+            "<strong>Myth:</strong> Bhumi Amla cures jaundice and hepatitis. <strong>Fact:</strong> there is no proof of this, and these conditions need proper medical care.",
+            "<strong>Myth:</strong> Bhumi Amla and Amla are the same. <strong>Fact:</strong> they are different plants.",
+            "<strong>Myth:</strong> natural means safe for everyone. <strong>Fact:</strong> herbs can interact with medicines and may not suit every person."
+          ]}
+        ]
+      },
+
+      {
+        heading: "When to See a Doctor",
+        content: [
+          { type: "bullets", items: [
+            "See a doctor if you notice yellow eyes or skin, dark urine, pale stool, persistent tiredness, loss of appetite, nausea or swelling in the abdomen or legs.",
+            "Get checked if your reports show raised liver enzymes, fatty liver or other liver findings, so the cause can be understood.",
+            "Seek urgent care for vomiting blood, black stool, confusion, severe abdominal pain or high fever with jaundice.",
+            "If you already have a diagnosed liver condition, never stop prescribed medicines on your own."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Liver and Digestive Care at Balprada Ayurvedic Hospital, Bilari",
+        content: [
+          { type: "bullets", items: [
+            "Balprada Ayurvedic Hospital &amp; Research Center in Bilari, Moradabad has offered Ayurvedic care for 35 years, including medicine, diet and routine based care for liver health, fatty liver, jaundice and weak digestion.",
+            "Our doctors review your concern, history, reports and current medicines before suggesting any herb or plan, with food guidance and regular follow-up.",
+            "Balprada has its own pathology lab that supports blood, urine and other diagnostic testing.",
+            "Patients from Bilari, Moradabad, Rampur and nearby areas can visit our ashram and clinic, open 7 days a week from 10:00 AM to 2:00 PM, with free OPD on the 15th of every month.",
+            "🔗 <strong>Book a consultation:</strong> call or WhatsApp <a href='tel:8126364606' style='color:#2563eb;'>8126364606</a>, or visit <a href='https://www.balpradaindia.com/contact' style='color:#2563eb;'>balpradaindia.com/contact</a>.",
+            "Our guide on what happens in the first Ayurvedic consultation explains how to prepare.",
+            "You can also read our guides on other traditional herbs, Kutki, Punarnava and Gokshura."
+          ]}
+        ]
+      }
+    ]
+  },
+
+  faqs: [
+    {
+      question: "What is Bhumi Amla used for in Ayurveda?",
+      answer: "It is traditionally used for liver support, jaundice care, digestion, urinary comfort and Pitta related complaints."
+    },
+    {
+      question: "Is Bhumi Amla good for the liver?",
+      answer: "It is traditionally linked with liver care, and early studies are interesting, but human research is limited, so it should be used only under medical guidance."
+    },
+    {
+      question: "Can Bhumi Amla cure jaundice or hepatitis?",
+      answer: "There is no proof of this. Jaundice and hepatitis need proper tests and medical care."
+    },
+    {
+      question: "Is Bhumi Amla the same as Amla?",
+      answer: "No. Bhumi Amla is a small herb, while Amla is the Indian gooseberry tree. They are different plants."
+    }
+  ],
+
+  metaTags: {
+    title: "Bhumi Amla: Traditional Use for Liver Care",
+    description: "Learn what Bhumi Amla is, its traditional use for liver care in Ayurveda, what research says and key safety points. A simple guide by Balprada Ayurvedic Hospital.",
+    keywords: "bhumi amla, bhumi amla in ayurveda, bhumi amla benefits, bhumi amla for liver, bhumi amla uses, phyllanthus niruri, phyllanthus amarus, bhumyamalaki, bhumi amla for jaundice, bhumi amla powder, bhumi amla side effects, bhumi amla safety, bhumi amla vs amla, ayurvedic herbs for liver, liver care in ayurveda, ayurvedic herbs for jaundice, traditional liver herbs, bhumi amla research, ayurvedic liver treatment, ayurvedic treatment in Bilari, ayurvedic hospital in Moradabad, ayurvedic hospital Rampur, Balprada Ayurvedic Hospital, natural liver support, ayurveda for liver health",
+    alternates: {
+      canonical: "https://www.balpradaindia.com/blog/bhumi-amla-traditional-use-for-liver-care"
+    },
+    openGraph: {
+      type: "article",
+      url: "https://www.balpradaindia.com/blog/bhumi-amla-traditional-use-for-liver-care",
+      title: "Bhumi Amla: Traditional Use for Liver Care",
+      description: "Learn what Bhumi Amla is, its traditional use for liver care in Ayurveda, what research says and key safety points. A simple guide by Balprada Ayurvedic Hospital.",
+      images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Bhumi Amla: Traditional Use for Liver Care — Balprada Ayurvedic Hospital" }]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Bhumi Amla: Traditional Use for Liver Care",
+      description: "Learn what Bhumi Amla is, its traditional use for liver care in Ayurveda, what research says and key safety points. A simple guide by Balprada Ayurvedic Hospital.",
+      images: ["/icon.png"]
+    },
+    icons: { icon: "/icon.png" }
+  }
 }
 
 ];
