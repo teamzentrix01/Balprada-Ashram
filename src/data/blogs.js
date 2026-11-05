@@ -4169,12 +4169,12 @@ export const blogs = [
         content: [
           { type: "bullets", items: [
             "Eat fresh, home-cooked, balanced meals at regular times, with enough protein.",
-            "Link: <a href='https://www.balpradaindia.com/blog/ritucharya-what-to-eat-and-avoid-in-each-season' style='color:#2563eb;'>Ritucharya guide</a>.",
+            "<a href='https://www.balpradaindia.com/blog/ritucharya-what-to-eat-and-avoid-in-each-season' style='color:#2563eb;'>Ritucharya guide</a>.",
             "Sleep on time and wake early.",
-            "Link: <a href='https://www.balpradaindia.com/blog/ayurvedic-daily-routine-dinacharya-for-better-health' style='color:#2563eb;'>Dinacharya guide</a>.",
+            "<a href='https://www.balpradaindia.com/blog/ayurvedic-daily-routine-dinacharya-for-better-health' style='color:#2563eb;'>Dinacharya guide</a>.",
             "Stay active with walking, yoga or light exercise, and make time for rest and quiet breathing.",
             "Limit late nights and screen use before bed.",
-            "Link: <a href='https://www.balpradaindia.com/blog/agni-in-ayurveda-why-digestion-fire-matters' style='color:#2563eb;'>Agni</a> and <a href='https://www.balpradaindia.com/blog/ama-toxins-in-ayurveda-signs-and-causes' style='color:#2563eb;'>Ama</a> guides."
+            "<a href='https://www.balpradaindia.com/blog/agni-in-ayurveda-why-digestion-fire-matters' style='color:#2563eb;'>Agni</a> and <a href='https://www.balpradaindia.com/blog/ama-toxins-in-ayurveda-signs-and-causes' style='color:#2563eb;'>Ama</a> guides."
           ]}
         ]
       },
