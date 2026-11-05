@@ -3707,6 +3707,547 @@ export const blogs = [
     },
     icons: { icon: "/icon.png" }
   }
+},
+
+{
+  id: 15,
+  slug: "giloy-benefits-and-who-should-avoid-it",
+  title: "Giloy: Benefits and Who Should Avoid It | Balprada Bilari",
+  subtitle: "Learn the traditional uses of Giloy in Ayurveda, what research says, safety points and who should avoid it. Guidance from Balprada Ayurvedic Hospital, Bilari.",
+  category: "Ayurveda | Herbs",
+  author: "Balprada Ayurvedic Hospital Team",
+  date: "2026-11-05",
+  readTime: "10 min read",
+  image: "https://res.cloudinary.com/dt8wjpf9e/image/upload/v1793857486/giloy-benefits-and-who-should-avoid-it_tz3wt3.jpg",
+  content: "Giloy (Tinospora cordifolia) is a traditional Ayurvedic herb used for fever, digestion and strength. Learn its benefits, research evidence, safety points and who should avoid it.",
+  tags: [
+    "Giloy Benefits",
+    "Giloy Who Should Avoid",
+    "Giloy Side Effects",
+    "Tinospora Cordifolia",
+    "Guduchi",
+    "Amrita Herb",
+    "Giloy in Ayurveda",
+    "Giloy for Fever",
+    "Giloy and Immunity",
+    "Giloy and Liver",
+    "Giloy and Diabetes",
+    "Giloy Autoimmune",
+    "Giloy During Pregnancy",
+    "Giloy Juice",
+    "Giloy Powder",
+    "Giloy Tablets",
+    "Neem Giloy",
+    "Giloy Myths",
+    "Giloy Dengue Myth",
+    "Ayurvedic Herbs Safety",
+    "Rasayana Herbs",
+    "Ayurvedic Hospital Bilari",
+    "Ayurvedic Doctor Moradabad",
+    "Balprada Ayurvedic Hospital"
+  ],
+
+  fullContent: {
+    introduction: "Giloy is a climbing vine used in Ayurveda for many generations, especially for fever, digestion and recovery. This guide explains its traditional uses, what research says, and the safety points and people who should avoid it.",
+
+    sections: [
+      {
+        heading: "What Is Giloy?",
+        content: [
+          { type: "bullets", items: [
+            "Giloy is a climbing vine used in Ayurveda for many generations.",
+            "Its botanical name is Tinospora cordifolia, and it is also called Guduchi or Amrita in Sanskrit texts.",
+            "Amrita means nectar of life, which shows how highly the herb has been regarded.",
+            "It grows across India and is often seen climbing on trees such as neem and mango.",
+            "The stem is the part most often used, and the leaves and root are also described in traditional writing.",
+            "Giloy is a different plant from Neem, even though the two are often talked about together.",
+            "Check the label carefully when you buy a product."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Giloy in Ayurvedic Thinking",
+        content: [
+          { type: "bullets", items: [
+            "Ayurveda describes herbs by taste (Rasa), effect on digestion (Virya and Vipaka) and action on the doshas.",
+            "Giloy is traditionally described as bitter and astringent in taste, warming in some texts, and helpful in balancing all three doshas, especially Pitta.",
+            "These descriptions come from classical texts and traditional practice.",
+            "It is placed among Rasayana herbs, meaning those traditionally used to support long-term strength and recovery.",
+            "Ayurveda always looks at the whole person. A herb is chosen after the doctor studies your body type, digestion and condition.",
+            "Link: <a href='https://www.balpradaindia.com/blog/what-is-ayurveda-history-principles-how-it-works' style='color:#2563eb;'>Vata, Pitta, Kapha and Prakriti guide</a>."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Traditional Uses of Giloy",
+        content: [
+          { type: "subheading", text: "Fever and Recovery" },
+          { type: "bullets", items: [
+            "Giloy is traditionally used in formulations for recurring fever and for weakness after illness."
+          ]},
+          { type: "subheading", text: "Digestion and Appetite" },
+          { type: "bullets", items: [
+            "Bitter herbs are traditionally used to awaken appetite and support weak digestion.",
+            "Link: <a href='https://www.balpradaindia.com/blog/agni-in-ayurveda-why-digestion-fire-matters' style='color:#2563eb;'>Agni</a> and <a href='https://www.balpradaindia.com/blog/ama-toxins-in-ayurveda-signs-and-causes' style='color:#2563eb;'>Ama</a> guides."
+          ]},
+          { type: "subheading", text: "Pitta Related Complaints" },
+          { type: "bullets", items: [
+            "It is used in some traditional formulations for burning sensation, acidity and other Pitta related complaints."
+          ]},
+          { type: "subheading", text: "Joint and General Strength" },
+          { type: "bullets", items: [
+            "It appears in traditional formulations for joint stiffness and for general strength and rejuvenation."
+          ]},
+          { type: "subheading", text: "Common Forms Used" },
+          { type: "bullets", items: [
+            "Stem powder (churna).",
+            "Fresh stem juice or decoction (kwatha).",
+            "Tablets, capsules and extracts.",
+            "Classical formulations that include Giloy, which should be taken only under the guidance of a qualified doctor."
+          ]}
+        ]
+      },
+
+      {
+        heading: "What Does Modern Research Say?",
+        content: [
+          { type: "bullets", items: [
+            "Giloy has been studied in laboratories and in animals, with some studies suggesting antioxidant, anti-inflammatory and immune related effects.",
+            "Human studies are few, small and of mixed quality, so results cannot be taken as proof of benefit.",
+            "It is not correct to say that Giloy cures dengue, raises platelets, prevents COVID or other infections, or controls diabetes on its own.",
+            "It is fair to say that Giloy is a traditional herb with a long history of use in Ayurveda, and that more good quality research is needed."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Who Should Avoid Giloy or Take Medical Advice First",
+        content: [
+          { type: "subheading", text: "Autoimmune Conditions" },
+          { type: "bullets", items: [
+            "Giloy is traditionally linked with immunity and may act on the immune system.",
+            "People with autoimmune conditions such as rheumatoid arthritis, lupus, multiple sclerosis or autoimmune thyroid disease should avoid it unless their doctor advises it."
+          ]},
+          { type: "subheading", text: "Immune Suppressing Medicines and Organ Transplant" },
+          { type: "bullets", items: [
+            "If you take medicines that lower immunity, or have had an organ transplant, Giloy may work against your treatment.",
+            "Speak to your doctor first."
+          ]},
+          { type: "subheading", text: "Liver Problems" },
+          { type: "bullets", items: [
+            "There are reports of liver injury linked with Giloy products, some in people who took it on their own for long periods.",
+            "If you have liver disease, a history of liver injury or raised liver enzymes, do not start Giloy without medical advice."
+          ]},
+          { type: "subheading", text: "Diabetes and Low Blood Sugar" },
+          { type: "bullets", items: [
+            "Giloy may lower blood sugar.",
+            "If you take diabetes medicines, it may add to their effect and cause low blood sugar, so tell your doctor before using it."
+          ]},
+          { type: "subheading", text: "Planned Surgery" },
+          { type: "bullets", items: [
+            "Stop herbs only as your doctor advises, and tell your surgeon about Giloy at least two weeks before any planned surgery, as it may affect blood sugar and immunity."
+          ]},
+          { type: "subheading", text: "Pregnancy, Breastfeeding and Children" },
+          { type: "bullets", items: [
+            "Pregnant and breastfeeding women and children should use herbs only on the advice of a qualified doctor."
+          ]},
+          { type: "subheading", text: "Weak Digestion or Constipation" },
+          { type: "bullets", items: [
+            "Strongly bitter herbs may not suit people with a very weak digestion or a dry constitution, and some people notice constipation or stomach upset."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Important Safety Points Before Using Giloy",
+        content: [
+          { type: "subheading", text: "Do Not Self-Medicate" },
+          { type: "bullets", items: [
+            "Do not use Giloy as a daily tonic or as a home remedy for fever without knowing the cause.",
+            "Fever can be a sign of dengue, malaria, typhoid or another condition that needs proper tests."
+          ]},
+          { type: "subheading", text: "Product Quality and Dose" },
+          { type: "bullets", items: [
+            "Giloy products vary widely.",
+            "Use products only from reliable, licensed sources with clear labels.",
+            "Link: <a href='https://www.balpradaindia.com/blog/is-ayurvedic-treatment-safe-what-to-check-before-you-start' style='color:#2563eb;'>Is Ayurvedic Treatment Safe? guide</a>.",
+            "The right dose and form depend on the person, so do not copy a dose from the internet or from a friend.",
+            "More is not better."
+          ]},
+          { type: "subheading", text: "Warning Signs" },
+          { type: "bullets", items: [
+            "Stop the herb and contact a doctor if you notice yellow eyes or skin, dark urine, unusual tiredness, rash, itching, swelling of the lips or face, breathlessness, repeated vomiting or severe stomach pain."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Common Myths About Giloy",
+        content: [
+          { type: "bullets", items: [
+            "<strong>Myth:</strong> Giloy cures dengue and raises platelets. <strong>Fact:</strong> there is no proof of this, and dengue needs medical monitoring.",
+            "<strong>Myth:</strong> Giloy prevents COVID or other infections. <strong>Fact:</strong> there is no proof, and no herb replaces vaccines or treatment.",
+            "<strong>Myth:</strong> Neem Giloy is always better. <strong>Fact:</strong> a mixed product is not proven to be stronger, and it adds a second herb to think about.",
+            "<strong>Myth:</strong> natural means safe for everyone. <strong>Fact:</strong> herbs can interact with medicines and may not suit every person."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Healthy Habits That Support Immunity and Digestion",
+        content: [
+          { type: "bullets", items: [
+            "Eat fresh, home-cooked, balanced meals at regular times, with seasonal fruits and vegetables.",
+            "Link: <a href='https://www.balpradaindia.com/blog/ritucharya-what-to-eat-and-avoid-in-each-season' style='color:#2563eb;'>Ritucharya guide</a>.",
+            "Sleep on time, stay active and manage stress.",
+            "Link: <a href='https://www.balpradaindia.com/blog/ayurvedic-daily-routine-dinacharya-for-better-health' style='color:#2563eb;'>Dinacharya guide</a>.",
+            "Avoid smoking and alcohol, and keep up with vaccines and regular check-ups.",
+            "Keep blood sugar, blood pressure and weight under control."
+          ]}
+        ]
+      },
+
+      {
+        heading: "When to See a Doctor",
+        content: [
+          { type: "bullets", items: [
+            "See a doctor for fever lasting more than two to three days, repeated fever, or fever with body pain, rash or bleeding.",
+            "Get checked if you have long-lasting tiredness, frequent infections or joint swelling.",
+            "Seek urgent care for breathlessness, confusion, severe weakness, yellow eyes or skin, or bleeding.",
+            "If you already take prescribed medicines, never stop them on your own."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Ayurvedic Guidance at Balprada Ayurvedic Hospital, Bilari",
+        content: [
+          { type: "bullets", items: [
+            "Balprada Ayurvedic Hospital &amp; Research Center in Bilari, Moradabad has offered Ayurvedic care for 35 years, including medicine, diet and routine based care.",
+            "Our doctors review your concern, history, reports and current medicines before suggesting any herb or plan, with food guidance and regular follow-up.",
+            "Balprada has its own pathology lab that supports blood, urine and other diagnostic testing.",
+            "Patients from Bilari, Moradabad, Rampur and nearby areas can visit our ashram and clinic, open 7 days a week from 10:00 AM to 2:00 PM, with free OPD on the 15th of every month.",
+            "🔗 <strong>Book a consultation:</strong> call or WhatsApp <a href='tel:8126364606' style='color:#2563eb;'>8126364606</a>, or visit <a href='https://www.balpradaindia.com/contact' style='color:#2563eb;'>balpradaindia.com/contact</a>.",
+            "<a href='https://www.balpradaindia.com/blog/what-happens-in-the-first-ayurvedic-consultation' style='color:#2563eb;'>What Happens in the First Ayurvedic Consultation?</a>"
+          ]}
+        ]
+      }
+    ]
+  },
+
+  faqs: [
+    {
+      question: "What is Giloy used for in Ayurveda?",
+      answer: "It is traditionally used for recurring fever, digestion, Pitta related complaints, joint stiffness and general strength."
+    },
+    {
+      question: "Is Giloy safe to take daily?",
+      answer: "Not for everyone. It may affect immunity, blood sugar and the liver, so take it only on the advice of a qualified doctor."
+    },
+    {
+      question: "Who should not take Giloy?",
+      answer: "People with autoimmune conditions, those on immune suppressing medicines or with organ transplants, people with liver problems, and those on diabetes medicines should take medical advice first."
+    },
+    {
+      question: "Does Giloy cure dengue?",
+      answer: "There is no proof of this. Dengue needs tests and medical care."
+    }
+  ],
+
+  metaTags: {
+    title: "Giloy: Benefits and Who Should Avoid It | Balprada Bilari",
+    description: "Learn the traditional uses of Giloy in Ayurveda, what research says, safety points and who should avoid it. Guidance from Balprada Ayurvedic Hospital, Bilari.",
+    keywords: "Giloy benefits, Giloy who should avoid, Giloy side effects, Tinospora cordifolia, Guduchi, Amrita herb, Giloy in Ayurveda, Giloy for fever, Giloy and immunity, Giloy and liver, Giloy and diabetes, Giloy autoimmune, Giloy during pregnancy, Giloy juice, Giloy powder, Giloy tablets, Neem Giloy, Giloy myths, Giloy dengue myth, Ayurvedic herbs safety, Rasayana herbs, Ayurvedic hospital Bilari, Ayurvedic doctor Moradabad, Balprada Ayurvedic Hospital",
+    alternates: {
+      canonical: "https://www.balpradaindia.com/blog/giloy-benefits-and-who-should-avoid-it"
+    },
+    openGraph: {
+      type: "article",
+      url: "https://www.balpradaindia.com/blog/giloy-benefits-and-who-should-avoid-it",
+      title: "Giloy: Benefits and Who Should Avoid It | Balprada Bilari",
+      description: "Learn the traditional uses of Giloy in Ayurveda, what research says, safety points and who should avoid it. Guidance from Balprada Ayurvedic Hospital, Bilari.",
+      images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Giloy: Benefits and Who Should Avoid It — Balprada Ayurvedic Hospital" }]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Giloy: Benefits and Who Should Avoid It | Balprada Bilari",
+      description: "Learn the traditional uses of Giloy in Ayurveda, what research says, safety points and who should avoid it. Guidance from Balprada Ayurvedic Hospital, Bilari.",
+      images: ["/icon.png"]
+    },
+    icons: { icon: "/icon.png" }
+  }
+},
+
+{
+  id: 16,
+  slug: "ashwagandha-uses-benefits-and-precautions",
+  title: "Ashwagandha: Uses, Benefits and Precautions | Balprada Bilari",
+  subtitle: "Know the traditional uses of Ashwagandha in Ayurveda, what research says, side effects and who should avoid it. Guidance from Balprada Ayurvedic Hospital, Bilari.",
+  category: "Ayurveda | Herbs",
+  author: "Balprada Ayurvedic Hospital Team",
+  date: "2026-11-05",
+  readTime: "10 min read",
+  image: "https://res.cloudinary.com/dt8wjpf9e/image/upload/v1793859005/ashwagandha-uses-benefits-and-precautions_cnvv4m.jpg",
+  content: "Ashwagandha is a traditional Ayurvedic herb used for strength, stress and sleep. Learn its uses, research evidence, side effects and who should avoid it.",
+  tags: [
+    "Ashwagandha Benefits",
+    "Ashwagandha Uses",
+    "Ashwagandha Precautions",
+    "Ashwagandha Side Effects",
+    "Withania Somnifera",
+    "Indian Ginseng",
+    "Ashwagandha in Ayurveda",
+    "Ashwagandha for Stress",
+    "Ashwagandha for Sleep",
+    "Ashwagandha for Strength",
+    "Ashwagandha and Thyroid",
+    "Ashwagandha in Pregnancy",
+    "Ashwagandha and Liver",
+    "Ashwagandha and Diabetes",
+    "Ashwagandha Churna",
+    "Ashwagandha Capsules",
+    "Ashwagandha with Milk",
+    "Ashwagandha Who Should Avoid",
+    "Ashwagandha Myths",
+    "Rasayana Herbs",
+    "Ayurvedic Herbs Safety",
+    "Ayurvedic Hospital Bilari",
+    "Ayurvedic Doctor Moradabad",
+    "Balprada Ayurvedic Hospital"
+  ],
+
+  fullContent: {
+    introduction: "Ashwagandha is one of the best known herbs in Ayurveda, traditionally used for strength, stress, sleep and recovery. This guide explains its uses, research evidence and the precautions every person should know before using it.",
+
+    sections: [
+      {
+        heading: "What Is Ashwagandha?",
+        content: [
+          { type: "bullets", items: [
+            "Ashwagandha is one of the best known herbs in Ayurveda.",
+            "Its botanical name is Withania somnifera, and it is also called Indian ginseng or winter cherry.",
+            "It is a small shrub that grows in dry regions of India.",
+            "The name comes from Sanskrit. Ashva means horse and Gandha means smell, because the fresh root is said to smell like a horse.",
+            "It is also said to give the strength of a horse, which is a traditional saying and not a proven claim.",
+            "The root is the part most often used. The leaves are also used in some preparations and products.",
+            "It is a Rasayana herb, meaning one traditionally used to support long-term strength, recovery and resilience."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Ashwagandha in Ayurvedic Thinking",
+        content: [
+          { type: "bullets", items: [
+            "Ayurveda describes herbs by taste (Rasa), effect on digestion (Virya and Vipaka) and action on the doshas.",
+            "Ashwagandha is traditionally described as bitter, astringent and slightly sweet in taste, and warming in nature.",
+            "It is considered helpful in balancing Vata and Kapha, and it may increase Pitta if used too much.",
+            "These descriptions come from classical texts and traditional practice.",
+            "It is placed among the herbs traditionally called Balya, meaning supportive of strength, and Vrishya, meaning supportive of vitality.",
+            "Ayurveda always looks at the whole person. A herb is chosen after the doctor studies your body type, digestion and condition.",
+            "Link: <a href='https://www.balpradaindia.com/blog/what-is-ayurveda-history-principles-how-it-works' style='color:#2563eb;'>Vata, Pitta, Kapha and Prakriti guide</a>."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Traditional Uses of Ashwagandha",
+        content: [
+          { type: "subheading", text: "Strength and Weakness" },
+          { type: "bullets", items: [
+            "Ashwagandha is traditionally used for general weakness, tiredness and recovery after long illness."
+          ]},
+          { type: "subheading", text: "Stress, Sleep and Nervous System" },
+          { type: "bullets", items: [
+            "It is traditionally used to calm the mind and support sleep, especially where Vata is thought to be raised, with restlessness and a tired but alert feeling."
+          ]},
+          { type: "subheading", text: "Joint and Muscle Support" },
+          { type: "bullets", items: [
+            "Because it balances Vata, it appears in traditional formulations for stiffness, weakness and aching in joints and muscles."
+          ]},
+          { type: "subheading", text: "Vitality and Reproductive Health" },
+          { type: "bullets", items: [
+            "It is traditionally described as a tonic for vitality and reproductive health in both men and women."
+          ]},
+          { type: "subheading", text: "Common Forms Used" },
+          { type: "bullets", items: [
+            "Root powder (churna), often taken with warm milk in traditional practice under guidance.",
+            "Decoction (kwatha).",
+            "Tablets, capsules and extracts.",
+            "Classical formulations that include Ashwagandha, which should be taken only under the guidance of a qualified doctor."
+          ]}
+        ]
+      },
+
+      {
+        heading: "What Does Modern Research Say?",
+        content: [
+          { type: "bullets", items: [
+            "Ashwagandha has been studied in laboratories and in a number of human trials, mainly for stress, anxiety, sleep and general wellbeing.",
+            "Some small trials suggest a modest benefit for stress and sleep, but studies differ in product, dose and quality, so results cannot be taken as firm proof.",
+            "Research on strength, fertility, thyroid and blood sugar is early and mixed.",
+            "It is not correct to say that Ashwagandha cures anxiety, depression, infertility or thyroid disease, or that it can replace medical treatment.",
+            "It is fair to say that Ashwagandha is a traditional herb with a long history of use, with some early research interest, and that more good quality research is needed."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Precautions: Who Should Avoid It or Take Medical Advice First",
+        content: [
+          { type: "subheading", text: "Pregnancy and Breastfeeding" },
+          { type: "bullets", items: [
+            "Ashwagandha is generally advised against in pregnancy, as traditional and modern sources raise concern about miscarriage.",
+            "Breastfeeding women should also use it only on the advice of a qualified doctor."
+          ]},
+          { type: "subheading", text: "Thyroid Conditions" },
+          { type: "bullets", items: [
+            "Some reports suggest it may raise thyroid hormone levels.",
+            "People with thyroid disease or on thyroid medicines should not take it without medical advice and monitoring."
+          ]},
+          { type: "subheading", text: "Autoimmune Conditions and Transplant" },
+          { type: "bullets", items: [
+            "It may act on the immune system.",
+            "People with autoimmune conditions, those on immune suppressing medicines or with an organ transplant should speak to their doctor first."
+          ]},
+          { type: "subheading", text: "Liver Problems" },
+          { type: "bullets", items: [
+            "Rare cases of liver injury have been reported with Ashwagandha products.",
+            "If you have liver disease or raised liver enzymes, do not start it without medical advice, and stop it if you notice warning signs."
+          ]},
+          { type: "subheading", text: "Diabetes and Blood Pressure" },
+          { type: "bullets", items: [
+            "It may lower blood sugar and blood pressure.",
+            "If you take medicines for diabetes or blood pressure, tell your doctor, as the combined effect may be too strong."
+          ]},
+          { type: "subheading", text: "Sedatives and Sleep Medicines" },
+          { type: "bullets", items: [
+            "It may add to the effect of sedatives, sleep tablets and some anxiety medicines, causing too much drowsiness."
+          ]},
+          { type: "subheading", text: "High Pitta or Heat Symptoms" },
+          { type: "bullets", items: [
+            "Because it is warming, people with strong heat symptoms such as burning, acidity or loose stools may not tolerate it well."
+          ]},
+          { type: "subheading", text: "Planned Surgery" },
+          { type: "bullets", items: [
+            "Tell your surgeon about all herbs you use before any planned surgery, as it may add to the effect of anaesthesia and other medicines."
+          ]},
+          { type: "subheading", text: "Side Effects of Too Much" },
+          { type: "bullets", items: [
+            "Large doses may cause stomach upset, nausea, loose stools, drowsiness or headache in some people."
+          ]},
+          { type: "subheading", text: "Product Quality and Dose" },
+          { type: "bullets", items: [
+            "Ashwagandha products vary widely in strength and purity, and some are mixed with other ingredients.",
+            "Use products only from reliable, licensed sources with clear labels.",
+            "Link: <a href='https://www.balpradaindia.com/blog/is-ayurvedic-treatment-safe-what-to-check-before-you-start' style='color:#2563eb;'>Is Ayurvedic Treatment Safe? guide</a>.",
+            "The right dose and form depend on the person, so do not copy a dose from the internet or from a friend.",
+            "More is not better."
+          ]},
+          { type: "subheading", text: "Warning Signs" },
+          { type: "bullets", items: [
+            "Stop the herb and contact a doctor if you notice yellow eyes or skin, dark urine, unusual tiredness, rash, itching, swelling of the lips or face, breathlessness, palpitations, repeated vomiting or severe stomach pain."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Common Myths About Ashwagandha",
+        content: [
+          { type: "bullets", items: [
+            "<strong>Myth:</strong> Ashwagandha is safe for everyone because it is natural. <strong>Fact:</strong> herbs can interact with medicines and may not suit every person, including pregnant women and people with thyroid disease.",
+            "<strong>Myth:</strong> Ashwagandha cures stress and anxiety. <strong>Fact:</strong> it may help some people a little, but long-lasting anxiety needs proper care.",
+            "<strong>Myth:</strong> more Ashwagandha means more strength. <strong>Fact:</strong> more can cause stomach upset and drowsiness, and does not build strength faster."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Healthy Habits That Support Strength and Calm",
+        content: [
+          { type: "bullets", items: [
+            "Eat fresh, home-cooked, balanced meals at regular times, with enough protein.",
+            "Link: <a href='https://www.balpradaindia.com/blog/ritucharya-what-to-eat-and-avoid-in-each-season' style='color:#2563eb;'>Ritucharya guide</a>.",
+            "Sleep on time and wake early.",
+            "Link: <a href='https://www.balpradaindia.com/blog/ayurvedic-daily-routine-dinacharya-for-better-health' style='color:#2563eb;'>Dinacharya guide</a>.",
+            "Stay active with walking, yoga or light exercise, and make time for rest and quiet breathing.",
+            "Limit late nights and screen use before bed.",
+            "Link: <a href='https://www.balpradaindia.com/blog/agni-in-ayurveda-why-digestion-fire-matters' style='color:#2563eb;'>Agni</a> and <a href='https://www.balpradaindia.com/blog/ama-toxins-in-ayurveda-signs-and-causes' style='color:#2563eb;'>Ama</a> guides."
+          ]}
+        ]
+      },
+
+      {
+        heading: "When to See a Doctor",
+        content: [
+          { type: "bullets", items: [
+            "See a doctor if you have long-lasting tiredness, poor sleep, constant worry, low mood or unexplained weight change.",
+            "Get checked if you have symptoms such as palpitations, heat intolerance, tremor or swelling in the neck, as thyroid problems can look like stress.",
+            "Seek urgent care for chest pain, severe breathlessness, fainting, thoughts of self-harm or yellow eyes and skin.",
+            "If you already take prescribed medicines, never stop them on your own."
+          ]}
+        ]
+      },
+
+      {
+        heading: "Ayurvedic Guidance at Balprada Ayurvedic Hospital, Bilari",
+        content: [
+          { type: "bullets", items: [
+            "Balprada Ayurvedic Hospital &amp; Research Center in Bilari, Moradabad has offered Ayurvedic care for 35 years, including medicine, diet and routine based care.",
+            "Our doctors review your concern, history, reports and current medicines before suggesting any herb or plan, with food guidance and regular follow-up.",
+            "Balprada has its own pathology lab that supports blood, urine and other diagnostic testing.",
+            "Patients from Bilari, Moradabad, Rampur and nearby areas can visit our ashram and clinic, open 7 days a week from 10:00 AM to 2:00 PM, with free OPD on the 15th of every month.",
+            "🔗 <strong>Book a consultation:</strong> call or WhatsApp <a href='tel:8126364606' style='color:#2563eb;'>8126364606</a>, or visit <a href='https://www.balpradaindia.com/contact' style='color:#2563eb;'>balpradaindia.com/contact</a>.",
+            "Link: <a href='https://www.balpradaindia.com/blog/what-happens-in-the-first-ayurvedic-consultation' style='color:#2563eb;'>What Happens in the First Ayurvedic Consultation?</a>"
+          ]}
+        ]
+      }
+    ]
+  },
+
+  faqs: [
+    {
+      question: "What is Ashwagandha used for in Ayurveda?",
+      answer: "It is traditionally used for weakness, stress, sleep, joint stiffness and vitality."
+    },
+    {
+      question: "Is Ashwagandha safe to take daily?",
+      answer: "Not for everyone. It may affect thyroid, blood sugar and the liver, so take it only on the advice of a qualified doctor."
+    },
+    {
+      question: "Who should not take Ashwagandha?",
+      answer: "Pregnant women, people with thyroid disease, autoimmune conditions or liver problems, and those on sedatives or diabetes medicines should take medical advice first."
+    },
+    {
+      question: "Does Ashwagandha help with stress and sleep?",
+      answer: "Some small studies suggest a modest benefit, but evidence is limited, so it should not replace medical care."
+    }
+  ],
+
+  metaTags: {
+    title: "Ashwagandha: Uses, Benefits and Precautions | Balprada Bilari",
+    description: "Know the traditional uses of Ashwagandha in Ayurveda, what research says, side effects and who should avoid it. Guidance from Balprada Ayurvedic Hospital, Bilari.",
+    keywords: "Ashwagandha benefits, Ashwagandha uses, Ashwagandha precautions, Ashwagandha side effects, Withania somnifera, Indian ginseng, Ashwagandha in Ayurveda, Ashwagandha for stress, Ashwagandha for sleep, Ashwagandha for strength, Ashwagandha and thyroid, Ashwagandha in pregnancy, Ashwagandha and liver, Ashwagandha and diabetes, Ashwagandha churna, Ashwagandha capsules, Ashwagandha with milk, Ashwagandha who should avoid, Ashwagandha myths, Rasayana herbs, Ayurvedic herbs safety, Ayurvedic hospital Bilari, Ayurvedic doctor Moradabad, Balprada Ayurvedic Hospital",
+    alternates: {
+      canonical: "https://www.balpradaindia.com/blog/ashwagandha-uses-benefits-and-precautions"
+    },
+    openGraph: {
+      type: "article",
+      url: "https://www.balpradaindia.com/blog/ashwagandha-uses-benefits-and-precautions",
+      title: "Ashwagandha: Uses, Benefits and Precautions | Balprada Bilari",
+      description: "Know the traditional uses of Ashwagandha in Ayurveda, what research says, side effects and who should avoid it. Guidance from Balprada Ayurvedic Hospital, Bilari.",
+      images: [{ url: "/icon.png", width: 1200, height: 630, alt: "Ashwagandha: Uses, Benefits and Precautions — Balprada Ayurvedic Hospital" }]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Ashwagandha: Uses, Benefits and Precautions | Balprada Bilari",
+      description: "Know the traditional uses of Ashwagandha in Ayurveda, what research says, side effects and who should avoid it. Guidance from Balprada Ayurvedic Hospital, Bilari.",
+      images: ["/icon.png"]
+    },
+    icons: { icon: "/icon.png" }
+  }
 }
 
 ];
