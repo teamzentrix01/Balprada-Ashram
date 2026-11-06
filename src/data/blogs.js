@@ -3718,7 +3718,7 @@ export const blogs = [
   author: "Balprada Ayurvedic Hospital Team",
   date: "2026-11-05",
   readTime: "10 min read",
-  image: "https://res.cloudinary.com/dt8wjpf9e/image/upload/v1793857486/giloy-benefits-and-who-should-avoid-it_tz3wt3.jpg",
+  image: "https://res.cloudinary.com/hiu9gggc/image/upload/v1793945069/giloy-benefits-and-who-should-avoid-it.jpg",
   content: "Giloy (Tinospora cordifolia) is a traditional Ayurvedic herb used for fever, digestion and strength. Learn its benefits, research evidence, safety points and who should avoid it.",
   tags: [
     "Giloy Benefits",
@@ -3989,7 +3989,7 @@ export const blogs = [
   author: "Balprada Ayurvedic Hospital Team",
   date: "2026-11-05",
   readTime: "10 min read",
-  image: "https://res.cloudinary.com/dt8wjpf9e/image/upload/v1793859005/ashwagandha-uses-benefits-and-precautions_cnvv4m.jpg",
+  image: "https://res.cloudinary.com/hiu9gggc/image/upload/v1793945089/ashwagandha-uses-benefits-and-precautions.jpg",
   content: "Ashwagandha is a traditional Ayurvedic herb used for strength, stress and sleep. Learn its uses, research evidence, side effects and who should avoid it.",
   tags: [
     "Ashwagandha Benefits",
@@ -4259,7 +4259,7 @@ export const blogs = [
   author: "Balprada Ayurvedic Hospital Team",
   date: "2026-11-06",
   readTime: "10 min read",
-  image: "https://res.cloudinary.com/dt8wjpf9e/image/upload/v1793943719/triphala-benefits-and-how-to-take-it-safely_pjkayy.jpg",
+  image: "https://res.cloudinary.com/hiu9gggc/image/upload/v1793945239/triphala-benefits-and-how-to-take-it-safely.jpg",
   content: "Triphala is a traditional Ayurvedic formulation used for digestion and bowel regularity. Learn its benefits, how to take it safely, side effects and who should avoid it.",
   tags: [
     "Triphala Benefits",
